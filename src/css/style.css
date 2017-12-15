@@ -1,0 +1,74 @@
+
+<!---fonts--->
+@font-face {
+    font-family: 'MontserratBlack';
+    src: url('fonts/MontserratBlack.eot');
+    src: url('fonts/MontserratBlack.eot') format('embedded-opentype'),
+         url('fonts/MontserratBlack.woff2') format('woff2'),
+         url('fonts/MontserratBlack.woff') format('woff'),
+         url('fonts/MontserratBlack.ttf') format('truetype'),
+         url('fonts/MontserratBlack.svg#MontserratBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'CrimsonTextRoman';
+    src: url('fonts/CrimsonTextRoman.eot');
+    src: url('fonts/CrimsonTextRoman.eot') format('embedded-opentype'),
+         url('fonts/CrimsonTextRoman.woff2') format('woff2'),
+         url('fonts/CrimsonTextRoman.woff') format('woff'),
+         url('fonts/CrimsonTextRoman.ttf') format('truetype'),
+         url('fonts/CrimsonTextRoman.svg#CrimsonTextRoman') format('svg');
+}
+
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url('fonts/MontserratRegular.eot');
+    src: url('fonts/MontserratRegular.eot') format('embedded-opentype'),
+         url('fonts/MontserratRegular.woff2') format('woff2'),
+         url('fonts/MontserratRegular.woff') format('woff'),
+         url('fonts/MontserratRegular.ttf') format('truetype'),
+         url('fonts/MontserratRegular.svg#MontserratRegular') format('svg');
+}
+
+
+.menu a {
+color:rgb(52, 62, 91);
+text-decoration:none;
+}   
+.menu {
+	padding-top: 35px;
+    padding-bottom: 35px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+}
+.zero {
+    width: 50px;
+    height: 50px;
+    background-color: #e3e8f0;
+    border-radius: 50%;
+}
+.menu__cart p{
+display: inline-block;
+}
+
+.submenu {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: 400;
+    border-top: 1px solid #e3e8f0;
+}
+.submenu a{
+    color: rgb(185, 190, 209);
+    text-decoration:none;
+}
+section .banner {
+    background-color: #1c1e23;  
+
+}
+.banner__text {
+    padding: 10px;
+    color: #ffffff;
+}
