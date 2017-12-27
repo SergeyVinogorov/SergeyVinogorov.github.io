@@ -1,0 +1,23 @@
+body {
+	background-color: #f3f5f7;
+	text-align: center; 
+}
+h1 {
+	padding-bottom: 50px;
+}
+.main__workMoney>img {
+	width: 148px;
+	height: 131px;
+}
+.main__earnWithUs>img {
+	width: 148px;
+	height: 131px;
+}
+.main__reliability>img {
+	width: 148px;
+	height: 131px;
+}
+.main__risk>img {
+	width: 148px;
+	height: 131px;
+}
