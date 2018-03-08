@@ -1,3 +1,4 @@
+/* Style for home_page*/
 @font-face {
   font-family: 'Adobe Garamond Pro';
   src: url('../font/AGaramondPro-Bold.woff2') format('woff2'), url('../font/AGaramondPro-Bold.woff') format('woff');
@@ -16,6 +17,10 @@
   font-weight: 600;
   font-style: normal;
 }
+body {
+  overflow: hidden;
+}
+/* Style for header */
 .page__home {
   background-color: #000000;
   height: 66vh;
@@ -32,6 +37,7 @@
 .page__home__logo {
   margin-bottom: 0.4rem;
 }
+/* Style for navigation row */
 .page__home__navigation {
   height: 17vh;
   text-align: center;
@@ -54,6 +60,7 @@
   font-family: Adobe Garamond Pro, sans-serif;
   text-transform: uppercase;
 }
+/* Style for copyright row */
 .page__home__copyright {
   height: 17vh;
   font-size: 7.7px;
@@ -73,6 +80,7 @@
 .page__home__copyright a {
   color: #949494;
 }
+/* Style for services page*/
 .services {
   background-image: url(../img/Services.jpg);
   background-repeat: no-repeat;
@@ -80,18 +88,21 @@
   color: #ffffff;
   margin-left: 2rem;
   width: 100%;
-  min-height: 100%;
+  height: 100vh;
+  overflow-x: hidden;
 }
+/* Style for header of page*/
 .page__sevices {
   height: 15rem;
 }
 .page__sevices__logo {
   margin-left: 1.5rem;
 }
-.way {
+.page__services__navigation_wrap {
   margin-left: 4rem;
   margin-bottom: 0.5rem;
 }
+/*Style use example from https://tympanus.net/Development/CreativeLinkEffects/#cl-effect-21*/
 .page__services__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,6 +164,7 @@
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
+/*Style accordion*/
 .page__sevices__capabilities {
   position: relative;
   width: 100%;
@@ -163,6 +175,15 @@
   margin-bottom: 0.5rem;
   line-height: 2;
   letter-spacing: 0.3px;
+  /*Style indicator*/
+  /* Style for hide text*/
+  /* Style rotate cross-hair-1*/
+  /* Style for change size text*/
+  /* Style for move indicator*/
+  /* Style text unchecked input*/
+}
+.page__sevices__capabilities .circle {
+  /*Style cross-hair-1 unchecked input*/
 }
 .page__sevices__capabilities .circle:before {
   position: absolute;
@@ -193,6 +214,7 @@
   margin-bottom: 2rem;
   position: relative;
   margin-bottom: 0.5rem;
+  /*Style cross-hair-2 unchecked input*/
 }
 .page__sevices__capabilities li:after {
   background-color: #000;
@@ -205,21 +227,6 @@
   margin-top: 14px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-.page__sevices__capabilities li:nth-of-type(1) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-.page__sevices__capabilities li:nth-of-type(2) {
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
-}
-.page__sevices__capabilities li:nth-of-type(3) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.page__sevices__capabilities li:last-of-type {
-  padding-bottom: 0;
 }
 .page__sevices__capabilities input {
   position: absolute;
@@ -268,6 +275,10 @@
   opacity: 1;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
 }
 .page__sevices__capabilities .capabilities_list p {
   text-transform: uppercase;
@@ -284,7 +295,6 @@
   text-transform: uppercase;
   margin-left: 0.2rem;
   letter-spacing: 1.12px;
-  margin-bottom: 1rem;
 }
 .page__sevices__copyright a {
   color: #949494;

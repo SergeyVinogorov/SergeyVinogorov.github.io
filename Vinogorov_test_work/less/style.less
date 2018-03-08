@@ -1,4 +1,4 @@
-//home_page_style	
+/* Style for home_page*/
 	@font-face {
 	  font-family: 'Adobe Garamond Pro';
 	    src: url('../font/AGaramondPro-Bold.woff2') format('woff2'),
@@ -22,6 +22,10 @@
     font-weight: 600;
     font-style: normal;
 	}
+	body {
+		overflow: hidden;
+	}
+	/* Style for header */
 	.page__home {
 	  background-color: #000000;
 	  height: 66vh;
@@ -32,7 +36,7 @@
 	  .page__home__logo{
 	  	margin-bottom: 0.4rem;
 	  }
-
+	/* Style for navigation row */
 	.page__home__navigation {
 	  height: 17vh;
 	  text-align: center;
@@ -49,6 +53,7 @@
 		text-transform: uppercase;
 	 }
 	}
+	/* Style for copyright row */
 	.page__home__copyright {
 		height: 17vh;
 		font-size: 7.7px;
@@ -63,196 +68,197 @@
 
 		}
 	}
-//services_page
-.services {
-		background-image: url(../img/Services.jpg);
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		color: #ffffff;
-		margin-left: 2rem;
-		width: 100%;
-        min-height: 100%;
-}
-.page__sevices {
-	height: 15rem;
-}
-.page__sevices__logo {
-	margin-left: 1.5rem;
-}
-.way {
-	margin-left: 4rem;
-	margin-bottom: 0.5rem;
-}
-.page__services__navigation {
-	display: flex;
-	align-items: flex-end;
-	margin-bottom: 1.7rem;
-	letter-spacing: 1px;
 
-	a {
-		position:relative;
-		margin-left: 1rem;
-		padding: 0.4rem;
-		text-decoration: none;
-		font-size: 13px;
-		color: #949494;
-		font-family: Adobe Garamond Pro, sans-serif;
-		text-transform: uppercase;
-		transition: color 0.3s;
-		outline: none;
-		&::before, &::after {
-		    position: absolute;
-		    left: 0;
-		    width: 100%;
-		    height: 0.08rem;
-		    background: #fff;
-		    content: '';
-		    opacity: 0;
-		    transition: opacity 0.3s, transform 0.3s;
-		    transform: translateY(-10px);
-		}
-		&::before{
-			top: 0;
-			transform: translateY(-10px);
-		}
-		&::after{
-			bottom: 0;
-			transform: translateY(10px);
-		}
-		&:hover, &:focus {
-			color: #fff;
-		}
-		&:hover, &:focus, &:hover::before, &:hover::after {
-			opacity: 1;
-			transform: translateY(0px);
-		}
+/* Style for services page*/
+	.services {
+			background-image: url(../img/Services.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			color: #ffffff;
+			margin-left: 2rem;
+			width: 100%;
+	        height: 100vh;
+	    	overflow-x: hidden;
 	}
-}
-.page__sevices__capabilities {
-	position: relative;
-	width: 100%;
-	max-width: 760px;
-	min-height: 0; 
-	overflow: hidden;
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
-	line-height: 2;
-	letter-spacing: 0.3px;
-	.circle {
-		&:before {
-			position: absolute;
-			content: '';
-			left: -2.5px;
-			top: 0.5rem;
-			background-color: #fff;
-			width: 1rem;
-			height: 1rem;
-			border-radius: 50%;
-			box-sizing: border-box;
-		}
-		&:after {
-			background-color: #000;
-			height: 0.09rem;
-			width: 0.75rem;
-			content: "";
-			position: absolute;
-			left: 0px;
-			top: 1rem;
-			box-sizing: border-box;
-		}
+	/* Style for header of page*/
+	.page__sevices {
+		height: 15rem;
 	}
-	li {
-		list-style-type: none;
-		font-family: Adobe Garamond;
-		margin-bottom: 2rem;
-		position: relative;
+	.page__sevices__logo {
+		margin-left: 1.5rem;
+	}
+	.page__services__navigation_wrap {
+		margin-left: 4rem;
 		margin-bottom: 0.5rem;
-		&:after {
-			background-color: #000;
-			height: 0.06rem;
-			width: 0.5rem;
-			content: "";
-			position: absolute;
-			left: 0.1rem;
-			top: 0.65rem;
-			margin-top: 14px;
-			box-sizing: border-box;
+	}
+	/*Style use example from https://tympanus.net/Development/CreativeLinkEffects/#cl-effect-21*/
+	.page__services__navigation {
+		display: flex;
+		align-items: flex-end;
+		margin-bottom: 1.7rem;
+		letter-spacing: 1px;
+
+		a {
+			position:relative;
+			margin-left: 1rem;
+			padding: 0.4rem;
+			text-decoration: none;
+			font-size: 13px;
+			color: #949494;
+			font-family: Adobe Garamond Pro, sans-serif;
+			text-transform: uppercase;
+			transition: color 0.3s;
+			outline: none;
+			&::before, &::after {
+			    position: absolute;
+			    left: 0;
+			    width: 100%;
+			    height: 0.08rem;
+			    background: #fff;
+			    content: '';
+			    opacity: 0;
+			    transition: opacity 0.3s, transform 0.3s;
+			    transform: translateY(-10px);
+			}
+			&::before{
+				top: 0;
+				transform: translateY(-10px);
+			}
+			&::after{
+				bottom: 0;
+				transform: translateY(10px);
+			}
+			&:hover, &:focus {
+				color: #fff;
+			}
+			&:hover, &:focus, &:hover::before, &:hover::after {
+				opacity: 1;
+				transform: translateY(0px);
+			}
 		}
-		&:nth-of-type(1) {
-  			animation-delay: 0.5s;
-		}
-		&:nth-of-type(2) {
-  		animation-delay: 0.75s;
-		}
-		&:nth-of-type(3) {
-  		animation-delay: 1s;
-		}
-		&:last-of-type {
-  		padding-bottom: 0;
-		}
 	}
-	input {
-		position: absolute;
-		cursor: pointer;
-		width: 10rem;
-		height: 100%;
-		z-index: 1;
-		opacity: 0;
-	}
-	input[type=checkbox]:checked ~ div.capabilities_list{
-		margin-top: 0;
-  		max-height: 0;
-		opacity: 0;
-		transform: translate(0, 50%);
-	}
-	input[type=checkbox]:checked ~ span.circle:after {
-	 	transform: rotate(90deg);
-	 	top: 1.5rem;
-	 }
-	input[type=checkbox]:checked ~ h2{
-		text-transform: lowercase;
-		font-family: Adobe Garamond;
-		font-size: 1.5em;
-		letter-spacing: 0.5px;
-	}
-	input[type=checkbox]:checked ~ span.circle:before {
-		top: 1rem;
-	}
-	h2 {
-		box-sizing: border-box;
-		margin-left: 1.4rem;
-		text-transform: uppercase;
-		font-family: Garamond;
-		margin-bottom: 0.8rem;
-		margin-top: 0rem;
-		font-size: 16px;
-		letter-spacing: 4px;
-	}
-	.capabilities_list {
+	/*Style accordion*/
+	.page__sevices__capabilities {
 		position: relative;
+		width: 100%;
+		max-width: 760px;
+		min-height: 0; 
 		overflow: hidden;
-		max-height: 800px;
-		opacity: 1;
-		transform: translate(0, 0);
-		p {
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+		line-height: 2;
+		letter-spacing: 0.3px;
+		/*Style indicator*/
+		.circle {
+			&:before {
+				position: absolute;
+				content: '';
+				left: -2.5px;
+				top: 0.5rem;
+				background-color: #fff;
+				width: 1rem;
+				height: 1rem;
+				border-radius: 50%;
+				box-sizing: border-box;
+			}
+		/*Style cross-hair-1 unchecked input*/
+			&:after {
+				background-color: #000;
+				height: 0.09rem;
+				width: 0.75rem;
+				content: "";
+				position: absolute;
+				left: 0px;
+				top: 1rem;
+				box-sizing: border-box;
+			}
+		}
+		li {
+			list-style-type: none;
+			font-family: Adobe Garamond;
+			margin-bottom: 2rem;
+			position: relative;
+			margin-bottom: 0.5rem;
+		/*Style cross-hair-2 unchecked input*/
+			&:after {
+				background-color: #000;
+				height: 0.06rem;
+				width: 0.5rem;
+				content: "";
+				position: absolute;
+				left: 0.1rem;
+				top: 0.65rem;
+				margin-top: 14px;
+				box-sizing: border-box;
+			}
+		}
+		input {
+			position: absolute;
+			cursor: pointer;
+			width: 10rem;
+			height: 100%;
+			z-index: 1;
+			opacity: 0;
+		}
+		/* Style for hide text*/
+		input[type=checkbox]:checked ~ div.capabilities_list{
+			margin-top: 0;
+	  		max-height: 0;
+			opacity: 0;
+			transform: translate(0, 50%);
+		}
+		/* Style rotate cross-hair-1*/
+		input[type=checkbox]:checked ~ span.circle:after {
+		 	transform: rotate(90deg);
+		 	top: 1.5rem;
+		 }
+		/* Style for change size text*/
+		input[type=checkbox]:checked ~ h2{
+			text-transform: lowercase;
+			font-family: Adobe Garamond;
+		 	font-size: 1.5em;
+		 	letter-spacing: 0.5px;
+		 }
+		/* Style for move indicator*/
+		input[type=checkbox]:checked ~ span.circle:before {
+			top: 1rem;
+		}
+		h2 {
+			box-sizing: border-box;
+			margin-left: 1.4rem;
 			text-transform: uppercase;
 			font-family: Garamond;
-			font-size: 12px;
+			margin-bottom: 0.8rem;
 			margin-top: 0rem;
-			margin-bottom: 0;
-			margin-left: 1.3rem;
+			font-size: 16px;
+			letter-spacing: 4px;
+		}
+		/* Style text unchecked input*/
+		.capabilities_list {
+			position: relative;
+			overflow: hidden;
+			max-height: 800px;
+			opacity: 1;
+			transform: translate(0, 0);
+			transition: transform 2s;
+			p {
+				text-transform: uppercase;
+				font-family: Garamond;
+				font-size: 12px;
+				margin-top: 0rem;
+				margin-bottom: 0;
+				margin-left: 1.3rem;
+			}
 		}
 	}
-}
-.page__sevices__copyright {
-	font-size: 11px;
-	color: #949494;
-	font-family: Adobe Garamond Pro, serif;
-	text-transform: uppercase;
-	margin-left: 0.2rem;
-    letter-spacing: 1.12px;
-    margin-bottom: 1rem;
-	a {
-			color: #949494;
-		}
-}
+	.page__sevices__copyright {
+		font-size: 11px;
+		color: #949494;
+		font-family: Adobe Garamond Pro, serif;
+		text-transform: uppercase;
+		margin-left: 0.2rem;
+	    letter-spacing: 1.12px;
+		a {
+				color: #949494;
+			}
+	}
