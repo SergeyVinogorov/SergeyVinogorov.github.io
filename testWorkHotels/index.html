@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/modernizr-custom.js"></script>
+  <title>TestWork Vinogorov</title>
+</head>
+<body>  
+
+<!--Navigation-->
+
+  <header class="d-flex justify-content-center main__navigation">
+      
+    <div class="container d-flex justify-content-between">
+
+      <nav class="navbar navbar-expand-lg text-uppercase font-weight-bold">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-menu2"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">search tickets <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">sapsan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">allegro</a>
+            </li>
+            <li class="nav-item dropdown" id="transSiberian">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                trans-siberian
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown" id="fag">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                fag
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown" id="ticketGuide" onclick="checkShow()">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                tickets guide
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Group travel</a>
+                <a class="dropdown-item" href="#">Ticket types</a>
+                <a class="dropdown-item" href="#">Chid policy</a>
+                <a class="dropdown-item" href="#">Change ticket request</a>
+                <a class="dropdown-item" href="#">Cancel tickets</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown" id="toggleColor">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                contact us
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+      </nav>
+        <div class="d-flex align-items-center wrap_sign">
+            <a class=" sign_in" href="#">Sign in</a>
+        </div>
+    </div>
+
+  </header>
+
+
+<h1 class="col-12">Russian Train Tickets</h1>
+
+<!--Section with choose city-->
+  <div class="container">
+
+    <section class="d-flex justify-content-between main__chooseCity">
+      
+
+        <div class="d-flex flex-column chooseCity__departure">
+            <div>Departure city: </div>
+            <input class="departure__city" type="text" placeholder="Type city name">
+            <div class="frequent_cities">Ex: <span>St.Peterburg</span>, <span>Moscow</span></div>
+        </div>
+        
+
+        <div class="d-flex flex-column chooseCity__arrival">
+          <div>Arrival city: </div>
+            <input class="arrival__city" type="text" placeholder="Type city name">
+            <div class="frequent_cities">Ex: <span>St.Peterburg</span>, <span>Moscow</span></div>
+        </div>
+      
+
+    </section>
+  </div>
+
+<!--Main features-->
+
+  <div class="container">
+
+    <section class="d-flex justify-content-between main__features">
+      
+        <!--Feature choose date of trip-->
+          <div class="d-flex flex-column feature__date_trip">
+        
+            <div class="feature_description">Departure date:</div> 
+            <input class="feature__date"  type="text" placeholder="dd.mm.yyyy">
+            <span class="icon-calendar feature__date_icon_departure"></span>
+
+          </div>
+
+            <!--Feature roundtrip-->
+          <div class="feature_roundtrip"> 
+            
+            <label class="roundtrip_label" for="check">
+            <input class="roundtrip" type="checkbox" id="check">
+            <span class="roundtrip_replace"></span>
+            Roundtrip</label>
+
+          </div>
+
+          <div class="d-flex flex-column feature__date_trip">
+        
+            <div class="feature_description">Return date:</div> 
+            <input id="arrival__date_disabled" class="feature__date " disabled="disabled" type="text" placeholder="dd.mm.yyyy" onchange="toggleReturnDate()">
+            <span class="icon-calendar feature__date_icon"></span>
+
+          </div>
+
+        <!--Currency pay for trip-->
+          <div class= "d-flex flex-column feature__ceurrency">
+            <div class="feature_description"> Currency</div>
+            <div class="currency__input"><span id="currency" > RUB </span>
+            <div class="dropdown">
+              <button class="currency__button" type="button" onclick="openCurrency()"> 
+              </button>
+              <div class="currency__button_menu" id="currencyMenu">
+                <button class="button_menu-item" type="button" onclick="changeCurrencyUSD()">USD</button>
+                <button class="button_menu-item" type="button" onclick="changeCurrencyRUB()">RUB</button>
+                <button class="button_menu-item" type="button" onclick="changeCurrencyGBR()">GBR</button>
+                <button class="button_menu-item" type="button" onclick="changeCurrencyEUR()">EUR</button>
+                <button class="button_menu-item" type="button" onclick="changeCurrencyCHF()">CHF</button>
+              </div>
+            </div>
+            </div>
+          </div>
+        
+        <!--Search button--> 
+          <div class="align-self-end feature__search"> 
+
+            <button type="button" class="btn btn-primary search_button"><span>Search</span></button>
+
+          </div>
+
+    </section>
+
+  </div>
+  <script>  
+         var count = 0;
+      function openCurrency(){
+        document.getElementById('currencyMenu').style = "display: block;";
+         count += 1;
+          if (count === 2) {
+           document.getElementById('currencyMenu').style = "display: none;";
+           count = 0;
+            }
+          }
+
+      function changeCurrencyUSD() {
+        document.getElementById('currency').innerHTML='USD';
+      }
+      function changeCurrencyRUB() {
+        document.getElementById('currency').innerHTML='RUB';
+      }
+      function changeCurrencyGBR() {
+        document.getElementById('currency').innerHTML='GBR';
+      }
+      function changeCurrencyEUR() {
+        document.getElementById('currency').innerHTML='EUR';
+      }
+      function changeCurrencyCHF() {
+        document.getElementById('currency').innerHTML='CHF';
+      }
+     
+  </script>
+  <script>
+    var amount = 0;
+
+     function checkShow(){
+    document.getElementById('ticketGuide').classList.add('for_active_dropdown');
+      amount += 1;
+     if (amount === 2) {
+           document.getElementById('ticketGuide').classList.remove('for_active_dropdown');
+           amount = 0;
+            }
+    }
+
+
+  </script>
+  
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
