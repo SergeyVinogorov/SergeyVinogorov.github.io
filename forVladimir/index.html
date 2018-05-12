@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Спроси у Владимира</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!--<link rel="stylesheet" href="css/normalize.css">-->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -75,254 +76,452 @@
 
 	</section>
 
-<section class="d-flex flex-column my_history">
-		
-		<div class="col-12">Моя история</div>
+<!--My history-->
+	<section class="d-flex flex-column my_history">
+			
+			<h2 class="col-12">Моя история</h2>
 
-		<div class="d-flex my_history_wrap">
+			<figure class="d-flex my_history_wrap">
 
-			<img src="img/Vladimir.jpg" alt="">
-			<p class="my_history_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati magni, delectus eligendi illo iste aperiam, neque excepturi? Accusantium consequatur, voluptate at mollitia sit dicta incidunt officia earum assumenda placeat tempore libero ad id amet laudantium perspiciatis reiciendis ea fugiat maxime cupiditate possimus distinctio sequi. Consectetur rerum, aliquam similique placeat eos ducimus, non tenetur aperiam fuga, asperiores perferendis optio suscipit eum fugiat  dolorem qui! Praesentium hic fugiat eius recusandae, deleniti natus inventore assumenda mollitia placeat atque voluptas sint quam, tempore ratione consequuntur. Hic autem eveniet amet sapiente reprehenderit. Qui corporis nesciunt nam, accusamus beatae sed saepe aspernatur quisquam est temporibus mollitia.</p>
+				<img src="img/Vladimir.jpg" alt="">
+				<figcaption class="my_history_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati magni, delectus eligendi illo iste aperiam, neque excepturi? Accusantium consequatur, voluptate at mollitia sit dicta incidunt officia earum assumenda placeat tempore libero ad id amet laudantium perspiciatis reiciendis ea fugiat maxime cupiditate possimus distinctio sequi. Consectetur rerum, aliquam similique placeat eos ducimus, non tenetur aperiam fuga, asperiores perferendis optio suscipit eum fugiat  dolorem qui! Praesentium hic fugiat eius recusandae, deleniti natus inventore assumenda mollitia placeat atque voluptas sint quam, tempore ratione consequuntur. Hic autem eveniet amet sapiente reprehenderit. Qui corporis nesciunt nam, accusamus beatae sed saepe aspernatur quisquam est temporibus mollitia.</figcaption>
+
+			</figure>
+
+	</section>
+
+<!--My work--> 
+	<section class="my_work">
+
+		<h2 class="col-12" style="text-align: center;margin-top: 2rem; margin-bottom: 2rem;">Мои работы</h2>
+	<!--Block with button of type work -->
+	<div class="d-flex justify-content-start my_work_list">
+	  	<div class="d-flex flex-column justify-content-around buttons__my_work">
+		  <button class="class1" onclick="changeClass(this)">Бани</button>
+		  <button class="class2" onclick="changeClass(this)">Бани</button>
+		  <button class="class3" onclick="changeClass(this)">Бани</button>
+		  <button class="class4" onclick="changeClass(this)">Бани</button>
+		  <button class="class5" onclick="changeClass(this)">Бани</button>
+		  
+		</div>
+
+		<!--Slider one-->
+
+
+		  	<div id="workSlideOne" class="d-flex align-items-center my_work_slides_one open_my_work_slides">
+		  		
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img class="d-block w-100" src="img/adi-goldstein-540718-unsplash.jpg" alt="First slide">
+				    </div>
+				    <div class="carousel-item">
+				      <img class="d-block w-100" src="img/clem-onojeghuo-119593-unsplash.jpg" alt="Second slide">
+				    </div>
+				    <div class="carousel-item">
+				      <img class="d-block w-100" src="img/michael-fenton-506489-unsplash.jpg" alt="Third slide">
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+		  	</div>
+
+		  	<!--Slider two-->
+
+
+			<div id="workSlideTwo" class="d-flex align-items-center my_work_slides_one">
+		  		
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img class="d-block w-100" src="img/adi-goldstein-540718-unsplash.jpg" alt="First slide">
+				    </div>
+				    <div class="carousel-item">
+				      <img class="d-block w-100" src="img/clem-onojeghuo-119593-unsplash.jpg" alt="Second slide">
+				    </div>
+
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+		  	</div>
+
+		  	<!--Slider three-->
+
+
+			<div id="workSlideThree" class="d-flex align-items-center my_work_slides_one">
+		  		
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img class="d-block w-100" src="img/adi-goldstein-540718-unsplash.jpg" alt="First slide">
+				    </div>
+				    <div class="carousel-item">
+				      <img class="d-block w-100" src="img/clem-onojeghuo-119593-unsplash.jpg" alt="Second slide">
+				    </div>
+				    <div class="carousel-item">
+				      <img class="d-block w-100" src="img/michael-fenton-506489-unsplash.jpg" alt="Third slide">
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+		  	</div>
+
+		  	<!--Slider four-->
+
+
+			<div id="workSlideFour" class="d-flex align-items-center my_work_slides_one">
+		  		
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img class="d-block w-100" src="img/adi-goldstein-540718-unsplash.jpg" alt="First slide">
+				    </div>
+				    <div class="carousel-item">
+				      <img class="d-block w-100" src="img/clem-onojeghuo-119593-unsplash.jpg" alt="Second slide">
+				    </div>
+				    <div class="carousel-item">
+				      <img class="d-block w-100" src="img/michael-fenton-506489-unsplash.jpg" alt="Third slide">
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+		  	</div>
+
+
+		  	<!--Slider five-->
+
+
+			<div id="workSlideFive" class="d-flex align-items-center my_work_slides_one">
+		  		
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img class="d-block w-100" src="img/adi-goldstein-540718-unsplash.jpg" alt="First slide">
+				    </div>
+				    <div class="carousel-item">
+				      <img class="d-block w-100" src="img/clem-onojeghuo-119593-unsplash.jpg" alt="Second slide">
+				    </div>
+				    <div class="carousel-item">
+				      <img class="d-block w-100" src="img/michael-fenton-506489-unsplash.jpg" alt="Third slide">
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+		  	</div>
+		</div>
+</section>
+
+<!--My service-->
+	<section class="my_service_container">
+		<h2 class="col12" style="text-align: center;">Что я предлагаю</h2>
+		<p></p>
+		<div class="d-flex justify-content-around my_service">
+			<!--Block with buttons-->
+			<figure class="d-flex flex-column"><img src="img/montaj_stroeniy.png" alt="">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo">Монтаж</button>
+			<figcaption>Сборка, установка конструкций</figcaption></figure>
+			<figure class="d-flex flex-column"><img src="img/objecti_pod_kluch.png" alt="">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">Объекты под ключ</button>
+			<figcaption>Создание дома из дерева от сруба (коробки) до заселения в новый дом</figcaption></figure>
+			<figure class="d-flex flex-column"><img src="img/ot_korobki_do_krishi.png" alt="">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3" data-whatever="@mdo">От коробки до крыши</button>
+			<figcaption>Сборка сруба, установка крыши</figcaption></figure>
+			<figure class="d-flex flex-column"><img src="img/ic_launcher.png " alt="">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4" data-whatever="@mdo">Монтаж</button>
+			<figcaption>Сборка, установка конструкций</figcaption></figure>
+			<figure class="d-flex flex-column"><img src="img/ic_launcher.png " alt="">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5" data-whatever="@mdo">Монтаж</button>
+			<figcaption>Сборка, установка конструкций</figcaption></figure>
+			<figure class="d-flex flex-column"><img src="img/ic_launcher.png " alt="">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal6" data-whatever="@mdo">Монтаж</button>
+			<figcaption>Сборка, установка конструкций</figcaption></figure>
+
+		<!--Installation-->
+
+
+			<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Монтаж</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="form-group">
+			            <label for="recipient-name" class="col-form-label">Как я могу к Вам обращаться:</label>
+			            <input type="text" class="form-control" id="recipient-name">
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="col-form-label">Опишите что необходимо сделать</label>
+			            <textarea class="form-control" id="message-text"></textarea>
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			        <button type="button" class="btn btn-primary">Отправить</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+		<!--Turn-key projects-->
+
+			<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Объкты под ключ</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="form-group">
+			            <label for="recipient-name" class="col-form-label">Как я могу к Вам обращаться:</label>
+			            <input type="text" class="form-control" id="recipient-name">
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="col-form-label">Опишите что необходимо сделать</label>
+			            <textarea class="form-control" id="message-text"></textarea>
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			        <button type="button" class="btn btn-primary">Отправить</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+		<!--Objects from the box to the roof-->
+			<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Объкты от коробки до крыши</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="form-group">
+			            <label for="recipient-name" class="col-form-label">Как я могу к Вам обращаться:</label>
+			            <input type="text" class="form-control" id="recipient-name">
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="col-form-label">Опишите что необходимо сделать</label>
+			            <textarea class="form-control" id="message-text"></textarea>
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			        <button type="button" class="btn btn-primary">Отправить</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		<!--Disassembling-->
+			<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Демонтаж, доработки</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="form-group">
+			            <label for="recipient-name" class="col-form-label">Как я могу к Вам обращаться:</label>
+			            <input type="text" class="form-control" id="recipient-name">
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="col-form-label">Опишите что необходимо сделать</label>
+			            <textarea class="form-control" id="message-text"></textarea>
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			        <button type="button" class="btn btn-primary">Отправить</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		<!--Work in stages-->
+			<div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Работы поэтапно</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="form-group">
+			            <label for="recipient-name" class="col-form-label">Как я могу к Вам обращаться:</label>
+			            <input type="text" class="form-control" id="recipient-name">
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="col-form-label">Опишите что необходимо сделать</label>
+			            <textarea class="form-control" id="message-text"></textarea>
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			        <button type="button" class="btn btn-primary">Отправить</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		<!--Alteration-->
+			<div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Переделки</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="form-group">
+			            <label for="recipient-name" class="col-form-label">Как я могу к Вам обращаться:</label>
+			            <input type="text" class="form-control" id="recipient-name">
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="col-form-label">Опишите что необходимо сделать</label>
+			            <textarea class="form-control" id="message-text"></textarea>
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			        <button type="button" class="btn btn-primary">Отправить</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		<!--Сonsultation-->
+			<div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Консультация</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="form-group">
+			            <label for="recipient-name" class="col-form-label">Как я могу к Вам обращаться:</label>
+			            <input type="text" class="form-control" id="recipient-name">
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="col-form-label">Опишите какой Вас интересует вопрос и я с удовольствием отвечу на него</label>
+			            <textarea class="form-control" id="message-text"></textarea>
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			        <button type="button" class="btn btn-primary">Отправить</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
 
 		</div>
 
-</section>
-
-
-<section class="my_work">
-
-	<div class="col-12" style="text-align: center;margin-top: 2rem; margin-bottom: 2rem;">Мои работы</div>
-
-<div class="d-flex justify-content-start my_work_list">
-  	<div class="d-flex flex-column justify-content-around">
-	  <button class="class1" onclick="changeClass(this)">Бани</button>
-	  <button class="class2" onclick="changeClass(this)">Бани</button>
-	  <button class="class3" onclick="changeClass(this)">Бани</button>
-	  <button class="class4" onclick="changeClass(this)">Бани</button>
-	  <button class="class5" onclick="changeClass(this)">Бани</button>
-	  
-	</div>
-
-	<!--Slider one-->
-
-
-	  	<div id="workSlideOne" class="d-flex align-items-center my_work_slides_one open_my_work_slides">
-	  		
-				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			  <ol class="carousel-indicators">
-			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			  </ol>
-			  <div class="carousel-inner">
-			    <div class="carousel-item active">
-			      <img class="d-block w-100" src="img/adi-goldstein-540718-unsplash.jpg" alt="First slide">
-			    </div>
-			    <div class="carousel-item">
-			      <img class="d-block w-100" src="img/clem-onojeghuo-119593-unsplash.jpg" alt="Second slide">
-			    </div>
-			    <div class="carousel-item">
-			      <img class="d-block w-100" src="img/michael-fenton-506489-unsplash.jpg" alt="Third slide">
-			    </div>
-			  </div>
-			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
-			</div>
-	  	</div>
-
-	  	<!--Slider two-->
-
-
-		<div id="workSlideTwo" class="d-flex align-items-center my_work_slides_one">
-	  		
-				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			  <ol class="carousel-indicators">
-			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			  </ol>
-			  <div class="carousel-inner">
-			    <div class="carousel-item active">
-			      <img class="d-block w-100" src="img/adi-goldstein-540718-unsplash.jpg" alt="First slide">
-			    </div>
-			    <div class="carousel-item">
-			      <img class="d-block w-100" src="img/clem-onojeghuo-119593-unsplash.jpg" alt="Second slide">
-			    </div>
-
-			  </div>
-			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
-			</div>
-	  	</div>
-
-	  	<!--Slider three-->
-
-
-		<div id="workSlideThree" class="d-flex align-items-center my_work_slides_one">
-	  		
-				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			  <ol class="carousel-indicators">
-			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			  </ol>
-			  <div class="carousel-inner">
-			    <div class="carousel-item active">
-			      <img class="d-block w-100" src="img/adi-goldstein-540718-unsplash.jpg" alt="First slide">
-			    </div>
-			    <div class="carousel-item">
-			      <img class="d-block w-100" src="img/clem-onojeghuo-119593-unsplash.jpg" alt="Second slide">
-			    </div>
-			    <div class="carousel-item">
-			      <img class="d-block w-100" src="img/michael-fenton-506489-unsplash.jpg" alt="Third slide">
-			    </div>
-			  </div>
-			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
-			</div>
-	  	</div>
-
-	  	<!--Slider four-->
-
-
-		<div id="workSlideFour" class="d-flex align-items-center my_work_slides_one">
-	  		
-				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			  <ol class="carousel-indicators">
-			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			  </ol>
-			  <div class="carousel-inner">
-			    <div class="carousel-item active">
-			      <img class="d-block w-100" src="img/adi-goldstein-540718-unsplash.jpg" alt="First slide">
-			    </div>
-			    <div class="carousel-item">
-			      <img class="d-block w-100" src="img/clem-onojeghuo-119593-unsplash.jpg" alt="Second slide">
-			    </div>
-			    <div class="carousel-item">
-			      <img class="d-block w-100" src="img/michael-fenton-506489-unsplash.jpg" alt="Third slide">
-			    </div>
-			  </div>
-			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
-			</div>
-	  	</div>
-
-
-	  	<!--Slider five-->
-
-
-		<div id="workSlideFive" class="d-flex align-items-center my_work_slides_one">
-	  		
-				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			  <ol class="carousel-indicators">
-			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			  </ol>
-			  <div class="carousel-inner">
-			    <div class="carousel-item active">
-			      <img class="d-block w-100" src="img/adi-goldstein-540718-unsplash.jpg" alt="First slide">
-			    </div>
-			    <div class="carousel-item">
-			      <img class="d-block w-100" src="img/clem-onojeghuo-119593-unsplash.jpg" alt="Second slide">
-			    </div>
-			    <div class="carousel-item">
-			      <img class="d-block w-100" src="img/michael-fenton-506489-unsplash.jpg" alt="Third slide">
-			    </div>
-			  </div>
-			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
-			</div>
-	  	</div>
-
-
-</div>
-</section>
-<section>
-	
-	<div class="d-flex justify-content-around">
+	</section>
+<!--Contacts-->
+	<footer class="contacts">
+		<h2 style="text-align: center;">Как со мной связаться</h2>
+	<div class="d-flex justify-content-center">
 		
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+		<a href="#"><span class="icon-vk2" style="font-size: 18px;"></span></a>
+		<a href="#"><span class="icon-youtube" style="font-size: 18px;"></span></a>
+		<a href="#"><span class="icon-envelop"></span></a>
+		<a href="#"><span class="icon-instagram"></span></a>
+		<a href="#"><span class="icon-phone"></span></a>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
-      </div>
-    </div>
-  </div>
-</div>
 	</div>
 
-</section>
-
-<section>
-	
-<div class="d-flex justify-content-center">
-	
-	<a href="#">вк</a>
-	<a href="#">ютуб</a>
-	<a href="#">емейл</a>
-	<a href="#">инста</a>
-	<a href="#">тел</a>
-
-</div>
-
-</section>
+	</footer>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
