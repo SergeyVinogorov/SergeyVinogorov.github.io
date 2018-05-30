@@ -50,7 +50,7 @@ h1 {
 @media (max-width: 320px) {
   h1 {
     font-size: 22px;
-    top: 25%;
+    top: 20%;
   }
 }
 /*Mobile main nav*/
@@ -285,6 +285,11 @@ h1 {
   .modal-dialog {
     max-width: 500px;
     margin: 5rem auto;
+  }
+}
+@media (max-width: 320px) {
+  .modal {
+    top: 30%;
   }
 }
 /*Contacts*/
