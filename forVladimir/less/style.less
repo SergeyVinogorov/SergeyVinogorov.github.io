@@ -24,24 +24,6 @@ body {
 			}
 		}
 	 }
-	h1 {
-		position: absolute; z-index: 7; color: #ffff; left: 20%; top: 40%;
-		text-align: center;
-		@media (max-width: 1024px) {
-			left: 8%;
-		}
-		@media (max-width: 768px) {
-			left: 0;
-		}
-		@media (max-width: 425px) {
-			font-size: 24px;
-			top: 30%;
-		}
-		@media (max-width: 320px) {
-			font-size: 22px;
-			top: 25%;
-		}
-	}
 
 /*Mobile main nav*/
 	.main_nav_mob {
@@ -136,24 +118,18 @@ body {
 		background-image: url('../img/backNav.jpg');
 		background-size: cover;
 		padding: 2rem;
-		@media (max-width: 768px) {
-			height: 950px;
-			}
-		@media (max-width: 600px) {
-			height: 1050px;
-			}
 		}
 		.my_work_list {
 			height: 500px;
 			margin-left: 3rem;
 			position: relative;
 			@media (max-width: 768px) {
+				height: 600px;
 				flex-direction: column;
 				align-items: center;
 				margin-left: 1rem;
 			}
 			button {
-					width: 250px;
 				    padding: 1rem 5rem;
 				    background-color: #f7df09;
 				    outline: none;
@@ -178,16 +154,10 @@ body {
 		z-index: -7;
 		width: 40vw;
 		position: absolute;
-		right: 5%;
+		right: 20%;
 		top: 15%;
-		
 		@media (max-width: 768px) {
-			top: 55%;
-			right: 0;
-			width: initial;
-		}
-		@media (max-width: 579px) {
-			top: 100%;
+			top: 40%;
 			right: 0;
 			width: initial;
 		}
@@ -204,16 +174,13 @@ body {
 	.my_service {
 		
 		flex-wrap: wrap;
-		figcaption {
-			margin-top: 2rem;
-		}
+
 		button {
 		    background-color: #f7df09;
 		    outline: none;
 		    border-radius: 4px;
 		    border: 1px solid #f7df09;
-		    margin: auto;
-		    width: 200px;
+		    margin-bottom: 1rem;
 		    color: #000;
 		    &:hover {
 				background-color: #fce300;
@@ -232,14 +199,6 @@ body {
 				border-color: #fce300 !important;
 			}
 		}
-		@media (max-width: 600px) {
-			img {
-				width: 300px;
-				height: 250px;
-				margin: auto;
-			}
-			
-		}
 	}
 	@media (min-width: 576px){
 			.modal-dialog {
@@ -256,8 +215,5 @@ body {
 			margin: 2rem;
 			text-decoration: none;
 			color: #000;
-			@media (max-width: 320px) {
-			margin: 1rem;
-			}
 		}
 	}
