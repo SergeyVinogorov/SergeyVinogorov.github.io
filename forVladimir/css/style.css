@@ -23,6 +23,36 @@ body {
 .main_nav a:hover {
   color: #a5a5a5;
 }
+h1 {
+  position: absolute;
+  z-index: 7;
+  color: #ffff;
+  left: 20%;
+  top: 40%;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  h1 {
+    left: 8%;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    left: 0;
+  }
+}
+@media (max-width: 425px) {
+  h1 {
+    font-size: 24px;
+    top: 30%;
+  }
+}
+@media (max-width: 320px) {
+  h1 {
+    font-size: 22px;
+    top: 25%;
+  }
+}
 /*Mobile main nav*/
 .main_nav_mob {
   width: 100%;
@@ -129,6 +159,16 @@ body {
   background-size: cover;
   padding: 2rem;
 }
+@media (max-width: 768px) {
+  .my_work {
+    height: 950px;
+  }
+}
+@media (max-width: 600px) {
+  .my_work {
+    height: 1050px;
+  }
+}
 .my_work_list {
   height: 500px;
   margin-left: 3rem;
@@ -136,7 +176,6 @@ body {
 }
 @media (max-width: 768px) {
   .my_work_list {
-    height: 600px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -148,6 +187,7 @@ body {
   }
 }
 .my_work_list button {
+  width: 250px;
   padding: 1rem 5rem;
   background-color: #f7df09;
   outline: none;
@@ -176,12 +216,19 @@ body {
   z-index: -7;
   width: 40vw;
   position: absolute;
-  right: 20%;
+  right: 5%;
   top: 15%;
 }
 @media (max-width: 768px) {
   .my_work_slides_one {
-    top: 40%;
+    top: 55%;
+    right: 0;
+    width: initial;
+  }
+}
+@media (max-width: 579px) {
+  .my_work_slides_one {
+    top: 100%;
     right: 0;
     width: initial;
   }
@@ -199,12 +246,16 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.my_service figcaption {
+  margin-top: 2rem;
+}
 .my_service button {
   background-color: #f7df09;
   outline: none;
   border-radius: 4px;
   border: 1px solid #f7df09;
-  margin-bottom: 1rem;
+  margin: auto;
+  width: 200px;
   color: #000;
 }
 .my_service button:hover {
@@ -223,6 +274,13 @@ body {
   background-color: #fce300 !important;
   border-color: #fce300 !important;
 }
+@media (max-width: 600px) {
+  .my_service img {
+    width: 300px;
+    height: 250px;
+    margin: auto;
+  }
+}
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 500px;
@@ -239,4 +297,9 @@ body {
   margin: 2rem;
   text-decoration: none;
   color: #000;
+}
+@media (max-width: 320px) {
+  .contacts a {
+    margin: 1rem;
+  }
 }
