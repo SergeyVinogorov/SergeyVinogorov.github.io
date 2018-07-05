@@ -1,0 +1,248 @@
+body {
+  font-family: 'Georgia';
+}
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+.wrap_button {
+  margin-top: 1em;
+}
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #de5300;
+  border-color: #de5300;
+  padding: 10px 80px;
+  font-size: 28px;
+  font-weight: 700;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  line-height: 36px;
+}
+.btn-primary:not(:disabled):not(.disabled).active:hover,
+.btn-primary:not(:disabled):not(.disabled):active:hover,
+.show > .btn-primary.dropdown-toggle:hover {
+  padding: 15px 85px;
+  text-shadow: 1px 1px #000;
+}
+.hidden {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
+}
+.text_description_backgroud {
+  color: #fff;
+  position: absolute;
+}
+.wprap-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#000000));
+  background: linear-gradient(#ffffff, #000000);
+}
+.hashtag {
+  color: #e77020;
+}
+.header_icon {
+  background-image: url('../img/Photostudia_hashashtag.png');
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 97px;
+}
+header {
+  background-color: #000;
+  padding: 38px 38px 0px 38px;
+}
+header a {
+  color: #fff;
+  font-size: 24px;
+}
+canvas {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  z-index: 99;
+}
+.main {
+  z-index: 9;
+  background-image: url('../img/Ỿ頱1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 80vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+.main h1 {
+  font-size: 46px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 4rem;
+  text-align: center;
+}
+.main h3 {
+  color: #fff;
+  text-align: center;
+}
+.about_photostudia {
+  padding: 38px;
+}
+.about_photostudia_shirin {
+  position: relative;
+}
+.about_photostudia_shirin img {
+  float: left;
+}
+.about_photostudia_shirin .wrap_text {
+  padding-top: 5em;
+}
+.about_photostudia_shirin p {
+  width: 50em;
+  line-height: 1.5em;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  background-color: grey;
+  padding: 1em 1em 1em 4em;
+  left: 250px;
+}
+.about_photostudia_luiza {
+  margin-top: 34px;
+  position: relative;
+}
+.about_photostudia_luiza img {
+  float: right;
+}
+.about_photostudia_luiza .wrap_text {
+  padding-top: 5em;
+}
+.about_photostudia_luiza p {
+  width: 50em;
+  line-height: 1.5em;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  background-color: grey;
+  padding: 1em 4em 1em 1em;
+  right: 250px;
+  margin-top: 4em;
+}
+.carousel-inner {
+  width: 60%;
+  margin: auto;
+}
+.carousel-control-prev {
+  left: 5%;
+}
+.carousel-control-next {
+  right: 5%;
+}
+.carousel-control-prev-icon {
+  background-image: url('../img/Uslugi_photostudii_left.png');
+  width: 30px;
+  height: 50px;
+}
+.carousel-control-next-icon {
+  background-image: url('../img/Uslugi_photostudii_right.png');
+  width: 30px;
+  height: 50px;
+}
+.carousel-item .cover {
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.5;
+}
+.services_rent {
+  color: #fff;
+  position: absolute;
+  padding: 0.5em;
+  top: 30%;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: 'Roboto';
+}
+.services_button {
+  position: absolute;
+  top: 80%;
+  font-size: 26px !important;
+  margin: 0.5em;
+  padding: 15px 20px !important;
+}
+#carousel {
+  position: relative;
+  width: 80vw;
+  clear: both;
+  overflow: hidden;
+  height: 60vh;
+  margin: auto;
+}
+#carousel img {
+  visibility: hidden;
+  cursor: pointer;
+}
+.contacts {
+  margin-bottom: 7em;
+}
+.wrap_icon {
+  width: 100%;
+}
+.wrap_icon a {
+  width: 68px;
+  height: 68px;
+  padding: 5% 18%;
+}
+.wrap_icon .hashtag_vk {
+  background-image: url('../img/vk_icon.png');
+  background-repeat: no-repeat;
+}
+.wrap_icon .hashtag_insta {
+  background-image: url('../img/instagram_icon.png');
+  background-repeat: no-repeat;
+}
+.wrap_icon .hashtag_ok {
+  background-image: url('../img/ok_icon.png ');
+  background-repeat: no-repeat;
+}
+.contacts_addres_phone_social span {
+  font-size: 24px;
+  color: #fff;
+}
+map {
+  margin-right: 3em;
+}
+footer {
+  margin-top: 4em;
+  padding-bottom: 3em;
+  font-size: 24px;
+}
+footer span {
+  margin-left: 35px;
+  color: #fff;
+}
+footer a {
+  margin-right: 35px;
+}
+footer .studio {
+  text-decoration: none;
+  color: #fff;
+}
+.footer_line_big {
+  background-color: #fff;
+  height: 6px;
+}
+.footer_line_small {
+  background-color: #fff;
+  height: 2px;
+}
+.wrap_for_privacy {
+  line-height: 3em;
+}

@@ -171,7 +171,6 @@ h1 {
 }
 .my_work_list {
   height: 500px;
-  margin-left: 3rem;
   position: relative;
 }
 @media (max-width: 768px) {
@@ -183,7 +182,6 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 1rem;
   }
 }
 .my_work_list button {
@@ -235,6 +233,12 @@ h1 {
 }
 .open_my_work_slides {
   z-index: 2;
+}
+.my_work_slide {
+  position: relative;
+}
+.modal-dialog {
+  margin-top: 100px;
 }
 /*My service*/
 .my_service_container {

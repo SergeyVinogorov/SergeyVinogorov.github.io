@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Фотостудия Сочи - Hastag</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+</head>
+<body onload="draw();">
+	<header class="d-flex flex-row justify-content-between">
+		<div class="header_icon"></div>
+		<ul class="nav d-flex align-items-center">
+		  <li class="nav-item">
+		    <a class="nav-link active" href="#">О нас</a>
+		  </li>
+		  <li class="nav-item">
+		      <a class="nav-link" href="#">Фотосессии</a>
+		    </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="hashtagMobile.html">Услуги</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="hashtagPriceMobile.html">Акции</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Контакты</a>
+		  </li>
+		</ul>
+	</header>
+	<canvas id="under_header"></canvas>
+
+	<section class="d-flex flex-column align-items-center  justify-content-around main">
+		<h1>Профессиональная фотостудия<br>в самом центре Сочи</h1>
+		<div class="wrap_button">
+			<a href="#" class="btn btn-primary btn-lg active justify-content-center" role="button" aria-pressed="true">Получить <br> скидку</a>
+		</div>
+		<h3>*Оставь заявку прямо сейчас и получи скидку 10% <br>на свою первую фотосессию</h3>
+	</section>
+
+
+	<section class="d-flex flex-column about_photostudia">
+		<h2><span class="hashtag">#</span>Немного о нас</h2>
+		<figure class="about_photostudia_shirin">
+			<img class="Shirin" src="img/Photo_master_Shirin.jpg" alt="Фотостудия Сочи Hashtag мастер Ширин">
+			<figcaption class="wrap_text">
+			<p class="text_about">
+				Lorem ipsum dolor sit amet, consectetur adipisicing  elit. Voluptatum sapiente, voluptatibus commodi neque unde, accusamus nobis libero, similique culpa, debitis mollitia! Similique dolore, quisquam, iusto eius itaque quidem iste odit iure, laudantium possimus dolorem veniam, exercitationem ullam odio ab blanditiis dolorum consequuntur repudiandae mollitia rem sunt facilis molestiae autem. Quos, illo sit eius ducimus aut, possimus aliquam et molestiae iste numquam minus id, tempore qui laboriosam, eos facere earum enim sapiente! Doloremque itaque possimus perspiciatis sed nemo illo, corporis asperiores ipsa dicta nobis, dolores molestias cupiditate laudantium eligendi dignissimos iusto officia quidem praese</p>
+			</figcaption>
+		</figure>
+		<figure class="about_photostudia_luiza">
+			<figcaption class="wrap_text">
+				<p class="text_about_luiza">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sapiente, voluptatibus commodi neque unde, accusamus nobis libero, similique culpa, debitis mollitia! Similique dolore, quisquam, iusto eius itaque quidem iste odit iure, laudantium possimus dolorem veniam, exercitationem ullam odio ab blanditiis dolorum consequuntur repudiandae mollitia rem sunt facilis molestiae autem. Quos, illo sit eius ducimus aut, possimus aliquam et molestiae iste numquam minus id, tempore qui laboriosam, eos facere earum enim sapiente! Doloremque itaque possimus perspiciatis sed nemo illo, corporis asperiores i.</p>
+			</figcaption>
+			<img src="img/Photo_master_Luiza.jpg" alt="Фотостудия Сочи Hashtag мастер Луиза">
+		</figure>
+	</section>
+
+
+	<section class="services">
+	
+		<h2><span class="hashtag">#</span>Услуги фотостудии</h2>
+
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		    	<div class="cover"></div>
+		      <img class="d-block w-100" src="img/make_up_service_photostudia.jpg" alt="Аренда фотостудии Сочи">
+		      <span class="services_rent">Профессиональный make-up в студии <br>
+		      1000 рублей</span>
+		      <a href="#" class="btn btn-primary btn-lg active services_button" role="button" aria-pressed="true">Узнать подробнее</a>
+		    </div>
+
+		    <div class="carousel-item">
+		    	<div class="cover"></div>
+		      <img class="d-block w-100" src="img/Arenda_photostudii.jpg" alt="Аренда фотостудии Сочи">
+		       <span class="services_rent">Аренда фотостудии без оборудования <br> От 800 руб/час</span>
+		       <a href="#" class="btn btn-primary btn-lg active services_button" role="button" aria-pressed="true">Узнать подробнее</a>
+		    </div>
+		    <div class="carousel-item">
+		    	<div class="cover"></div>
+		      <img class="d-block w-100" src="img/Ỿ頱2.jpg" alt="Аренда фотостудии Сочи">
+		       <span class="services_rent">Персональные фотосессии <br> От 1 500 руб/час</span>
+		       <a href="#" class="btn btn-primary btn-lg active services_button" role="button" aria-pressed="true">Узнать подробнее</a>
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+	</section>
+
+
+	<div class="wprap-gradient">
+		<section class="our_works">
+
+			<h2><span class="hashtag">#</span>Наши работы</h2>
+				<div id="carousel">
+					<a href="#"><img src="img/img_center.jpg" alt=""></a>
+					<a href="#"><img src="img/img_center.jpg" alt=""></a>
+					<a href="#"><img src="img/img_center.jpg" alt=""></a>
+					<a href="#"><img src="img/img_center.jpg" alt=""></a>
+					<a href="#"><img src="img/img_center.jpg" alt=""></a>
+				</div>
+		</section>
+
+		<section class="contacts">
+			<h2><span class="hashtag">#</span>Как с  нами связаться</h2>
+			<div class="d-flex justify-content-center">
+				<map name="" id="map" style="width: 700px; height: 400px"></map>
+				<div class="d-flex flex-column justify-content-around  contacts_addres_phone_social">
+					<span class="phone">8 (928) 449-04-44</span>
+					<span>г.Сочи, <br> Ул. Кубанская 15, офис </span>
+					<span class="we_social">Mы в соцсетях</span>
+					<div class="d-flex flex-row justify-content-around wrap_icon">
+						<a href="#" class="hashtag_vk"></a>
+						<a href="#" class="hashtag_insta"></a>
+						<a href="#" class="hashtag_ok"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<footer>
+			<hr class="footer_line_big">
+			<hr class="footer_line_small"><br>
+			<div class="d-flex justify-content-between wrap_for_privacy">
+				<span>Фотостудия Hashtag <br>Сочи, 2018</span>
+				<div class="d-flex flex-column">
+				<a href="#">Политика конфиденциальности</a>
+				<span>Создание сайта: <a class="studio" href="#">Studio 1024</a></span>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.waterwheelCarousel.min.js"></script>
+	<script src="js/viewportchecker.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		function draw() {
+		  var canvas = document.getElementById('under_header');
+		  if (canvas.getContext) {
+		    var ctx = canvas.getContext('2d');
+		    ctx.beginPath();
+		    ctx.moveTo(0, 0);
+		    ctx.lineTo(300, 0);
+		    ctx.lineTo(0, 150);
+		    ctx.fill();
+			}
+		}
+	</script>
+	<script>
+		jQuery(document).ready(function() {
+		    jQuery('.text_about').addClass("visible").viewportChecker({
+		        classToAdd: 'animated bounceInRight',
+		        offset: 100
+		       });
+		});
+	</script>
+	<script>
+		jQuery(document).ready(function() {
+		    jQuery('.text_about_luiza').addClass("visible").viewportChecker({
+		        classToAdd: 'animated bounceInLeft',
+		        offset: 100
+		       });
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 3,
+          movingToCenter: function ($item) {
+            $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedToCenter: function ($item) {
+            $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movingFromCenter: function ($item) {
+            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedFromCenter: function ($item) {
+            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          clickedCenter: function ($item) {
+            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+          }
+        });
+
+      });
+	</script>
+	<script type="text/javascript">
+	  ymaps.ready(init);
+	    var myMap,
+	        myPlacemark;
+	
+	    function init(){     
+	        myMap = new ymaps.Map("map", {
+	            center: [43.578217, 39.730688],
+	            zoom: 16
+	        });
+	
+	        myPlacemark = new ymaps.Placemark([43.578217, 39.730688], { 
+	            hintContent: 'Фотостудия Hashtag', 
+	            balloonContent: 'Фотосессии, 8 фотозон' 
+	        }, {
+	            // Опции.
+	            // Необходимо указать данный тип макета.
+	            iconLayout: 'default#imageWithContent',
+	            // Своё изображение иконки метки.
+	            iconImageHref: 'img/Hash_for_map.png',
+	            // Размеры метки.
+	            iconImageSize: [72, 72],
+	            // Смещение левого верхнего угла иконки относительно
+	            // её "ножки" (точки привязки).
+	            iconImageOffset: [0, -68],
+	            
+	        });
+	
+	        myMap.geoObjects.add(myPlacemark);
+	    }
+	</script>
+</body>
+</html>

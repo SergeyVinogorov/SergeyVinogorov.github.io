@@ -1,0 +1,192 @@
+ body {
+    background: radial-gradient(circle at 250% 50%, #fff,#000);
+    font-size: 50px;
+    h2 {
+        margin-top: 3em;
+    }
+}
+// header
+    header {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        
+            p {
+                font-style: italic;
+                margin: 2em;
+                margin-top: 3em;
+                .mobile_label {
+                    color: #f06a11;
+                    }
+               }
+            .logo {
+                width: 12em;
+                height: 5em;
+                margin-top: 1em;
+                background-image: url('../img/mobile/logo.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                }
+        }
+        
+       
+        .wrap_contact_header {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            span {
+                margin-top: 2em;
+                font-size: 40px; 
+            }  
+            
+        }
+        .mobile_phone {
+            position: absolute;
+            width: 4em;
+            height: 4em;
+            top: -1em;
+            left: 44%;
+            background-image: url('../img/mobile/icon_phone.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+        .mobile_tel {
+            margin-left: 3em;
+            margin-right: 1em;
+            } 
+        .mobile_address {
+            margin-right: 3em;
+            margin-left: 1em;
+            }
+//main 
+    main {
+        margin: 1em;
+        box-sizing: border-box;
+    }
+    .wrapper {
+        border: 1px solid red;
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1.5em;
+        // .tabs {
+           
+        //     font-size: 24px;
+        // }
+        .tab {
+            background-color: #f06a11;
+            padding: 15px;
+            color: #fff;
+            margin-right: 1em;
+            font-size: 22px;
+        }
+        .tab_content {
+            background-color: #fff;
+        }
+        .tab_item {
+            padding-top: 14px;
+            h3 {
+                margin: 1em;
+                font-size: 14px;
+                font-weight: inherit;
+            }
+            p{
+                margin: 1em;
+                font-size: 14px;
+            }
+        }
+    }
+//style for slider    
+    
+
+    #block-for-slider {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+
+    #viewport {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        text-align: center;
+    }
+
+    #slidewrapper {
+        position: relative;
+        width: calc(100% * 4);
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+        -o-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+        transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    }
+
+    #slidewrapper, #slidewrapper ul, #slidewrapper li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .slide {
+        width: calc(100%/4);
+        list-style: none;
+        display: inline;
+        float: left;
+    }
+
+    .slide-img {
+        width: 100%;
+    }   
+//buttons 
+    .mobile_buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    button {
+        border-radius: 1em;
+        background-color:  #ffffff;
+        width: 10em;
+        height: 5em;
+        padding: 0.5em;
+        border: 12px solid #fc8510;
+        margin-top: 1.5em;
+        font-size: 50px;
+    }
+    .make_order {
+        background-color: #f06a11;
+        margin-bottom: 2em;
+    }
+//footer 
+    hr {
+        height: 18px;
+        background-color: #fff;
+    }
+
+    .wrap_footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 1em;
+        color: #fff;
+        font-size: 36px;
+        width: 100vw;
+        line-height: 1.5em;
+        letter-spacing: 2px;
+        
+        .studio1024 {
+            color: #fff;
+            font-style: italic;
+        }
+        .hashtag_privice-policy {
+            font-size: 30px;
+        }
+    }

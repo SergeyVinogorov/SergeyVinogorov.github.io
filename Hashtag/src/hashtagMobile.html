@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hashtag mobile</title>
+	<link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"></a> 
+		<div class="wrap_contact_header">
+			<span class="mobile_address">Сочи, Кубанская 15</span>
+			<span class="mobile_phone"></span>
+			<span class="mobile_tel">8-928-449-04-44</span>
+		</div>
+		<p class="mobile_description_text">Студия <span class="mobile_label">#HASHTAG</span>- это интерьерное пространство, созданное для воплащения различных творческих идей и фотосессий</p>
+	</header>
+
+	<section id="block-for-slider">	
+        <div id="viewport">
+            <ul id="slidewrapper">
+                <li class="slide"><img src="img/make_up_service_photostudia.jpg" alt="1" class="slide-img"></li>
+                <li class="slide"><img src="img/night_rent_photostudia.jpg" alt="2" class="slide-img"></li>
+                <li class="slide"><img src="img/outdoor_service_photostudia.jpg" alt="3" class="slide-img"></li>
+                <li class="slide"><img src="img/Pop_art_photostudio.jpg" alt="4" class="slide-img"></li>
+            </ul>
+            
+                    </div>
+	</section>
+
+	<section class="mobile_buttons">
+		<button>Посмотреть наши работы</button>
+		<button>Узнать цены на услуги</button>
+		<button>Действующие акции</button>
+		<button class="make_order">Оставить заявку</button>	
+	</section>
+
+	<footer>
+		<hr><br>
+		<div class="wrap_footer">
+			<span>
+				Фотостудия Hashtag <br>
+				Сочи, 2018
+			</span>
+			<span>
+				<a href="#" class="hashtag_privice-policy">Политика конфиденциальности</a><br>
+					Создание сайта <a href="#" class="studio1024">Studio 1024</a> 
+			</span>
+		</div>
+	</footer>
+	
+	<script src="js/jquery.js"></script>
+	<script>
+		var slideNow = 1;
+		var slideCount = $('#slidewrapper').children().length;
+		var slideInterval = 3000;
+		var navBtnId = 0;
+		var translateWidth = 0;
+
+		$(document).ready(function() {
+		    var switchInterval = setInterval(nextSlide, slideInterval);
+
+		    $('#viewport').hover(function() {
+		        clearInterval(switchInterval);
+		    }, function() {
+		        switchInterval = setInterval(nextSlide, slideInterval);
+		    });
+
+		    $('#next-btn').click(function() {
+		        nextSlide();
+		    });
+
+		    $('#prev-btn').click(function() {
+		        prevSlide();
+		    });
+
+		    $('.slide-nav-btn').click(function() {
+		        navBtnId = $(this).index();
+
+		        if (navBtnId + 1 != slideNow) {
+		            translateWidth = -$('#viewport').width() * (navBtnId);
+		            $('#slidewrapper').css({
+		                'transform': 'translate(' + translateWidth + 'px, 0)',
+		                '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
+		                '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
+		            });
+		            slideNow = navBtnId + 1;
+		        }
+		    });
+		});
+
+
+		function nextSlide() {
+		    if (slideNow == slideCount || slideNow <= 0 || slideNow > slideCount) {
+		        $('#slidewrapper').css('transform', 'translate(0, 0)');
+		        slideNow = 1;
+		    } else {
+		        translateWidth = -$('#viewport').width() * (slideNow);
+		        $('#slidewrapper').css({
+		            'transform': 'translate(' + translateWidth + 'px, 0)',
+		            '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
+		            '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
+		        });
+		        slideNow++;
+		    }
+		}
+
+		function prevSlide() {
+		    if (slideNow == 1 || slideNow <= 0 || slideNow > slideCount) {
+		        translateWidth = -$('#viewport').width() * (slideCount - 1);
+		        $('#slidewrapper').css({
+		            'transform': 'translate(' + translateWidth + 'px, 0)',
+		            '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
+		            '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
+		        });
+		        slideNow = slideCount;
+		    } else {
+		        translateWidth = -$('#viewport').width() * (slideNow - 2);
+		        $('#slidewrapper').css({
+		            'transform': 'translate(' + translateWidth + 'px, 0)',
+		            '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
+		            '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
+		        });
+		        slideNow--;
+		    }
+		}
+	</script>
+</body>
+</html>

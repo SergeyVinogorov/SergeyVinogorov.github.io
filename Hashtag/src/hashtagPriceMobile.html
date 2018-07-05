@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hashtag mobile</title>
+	<link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"></a> 
+		<div class="wrap_contact_header">
+			<span class="mobile_address">Сочи, Кубанская 15</span>
+			<span class="mobile_phone"></span>
+			<span class="mobile_tel">8-928-449-04-44</span>
+		</div>
+		<h2>Наши услуги и цены</h2>
+	</header>
+	<main>
+		<div class="wrapper">
+		    <div class="tabs">
+		        <span class="tab">Аренда</span>
+		        <span class="tab">Fashion съемка</span>
+		        <span class="tab">Семейная съемка</span>   
+		        <span class="tab">Уличная съемка</span>
+		    </div>
+		    <div class="tab_content">
+		        <div class="tab_item">
+		        	<h3>Аренда студии:</h3>
+		        	<p>800 руб. будни / 1000 руб выходные
+		        	<br> 5500 руб - ночной пакет с 23-00 до 6-00 <br> аренда зала в нерабочее время + 500руб. / час к стоимости зала</p>
+		        	<h3>Аренда оборудования</h3>
+		        	<p>Canon EOS 60D - 150 руб. / час <br>
+		        	Canon EF 24-70mm F/2.8 L - 300 руб. / час</p>
+
+		        </div>
+		        <div class="tab_item"><h3>Аренда студии:</h3>
+		        	<p>800 руб. будни / 1000 руб выходные
+		        	5500 руб - ночной пакет с 23-00 до 6-00 аренда зала в нерабочее время + 500руб. / час к стоимости зала</p>
+		        	<h3>Аренда оборудования</h3>
+		        	<p>Canon EOS 60D - 150 руб. / час
+		        	Canon EF 24-70mm F/2.8 L - 300 руб. / час</p></div>
+		        <div class="tab_item"><h3>Аренда студии:</h3>
+		        	<p>800 руб. будни / 1000 руб выходные
+		        	5500 руб - ночной пакет с 23-00 до 6-00 аренда зала в нерабочее время + 500руб. / час к стоимости зала</p>
+		        	<h3>Аренда оборудования</h3>
+		        	<p>Canon EOS 60D - 150 руб. / час
+		        	Canon EF 24-70mm F/2.8 L - 300 руб. / час</p></div>
+		    </div>
+		</div>
+	</main>
+	<footer>
+		<hr><br>
+		<div class="wrap_footer">
+			<span>
+				Фотостудия Hashtag <br>
+				Сочи, 2018
+			</span>
+			<span>
+				<a href="#" class="hashtag_privice-policy">Политика конфиденциальности</a><br>
+					Создание сайта <a href="#" class="studio1024">Studio 1024</a> 
+			</span>
+		</div>
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script>
+		$(".tab_item").not(":first").hide();
+		$(".wrapper .tab").click(function() {
+			$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+			$(".tab_item").hide().eq($(this).index()).fadeIn()
+		}).eq(0).addClass("active");
+	</script>
+</body>
