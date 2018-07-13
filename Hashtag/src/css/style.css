@@ -1,5 +1,17 @@
+@font-face {
+  font-family: 'Proxima Nova Lt';
+  src: url('../fonts/ProximaNova-Semibold.woff2') format('woff2'), url('../fonts/ProximaNova-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/ProximaNova-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: 'Georgia';
+  font-family: 'Proxima Nova Rg';
 }
 h2 {
   font-size: 48px;
@@ -17,18 +29,24 @@ h2 {
 .show > .btn-primary.dropdown-toggle {
   background-color: #de5300;
   border-color: #de5300;
-  padding: 10px 80px;
-  font-size: 28px;
+  padding: 5px 40px;
+  font-size: 20px;
   font-weight: 700;
   border-radius: 10px;
   letter-spacing: 1px;
-  line-height: 36px;
+  line-height: 30px;
 }
 .btn-primary:not(:disabled):not(.disabled).active:hover,
 .btn-primary:not(:disabled):not(.disabled):active:hover,
 .show > .btn-primary.dropdown-toggle:hover {
-  padding: 15px 85px;
-  text-shadow: 1px 1px #000;
+  background-color: #ce4b00;
+  border-color: #ce4b00;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #de5300;
+          box-shadow: 0 0 0 0.2rem #de5300;
 }
 .hidden {
   opacity: 0;
@@ -48,10 +66,11 @@ h2 {
   color: #e77020;
 }
 .header_icon {
-  background-image: url('../img/Photostudia_hashashtag.png');
+  background-image: url('../img/photostudia_hashashtag.png');
   background-repeat: no-repeat;
-  width: 320px;
-  height: 97px;
+  background-size: contain;
+  width: 250px;
+  height: 87px;
 }
 header {
   background-color: #000;
@@ -61,15 +80,33 @@ header a {
   color: #fff;
   font-size: 24px;
 }
+header a:hover {
+  color: #de5300;
+}
 canvas {
   width: 100%;
   height: 80px;
   position: absolute;
   z-index: 99;
 }
+.icon-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px 16px;
+  margin-bottom: 5px;
+  background-color: #de5300;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.navbar-toggler:focus {
+  outline: 0px;
+}
 .main {
   z-index: 9;
-  background-image: url('../img/Ỿ頱1.jpg');
+  background-image: url('../img/photostudia_hashashtag_sochi.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
@@ -85,10 +122,21 @@ canvas {
   color: #fff;
   margin-top: 4rem;
   text-align: center;
+  font-family: 'Proxima Nova Lt';
 }
 .main h3 {
   color: #fff;
   text-align: center;
+  font-size: 26px;
+}
+.close:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #de5300;
+          box-shadow: 0 0 0 0.2rem #de5300;
+}
+.form-control:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #de5300;
+          box-shadow: 0 0 0 0.2rem #de5300;
+  border-color: #de5300;
 }
 .about_photostudia {
   padding: 38px;
@@ -96,42 +144,100 @@ canvas {
 .about_photostudia_shirin {
   position: relative;
 }
+@media (max-width: 768px) {
+  .about_photostudia_shirin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .about_photostudia_shirin img {
   float: left;
+  margin-right: 4em;
+}
+@media (max-width: 768px) {
+  .about_photostudia_shirin img {
+    width: 50%;
+    float: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2em;
+    margin-right: 0;
+  }
 }
 .about_photostudia_shirin .wrap_text {
-  padding-top: 5em;
+  background-color: grey;
 }
 .about_photostudia_shirin p {
-  width: 50em;
   line-height: 1.5em;
   font-size: 20px;
   font-weight: 400;
-  position: absolute;
-  background-color: grey;
   padding: 1em 1em 1em 4em;
-  left: 250px;
+  margin-top: 2em;
+}
+@media (max-width: 768px) {
+  .about_photostudia_shirin p {
+    position: static;
+    padding: 1em;
+  }
 }
 .about_photostudia_luiza {
-  margin-top: 34px;
   position: relative;
+}
+@media (max-width: 768px) {
+  .about_photostudia_luiza {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .about_photostudia_luiza img {
   float: right;
+  margin-left: 4em;
 }
-.about_photostudia_luiza .wrap_text {
-  padding-top: 5em;
+@media (max-width: 768px) {
+  .about_photostudia_luiza img {
+    width: 50%;
+    float: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
 }
 .about_photostudia_luiza p {
-  width: 50em;
   line-height: 1.5em;
   font-size: 20px;
   font-weight: 400;
-  position: absolute;
-  background-color: grey;
   padding: 1em 4em 1em 1em;
   right: 250px;
-  margin-top: 4em;
+  margin-top: 2em;
+}
+@media (max-width: 768px) {
+  .about_photostudia_luiza p {
+    position: static;
+    padding: 1em;
+  }
+}
+.about_photostudia_luiza .wrap_text_luiza {
+  background-color: grey;
 }
 .carousel-inner {
   width: 60%;
@@ -144,14 +250,16 @@ canvas {
   right: 5%;
 }
 .carousel-control-prev-icon {
-  background-image: url('../img/Uslugi_photostudii_left.png');
+  background-image: url('../img/uslugi_photostudii_row_left.png');
   width: 30px;
   height: 50px;
+  background-repeat: no-repeat;
 }
 .carousel-control-next-icon {
-  background-image: url('../img/Uslugi_photostudii_right.png');
+  background-image: url('../img/uslugi_photostudii_row_right.png');
   width: 30px;
   height: 50px;
+  background-repeat: no-repeat;
 }
 .carousel-item .cover {
   position: absolute;
@@ -164,7 +272,7 @@ canvas {
 .services_rent {
   color: #fff;
   position: absolute;
-  padding: 0.5em;
+  padding-left: 2em;
   top: 30%;
   font-size: 32px;
   font-weight: 400;
@@ -174,43 +282,103 @@ canvas {
   position: absolute;
   top: 80%;
   font-size: 26px !important;
-  margin: 0.5em;
+  margin-left: 2em;
   padding: 15px 20px !important;
+}
+.our_works {
+  position: relative;
+}
+.our_works .row_prev {
+  background-image: url('../img/uslugi_photostudii_row_left.png');
+  width: 30px;
+  height: 50px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+@media (max-width: 1300px) {
+  .our_works .row_prev {
+    top: 30%;
+  }
+}
+.our_works .row_next {
+  background-image: url('../img/uslugi_photostudii_row_right.png');
+  width: 30px;
+  height: 50px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+@media (max-width: 1300px) {
+  .our_works .row_next {
+    top: 30%;
+  }
 }
 #carousel {
   position: relative;
-  width: 80vw;
+  width: 60vw;
   clear: both;
   overflow: hidden;
-  height: 60vh;
+  height: 70vh;
   margin: auto;
 }
 #carousel img {
   visibility: hidden;
   cursor: pointer;
+  top: 0 !important;
+}
+@media (max-width: 768px) {
+  #carousel img {
+    width: 100% !important;
+    height: auto !important;
+  }
 }
 .contacts {
   margin-bottom: 7em;
 }
+@media (max-width: 1200px) {
+  .wrap_contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 1200px) {
+  .contacts_addres_phone_social {
+    margin-top: 2em;
+  }
+}
 .wrap_icon {
   width: 100%;
 }
+@media (max-width: 1200px) {
+  .wrap_icon {
+    margin-top: 2em;
+  }
+}
 .wrap_icon a {
-  width: 68px;
-  height: 68px;
-  padding: 5% 18%;
+  padding: 2em 3em;
 }
 .wrap_icon .hashtag_vk {
-  background-image: url('../img/vk_icon.png');
+  background-image: url('../img/photostudia_hashashtag_vk_icon.png');
   background-repeat: no-repeat;
+  background-size: 50%;
 }
 .wrap_icon .hashtag_insta {
-  background-image: url('../img/instagram_icon.png');
+  background-image: url('../img/photostudia_hashashtag_instagram_icon.png');
   background-repeat: no-repeat;
+  background-size: 50%;
 }
 .wrap_icon .hashtag_ok {
-  background-image: url('../img/ok_icon.png ');
+  background-image: url('../img/photostudia_hashashtag_odnoklassniki_icon.png');
   background-repeat: no-repeat;
+  background-size: 50%;
 }
 .contacts_addres_phone_social span {
   font-size: 24px;

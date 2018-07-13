@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Фотостудия Сочи - Hastag</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
@@ -10,56 +11,95 @@
     </script>
 </head>
 <body onload="draw();">
-	<header class="d-flex flex-row justify-content-between">
-		<div class="header_icon"></div>
-		<ul class="nav d-flex align-items-center">
-		  <li class="nav-item">
-		    <a class="nav-link active" href="#">О нас</a>
-		  </li>
-		  <li class="nav-item">
-		      <a class="nav-link" href="#">Фотосессии</a>
-		    </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="hashtagMobile.html">Услуги</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="hashtagPriceMobile.html">Акции</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="#">Контакты</a>
-		  </li>
-		</ul>
+	<header>
+			<nav class="navbar navbar-expand-lg">
+			  <a class="navbar-brand header_icon" href="#"></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <!-- <span class="navbar-toggler-icon"></span> -->
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+			    <ul class="navbar-nav w-100 d-flex justify-content-end">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="#about">О нас</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#fotoservice">Услуги</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#works">Наши работы</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#contact">Контакты</a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
 	</header>
 	<canvas id="under_header"></canvas>
 
-	<section class="d-flex flex-column align-items-center  justify-content-around main">
+	<main class="d-flex flex-column align-items-center  justify-content-around main">
 		<h1>Профессиональная фотостудия<br>в самом центре Сочи</h1>
 		<div class="wrap_button">
-			<a href="#" class="btn btn-primary btn-lg active justify-content-center" role="button" aria-pressed="true">Получить <br> скидку</a>
+			<a href="#" class="btn btn-primary btn-lg active justify-content-center" role="button" aria-pressed="true" data-toggle="modal" data-target="#exampleModal" data-whatever="get_discount"
+			>Получить <br> скидку</a>
+			<!--Start modal-->
+
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Оставьте свои контактные данные и мы с Вами свяжемся в течении 15 минут</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        <form action="mail.php" method="POST">
+				          <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Ваше имя</label>
+				            <input type="hidden" name="from" value="Главная форма">
+				            <input type="text" class="form-control" id="recipient-name" name="user_name">
+				          </div>
+				          <div class="form-group">
+				            <label for="recepient-phone" class="col-form-label">Ваш телефон</label>
+				            <input type="tel" class="form-control" id="recipient-phone" placeholder="+7-999-999-99-99" name="user_phone">
+				          </div>
+				        </form>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-primary btn-lg active">Отправить</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			<!--End modal-->
 		</div>
 		<h3>*Оставь заявку прямо сейчас и получи скидку 10% <br>на свою первую фотосессию</h3>
-	</section>
+	</main>
 
 
-	<section class="d-flex flex-column about_photostudia">
+	<section class="d-flex flex-column about_photostudia" id="about">
 		<h2><span class="hashtag">#</span>Немного о нас</h2>
 		<figure class="about_photostudia_shirin">
-			<img class="Shirin" src="img/Photo_master_Shirin.jpg" alt="Фотостудия Сочи Hashtag мастер Ширин">
+			<img class="Shirin" src="img/photograf_Shirin.jpg" alt="Фотостудия Сочи Hashtag фотограв Ширин">
 			<figcaption class="wrap_text">
 			<p class="text_about">
 				Lorem ipsum dolor sit amet, consectetur adipisicing  elit. Voluptatum sapiente, voluptatibus commodi neque unde, accusamus nobis libero, similique culpa, debitis mollitia! Similique dolore, quisquam, iusto eius itaque quidem iste odit iure, laudantium possimus dolorem veniam, exercitationem ullam odio ab blanditiis dolorum consequuntur repudiandae mollitia rem sunt facilis molestiae autem. Quos, illo sit eius ducimus aut, possimus aliquam et molestiae iste numquam minus id, tempore qui laboriosam, eos facere earum enim sapiente! Doloremque itaque possimus perspiciatis sed nemo illo, corporis asperiores ipsa dicta nobis, dolores molestias cupiditate laudantium eligendi dignissimos iusto officia quidem praese</p>
 			</figcaption>
 		</figure>
 		<figure class="about_photostudia_luiza">
-			<figcaption class="wrap_text">
+			<img src="img/photograf_Luiza.jpg" alt="Фотостудия Сочи Hashtag фотограв Луиза">
+			<figcaption class="wrap_text_luiza">
 				<p class="text_about_luiza">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sapiente, voluptatibus commodi neque unde, accusamus nobis libero, similique culpa, debitis mollitia! Similique dolore, quisquam, iusto eius itaque quidem iste odit iure, laudantium possimus dolorem veniam, exercitationem ullam odio ab blanditiis dolorum consequuntur repudiandae mollitia rem sunt facilis molestiae autem. Quos, illo sit eius ducimus aut, possimus aliquam et molestiae iste numquam minus id, tempore qui laboriosam, eos facere earum enim sapiente! Doloremque itaque possimus perspiciatis sed nemo illo, corporis asperiores i.</p>
 			</figcaption>
-			<img src="img/Photo_master_Luiza.jpg" alt="Фотостудия Сочи Hashtag мастер Луиза">
 		</figure>
 	</section>
 
 
-	<section class="services">
+	<section class="services" id="fotoservice">
 	
 		<h2><span class="hashtag">#</span>Услуги фотостудии</h2>
 
@@ -67,23 +107,23 @@
 		  <div class="carousel-inner">
 		    <div class="carousel-item active">
 		    	<div class="cover"></div>
-		      <img class="d-block w-100" src="img/make_up_service_photostudia.jpg" alt="Аренда фотостудии Сочи">
+		      <img class="d-block w-100" src="img/services/uslugi_vizajista.jpg" alt="Услуги визажиста в фотостудии '#Hashtag' Сочи">
 		      <span class="services_rent">Профессиональный make-up в студии <br>
 		      1000 рублей</span>
-		      <a href="#" class="btn btn-primary btn-lg active services_button" role="button" aria-pressed="true">Узнать подробнее</a>
+		      <a href="#" class="btn btn-primary btn-lg active services_button" role="button" aria-pressed="true" data-toggle="modal" data-target="#exampleModal" data-whatever="make-up">Узнать подробнее</a>
 		    </div>
 
 		    <div class="carousel-item">
 		    	<div class="cover"></div>
-		      <img class="d-block w-100" src="img/Arenda_photostudii.jpg" alt="Аренда фотостудии Сочи">
+		      <img class="d-block w-100" src="img/services/arenda_photostudia.jpg" alt="Аренда фотостудии '#Hashtag' Сочи">
 		       <span class="services_rent">Аренда фотостудии без оборудования <br> От 800 руб/час</span>
-		       <a href="#" class="btn btn-primary btn-lg active services_button" role="button" aria-pressed="true">Узнать подробнее</a>
+		       <a href="#" class="btn btn-primary btn-lg active services_button" role="button" aria-pressed="true" data-toggle="modal" data-target="#exampleModal" data-whatever="rent">Узнать подробнее</a>
 		    </div>
 		    <div class="carousel-item">
 		    	<div class="cover"></div>
-		      <img class="d-block w-100" src="img/Ỿ頱2.jpg" alt="Аренда фотостудии Сочи">
+		      <img class="d-block w-100" src="img/services/personal_photosession.jpg" alt="Персональные фотосессии в фотостудии '#Hashtag' Сочи">
 		       <span class="services_rent">Персональные фотосессии <br> От 1 500 руб/час</span>
-		       <a href="#" class="btn btn-primary btn-lg active services_button" role="button" aria-pressed="true">Узнать подробнее</a>
+		       <a href="#" class="btn btn-primary btn-lg active services_button" role="button" aria-pressed="true" data-toggle="modal" data-target="#exampleModal" data-whatever="individual_fotoshoots">Узнать подробнее</a>
 		    </div>
 		  </div>
 		  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -99,21 +139,48 @@
 
 
 	<div class="wprap-gradient">
-		<section class="our_works">
+		<section class="our_works" id="works">
 
 			<h2><span class="hashtag">#</span>Наши работы</h2>
 				<div id="carousel">
-					<a href="#"><img src="img/img_center.jpg" alt=""></a>
-					<a href="#"><img src="img/img_center.jpg" alt=""></a>
-					<a href="#"><img src="img/img_center.jpg" alt=""></a>
-					<a href="#"><img src="img/img_center.jpg" alt=""></a>
-					<a href="#"><img src="img/img_center.jpg" alt=""></a>
+					<a href="#"><img src="img/slider/fotosessii_devushek.jpg" alt="Фотосессии девушек"></a>
+					<a href="#"><img src="img/slider/semeinaya_fotosessiya.jpg" alt="Семейная фотосессия"></a>
+					<a href="#"><img src="img/slider/fotosessiya_mama_s_rebenkom.jpg" alt="Фотосессия мама с ребенком"></a>
+					<a href="#"><img src="img/slider/fotosessiya_pari.jpg" alt="Фотосессия пары"></a>
+					<a href="#"><img src="img/slider/detskie_fotosessii.jpg" alt="Детские фотосессии"></a>
+					<a href="#"><img src="img/slider/detskaya_novogodnyaya_fotosessiya.jpg" alt="Детская новогодняя фотосессия"></a>
+					<a href="#"><img src="img/slider/fotosessiay_detei_v_studii_.jpg" alt="Фотосессия детей в студии"></a>
+					<a href="#"><img src="img/slider/fotosessia_devushki_na_prirode.jpg" alt="Фотосессия девушки на природе"></a>
+					<a href="#"><img src="img/slider/fotosessia_na_prirode.jpg" alt="Фотосессия на природе"></a>
+					<a href="#"><img src="img/slider/fotosessii_par_v_studii.jpg" alt="Фотосессия пар в студии"></a>
+					<a href="#"><img src="img/slider/fotosessii_s_detmi_v_studii.jpg" alt="Фотосессия с детьми в студии"></a>
+					<a href="#"><img src="img/slider/fotosessii_v_studii.jpg" alt="Фотосессии в студии"></a>
+					<a href="#"><img src="img/slider/fotosessii_v_studii_devushki.jpg" alt="Фотосессии в студии девушки"></a>
+					<a href="#"><img src="img/slider/fotosessiya.jpg" alt="Фотосессия"></a>
+					<a href="#"><img src="img/slider/fotosessiya_angel.jpg" alt="Фотосессия ангел"></a>
+					<a href="#"><img src="img/slider/fotosessiya_na_den_rojdeniya.jpg" alt="Фотосессия на день рождения"></a>
+					<a href="#"><img src="img/slider/fotosessiya_par.jpg" alt="Фотосессия пар"></a>
+					<a href="#"><img src="img/slider/fotosessiya_studiya.jpg" alt="Фотосессия студия"></a>
+					<a href="#"><img src="img/slider/fotosessiya_s_detmi_ha_prirode.jpg" alt="Фотосессия с детьми на природе"></a>
+					<a href="#"><img src="img/slider/fotosessiya_v_ojidanii.jpg" alt="Фотосессия в ожидании"></a>
+					<a href="#"><img src="img/slider/fotosessiya_v_sochi.jpg" alt="Фотосессия в Сочи"></a>
+					<a href="#"><img src="img/slider/fotosessiya_v_stile_pin_ap.jpg" alt="Фотосессия в стиле пин ап"></a>
+					<a href="#"><img src="img/slider/pin_up_fotosessii.jpg" alt="Пин ап фотосессии"></a>
+					<a href="#"><img src="img/slider/fotosessii_s_sobakoi.jpg" alt="Фотосессии с собакой"></a>
+					<a href="#"><img src="img/slider/krasivie_fotosessii_detei.jpg" alt="Красивые фотосессии детей"></a>
+					<a href="#"><img src="img/slider/mesta_dlya_svadebnoi_fotosessii.jpg" alt="Места для свадебной фотосессии"></a>
+					<a href="#"><img src="img/slider/novogodnyaya_fotosessiya.jpg" alt="Новогодняя фотосессия"></a>
+					<a href="#"><img src="img/slider/novogodnyaya_fotosessiya_v_studii.jpg" alt="Новогодняя фотосессия в студии"></a>
+					<a href="#"><img src="img/slider/svadebnaya_fotosessia.jpg" alt="Свадебная фотосессия"></a>
+					<a href="#"><img src="img/slider/semeinie_fotosessii_s_detmi.jpg" alt="Семейная фотосессия с детьми"></a>
 				</div>
+				<a href="#" id="prev" class="row_prev"></a>
+				<a href="#" id="next" class="row_next"></a>
 		</section>
 
-		<section class="contacts">
+		<section class="contacts" id="contact">
 			<h2><span class="hashtag">#</span>Как с  нами связаться</h2>
-			<div class="d-flex justify-content-center">
+			<div class="d-flex justify-content-center wrap_contacts">
 				<map name="" id="map" style="width: 700px; height: 400px"></map>
 				<div class="d-flex flex-column justify-content-around  contacts_addres_phone_social">
 					<span class="phone">8 (928) 449-04-44</span>
@@ -145,6 +212,7 @@
 	<script src="js/jquery.waterwheelCarousel.min.js"></script>
 	<script src="js/viewportchecker.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<!--Canvas-->
 	<script>
 		function draw() {
 		  var canvas = document.getElementById('under_header');
@@ -152,12 +220,13 @@
 		    var ctx = canvas.getContext('2d');
 		    ctx.beginPath();
 		    ctx.moveTo(0, 0);
-		    ctx.lineTo(300, 0);
+		    ctx.lineTo(310, 0);
 		    ctx.lineTo(0, 150);
 		    ctx.fill();
 			}
 		}
 	</script>
+	<!--animate p from right-->
 	<script>
 		jQuery(document).ready(function() {
 		    jQuery('.text_about').addClass("visible").viewportChecker({
@@ -166,6 +235,7 @@
 		       });
 		});
 	</script>
+	<!--animate p from left-->
 	<script>
 		jQuery(document).ready(function() {
 		    jQuery('.text_about_luiza').addClass("visible").viewportChecker({
@@ -174,6 +244,7 @@
 		       });
 		});
 	</script>
+	<!-- Our works slider-->
 	<script>
 		$(document).ready(function () {
         var carousel = $("#carousel").waterwheelCarousel({
@@ -195,8 +266,18 @@
           }
         });
 
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
       });
 	</script>
+	<!--yandex-karti-->
 	<script type="text/javascript">
 	  ymaps.ready(init);
 	    var myMap,
@@ -216,7 +297,7 @@
 	            // Необходимо указать данный тип макета.
 	            iconLayout: 'default#imageWithContent',
 	            // Своё изображение иконки метки.
-	            iconImageHref: 'img/Hash_for_map.png',
+	            iconImageHref: 'img/photostudia_hashashtag_map.png',
 	            // Размеры метки.
 	            iconImageSize: [72, 72],
 	            // Смещение левого верхнего угла иконки относительно
