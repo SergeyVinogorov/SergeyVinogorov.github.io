@@ -1,25 +1,17 @@
 @font-face {
-  font-family: 'Proxima Nova Lt';
-  src: url('../fonts/ProximaNova-Semibold.woff2') format('woff2'), url('../fonts/ProximaNova-Semibold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
   font-family: 'Proxima Nova Rg';
   src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/ProximaNova-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-body {
-  font-family: 'Proxima Nova Rg';
-}
 h2 {
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 1.8em;
+  font-family: 'Georgia';
+  font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
   margin-bottom: 2em;
-  margin-top: 1em;
+  margin-top: 3em;
 }
 .wrap_button {
   margin-top: 1em;
@@ -29,12 +21,13 @@ h2 {
 .show > .btn-primary.dropdown-toggle {
   background-color: #de5300;
   border-color: #de5300;
-  padding: 5px 40px;
-  font-size: 20px;
-  font-weight: 700;
+  padding: 1em 2em;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
   border-radius: 10px;
   letter-spacing: 1px;
-  line-height: 30px;
+  margin-left: 8%;
 }
 .btn-primary:not(:disabled):not(.disabled).active:hover,
 .btn-primary:not(:disabled):not(.disabled):active:hover,
@@ -48,52 +41,127 @@ h2 {
   -webkit-box-shadow: 0 0 0 0.2rem #de5300;
           box-shadow: 0 0 0 0.2rem #de5300;
 }
-.hidden {
-  opacity: 0;
-}
-.visible {
-  opacity: 1;
-}
-.text_description_backgroud {
-  color: #fff;
-  position: absolute;
-}
 .wprap-gradient {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#000000));
-  background: linear-gradient(#ffffff, #000000);
+  background: linear-gradient(233deg, #252424 0%, #000000 100%);
 }
 .hashtag {
   color: #e77020;
 }
-.header_icon {
-  background-image: url('../img/photostudia_hashashtag.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 250px;
-  height: 87px;
+body {
+  font-size: 16px;
+}
+@media (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    font-size: 10px;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    font-size: 8px;
+  }
 }
 header {
-  background-color: #000;
-  padding: 38px 38px 0px 38px;
+  background-color: #fff;
+}
+header li {
+  border-left: 1px solid #fff;
+  font-size: 1.2em;
+}
+header li:first-child {
+  border: none;
+}
+header li:first-child a {
+  padding-left: 4em !important;
+}
+@media (max-width: 768px) {
+  header li {
+    border: none;
+  }
 }
 header a {
   color: #fff;
-  font-size: 24px;
+  padding-left: 4em !important;
 }
 header a:hover {
   color: #de5300;
 }
-canvas {
-  width: 100%;
-  height: 80px;
-  position: absolute;
-  z-index: 99;
+@media (min-width: 768px) {
+  header .navbar-expand-lg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.hashtag__icon a {
+  padding-left: 2em !important;
+}
+@media (max-width: 320px) {
+  .hashtag__icon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.hashtag__icon img {
+  width: 11em;
+}
+@media (max-width: 768px) {
+  .hashtag__icon img {
+    width: 9em;
+  }
+}
+@media (max-width: 425px) {
+  .hashtag__icon img {
+    width: 7em;
+  }
+}
+@media (max-width: 375px) {
+  .hashtag__icon img {
+    width: 5em;
+  }
+}
+.hashtag__icon .hashtag__icon_phone {
+  font-size: 1.2em;
+  line-height: 2em;
+  text-align: right;
+}
+.hashtag__icon .hashtag__icon_phone span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+.hashtag__icon .hashtag__icon_phone a {
+  color: #de5300;
+  text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.navbar {
+  background-color: #000;
+  margin-top: 1em;
+  font-family: 'Proxima Nova Rg';
 }
 .icon-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2px 16px;
+  padding: 0.10em 0.8em;
   margin-bottom: 5px;
   background-color: #de5300;
   -webkit-box-orient: vertical;
@@ -104,30 +172,54 @@ canvas {
 .navbar-toggler:focus {
   outline: 0px;
 }
-.main {
-  z-index: 9;
-  background-image: url('../img/photostudia_hashashtag_sochi.jpg');
+.basic_block {
+  background-image: url('../img/main_bg.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 100%;
+  background-size: cover;
   height: 80vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow: hidden;
 }
-.main h1 {
-  font-size: 46px;
-  font-weight: 400;
-  color: #fff;
-  margin-top: 4rem;
-  text-align: center;
-  font-family: 'Proxima Nova Lt';
+@media (max-width: 992px) {
+  .basic_block {
+    background-size: 100% 120%;
+  }
 }
-.main h3 {
+@media (max-width: 768px) {
+  .basic_block {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+}
+@media (max-width: 325px) {
+  .basic_block {
+    background-size: 100% 100%;
+  }
+}
+.basic_block h1 {
+  font-size: 2em;
+  font-weight: 500;
   color: #fff;
-  text-align: center;
-  font-size: 26px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-left: 8%;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5em;
+  width: 60%;
+}
+.basic_block h2 {
+  color: #fff;
+  font-family: 'Proxima Nova Rg';
+  text-align: left;
+  margin-left: 8%;
+  margin-bottom: 2%;
+  margin-top: 0;
+  width: 60%;
+}
+.basic_block h3 {
+  color: #fff;
+  font-size: 1em;
+  margin-left: 8%;
+  margin-top: 2%;
 }
 .close:focus {
   -webkit-box-shadow: 0 0 0 0.2rem #de5300;
@@ -138,205 +230,99 @@ canvas {
           box-shadow: 0 0 0 0.2rem #de5300;
   border-color: #de5300;
 }
-.about_photostudia {
-  padding: 38px;
-}
-.about_photostudia_shirin {
-  position: relative;
+@media (max-width: 768px) {
+  .about_photostudia_fotograph {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
 }
 @media (max-width: 768px) {
-  .about_photostudia_shirin {
+  .wrap_frame {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
-.about_photostudia_shirin img {
-  float: left;
-  margin-right: 4em;
+.about_photostudio_frame {
+  border: 4px solid #de5300;
 }
-@media (max-width: 768px) {
-  .about_photostudia_shirin img {
-    width: 50%;
-    float: none;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 2em;
-    margin-right: 0;
-  }
+.about_photostudio_frame img {
+  -webkit-transform: translate(3%, 2%);
+          transform: translate(3%, 2%);
 }
-.about_photostudia_shirin .wrap_text {
-  background-color: grey;
-}
-.about_photostudia_shirin p {
+p {
   line-height: 1.5em;
-  font-size: 20px;
+  font-size: 1.2em;
   font-weight: 400;
-  padding: 1em 1em 1em 4em;
-  margin-top: 2em;
-}
-@media (max-width: 768px) {
-  .about_photostudia_shirin p {
-    position: static;
-    padding: 1em;
-  }
-}
-.about_photostudia_luiza {
-  position: relative;
-}
-@media (max-width: 768px) {
-  .about_photostudia_luiza {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-.about_photostudia_luiza img {
-  float: right;
-  margin-left: 4em;
-}
-@media (max-width: 768px) {
-  .about_photostudia_luiza img {
-    width: 50%;
-    float: none;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 0;
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-}
-.about_photostudia_luiza p {
-  line-height: 1.5em;
-  font-size: 20px;
-  font-weight: 400;
-  padding: 1em 4em 1em 1em;
-  right: 250px;
-  margin-top: 2em;
-}
-@media (max-width: 768px) {
-  .about_photostudia_luiza p {
-    position: static;
-    padding: 1em;
-  }
-}
-.about_photostudia_luiza .wrap_text_luiza {
-  background-color: grey;
-}
-.carousel-inner {
-  width: 60%;
-  margin: auto;
-}
-.carousel-control-prev {
-  left: 5%;
-}
-.carousel-control-next {
-  right: 5%;
-}
-.carousel-control-prev-icon {
-  background-image: url('../img/uslugi_photostudii_row_left.png');
-  width: 30px;
-  height: 50px;
-  background-repeat: no-repeat;
-}
-.carousel-control-next-icon {
-  background-image: url('../img/uslugi_photostudii_row_right.png');
-  width: 30px;
-  height: 50px;
-  background-repeat: no-repeat;
-}
-.carousel-item .cover {
-  position: absolute;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0.5;
-}
-.services_rent {
-  color: #fff;
-  position: absolute;
-  padding-left: 2em;
-  top: 30%;
-  font-size: 32px;
-  font-weight: 400;
-  font-family: 'Roboto';
-}
-.services_button {
-  position: absolute;
-  top: 80%;
-  font-size: 26px !important;
   margin-left: 2em;
-  padding: 15px 20px !important;
+  margin-right: 2em;
 }
-.our_works {
-  position: relative;
-}
-.our_works .row_prev {
-  background-image: url('../img/uslugi_photostudii_row_left.png');
-  width: 30px;
-  height: 50px;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 50%;
-  left: 10%;
-}
-@media (max-width: 1300px) {
-  .our_works .row_prev {
-    top: 30%;
+@media (max-width: 768px) {
+  p {
+    margin-top: 2em;
   }
 }
-.our_works .row_next {
-  background-image: url('../img/uslugi_photostudii_row_right.png');
-  width: 30px;
-  height: 50px;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 50%;
-  right: 10%;
+p .about_photostudio_caption {
+  display: block;
+  font-weight: 700;
 }
-@media (max-width: 1300px) {
-  .our_works .row_next {
-    top: 30%;
-  }
+.service_item {
+  margin-top: 2em;
 }
-#carousel {
+.service_item h3 {
+  background-color: #e87027;
+  font-size: 1.2em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+}
+.service_item ul {
+  background-color: #f1d7c6;
+  height: 40%;
+  padding-top: 1em;
+}
+.service_item ul li {
+  text-decoration: none;
+  list-style: none;
+}
+.service_item img {
+  width: 18em;
+}
+.our_works .example {
+  width: 100%;
+}
+.our_works #carousel {
+  width: 70%;
+  height: 42em;
   position: relative;
-  width: 60vw;
   clear: both;
   overflow: hidden;
-  height: 70vh;
-  margin: auto;
+  background: #FFF;
 }
-#carousel img {
+.our_works #carousel img {
   visibility: hidden;
+  /* hide images until carousel can handle them */
   cursor: pointer;
-  top: 0 !important;
+  /* otherwise it's not as obvious items can be clicked */
 }
 @media (max-width: 768px) {
-  #carousel img {
-    width: 100% !important;
-    height: auto !important;
+  .our_works #carousel img {
+    width: 30em !important;
+    height: 40em !important;
   }
 }
 .contacts {
+  margin-top: 7em;
   margin-bottom: 7em;
+  padding-top: 7em;
+}
+.contact_caption {
+  color: #fff;
 }
 @media (max-width: 1200px) {
   .wrap_contacts {
@@ -380,24 +366,51 @@ canvas {
   background-repeat: no-repeat;
   background-size: 50%;
 }
+.contacts_addres_phone_social {
+  position: relative;
+}
 .contacts_addres_phone_social span {
-  font-size: 24px;
+  font-size: 1.5em;
   color: #fff;
+}
+.contacts_addres_phone_social .contact_btn {
+  margin-left: 0 !important;
+  margin-top: 2rem;
+  padding: 1em 1em !important;
+}
+.contacts_addres_phone_social .phone {
+  margin-bottom: 1rem;
 }
 map {
-  margin-right: 3em;
+  border: 1px solid red;
+  width: 60%;
+  height: 60vh;
+}
+.contacts_link_whatsapp {
+  color: #fb8130;
+  text-decoration: underline;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.contacts_link_whatsapp:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 2em;
+  height: 2em;
+  background-image: url('../img/contact_whatsup.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.we_social {
+  margin-bottom: 2rem;
 }
 footer {
-  margin-top: 4em;
-  padding-bottom: 3em;
-  font-size: 24px;
+  font-size: 1em;
 }
 footer span {
-  margin-left: 35px;
   color: #fff;
-}
-footer a {
-  margin-right: 35px;
 }
 footer .studio {
   text-decoration: none;
@@ -405,12 +418,13 @@ footer .studio {
 }
 .footer_line_big {
   background-color: #fff;
-  height: 6px;
+  height: 0.3em;
 }
 .footer_line_small {
   background-color: #fff;
-  height: 2px;
+  height: 0.1em;
 }
 .wrap_for_privacy {
   line-height: 3em;
+  padding-bottom: 2rem;
 }

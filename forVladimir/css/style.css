@@ -1,15 +1,10 @@
 body {
-  font-size: 18px;
+  font-size: 16px;
 }
 /*Main nav*/
 .main_nav {
-  height: 5rem;
+  height: 5em;
   text-decoration: none;
-  background-image: url('../img/backNav.jpg');
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1071;
 }
 @media (max-width: 600px) {
   .main_nav ul {
@@ -18,40 +13,9 @@ body {
 }
 .main_nav a {
   color: #000;
-  margin-top: 1.5rem;
 }
 .main_nav a:hover {
   color: #a5a5a5;
-}
-h1 {
-  position: absolute;
-  z-index: 7;
-  color: #ffff;
-  left: 20%;
-  top: 40%;
-  text-align: center;
-}
-@media (max-width: 1024px) {
-  h1 {
-    left: 8%;
-  }
-}
-@media (max-width: 768px) {
-  h1 {
-    left: 0;
-  }
-}
-@media (max-width: 425px) {
-  h1 {
-    font-size: 24px;
-    top: 30%;
-  }
-}
-@media (max-width: 320px) {
-  h1 {
-    font-size: 22px;
-    top: 20%;
-  }
 }
 /*Mobile main nav*/
 .main_nav_mob {
@@ -239,6 +203,9 @@ h1 {
 }
 .modal-dialog {
   margin-top: 100px;
+}
+.main_slide img {
+  height: 90vh;
 }
 /*My service*/
 .my_service_container {
