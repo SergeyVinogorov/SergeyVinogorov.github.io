@@ -5,13 +5,11 @@
   font-style: normal;
 }
 h2 {
-  font-size: 1.8em;
+  font-size: 1.2em;
   font-family: 'Georgia';
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 1px;
   text-align: center;
-  margin-bottom: 2em;
-  margin-top: 3em;
 }
 .wrap_button {
   margin-top: 1em;
@@ -21,13 +19,37 @@ h2 {
 .show > .btn-primary.dropdown-toggle {
   background-color: #de5300;
   border-color: #de5300;
-  padding: 1em 2em;
-  font-size: 1.1em;
+  padding: 1em;
+  margin-bottom: 2em;
+  margin-top: 2em;
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
   border-radius: 10px;
-  letter-spacing: 1px;
-  margin-left: 8%;
+  width: 13em;
+}
+@media (max-width: 768px) {
+  .btn-primary:not(:disabled):not(.disabled).active,
+  .btn-primary:not(:disabled):not(.disabled):active,
+  .show > .btn-primary.dropdown-toggle {
+    width: 12em;
+    padding: 0.8em;
+  }
+}
+@media (max-width: 425px) {
+  .btn-primary:not(:disabled):not(.disabled).active,
+  .btn-primary:not(:disabled):not(.disabled):active,
+  .show > .btn-primary.dropdown-toggle {
+    width: 11em;
+    padding: 0.6em;
+  }
+}
+@media (max-width: 320px) {
+  .btn-primary:not(:disabled):not(.disabled).active,
+  .btn-primary:not(:disabled):not(.disabled):active,
+  .show > .btn-primary.dropdown-toggle {
+    width: 10em;
+    padding: 0.5em;
+  }
 }
 .btn-primary:not(:disabled):not(.disabled).active:hover,
 .btn-primary:not(:disabled):not(.disabled):active:hover,
@@ -75,13 +97,13 @@ header {
 }
 header li {
   border-left: 1px solid #fff;
-  font-size: 1.2em;
+  font-size: 0.8em;
 }
 header li:first-child {
   border: none;
 }
 header li:first-child a {
-  padding-left: 4em !important;
+  padding-left: 2em !important;
 }
 @media (max-width: 768px) {
   header li {
@@ -90,20 +112,32 @@ header li:first-child a {
 }
 header a {
   color: #fff;
-  padding-left: 4em !important;
+  padding-left: 6em !important;
 }
 header a:hover {
   color: #de5300;
 }
-@media (min-width: 768px) {
-  header .navbar-expand-lg {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media (max-width: 768px) {
+  header a {
+    padding-left: 2em !important;
   }
 }
+@media (min-width: 768px) {
+  header .navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+  }
+}
+.hashtag__icon {
+  margin-top: 0.5em;
+}
 .hashtag__icon a {
-  padding-left: 2em !important;
+  padding-left: 0em !important;
 }
 @media (max-width: 320px) {
   .hashtag__icon {
@@ -120,11 +154,11 @@ header a:hover {
   }
 }
 .hashtag__icon img {
-  width: 11em;
+  width: 9em;
 }
 @media (max-width: 768px) {
   .hashtag__icon img {
-    width: 9em;
+    width: 8em;
   }
 }
 @media (max-width: 425px) {
@@ -138,7 +172,7 @@ header a:hover {
   }
 }
 .hashtag__icon .hashtag__icon_phone {
-  font-size: 1.2em;
+  font-size: 0.8em;
   line-height: 2em;
   text-align: right;
 }
@@ -154,7 +188,7 @@ header a:hover {
 }
 .navbar {
   background-color: #000;
-  margin-top: 1em;
+  margin-top: 0.5em;
   font-family: 'Proxima Nova Rg';
 }
 .icon-bar {
@@ -172,11 +206,14 @@ header a:hover {
 .navbar-toggler:focus {
   outline: 0px;
 }
+.navbar-brand {
+  padding: 0;
+}
 .basic_block {
   background-image: url('../img/main_bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 95vh;
 }
 @media (max-width: 992px) {
   .basic_block {
@@ -196,29 +233,28 @@ header a:hover {
   }
 }
 .basic_block h1 {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 500;
   color: #fff;
-  margin-top: 1%;
+  margin-top: 8%;
   margin-bottom: 2%;
-  margin-left: 8%;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5em;
   width: 60%;
+  letter-spacing: 2px;
 }
 .basic_block h2 {
   color: #fff;
   font-family: 'Proxima Nova Rg';
   text-align: left;
-  margin-left: 8%;
   margin-bottom: 2%;
-  margin-top: 0;
+  margin-top: 7%;
   width: 60%;
 }
 .basic_block h3 {
   color: #fff;
-  font-size: 1em;
-  margin-left: 8%;
+  font-size: 0.8em;
+  font-weight: 400;
   margin-top: 2%;
 }
 .close:focus {
@@ -229,6 +265,149 @@ header a:hover {
   -webkit-box-shadow: 0 0 0 0.2rem #de5300;
           box-shadow: 0 0 0 0.2rem #de5300;
   border-color: #de5300;
+}
+.basic_block_percent {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.service {
+  padding-top: 4em;
+}
+.service .service_header {
+  margin-bottom: 3em;
+}
+.service_item {
+  margin-top: 1em;
+}
+@media (max-width: 767px) {
+  .service_item {
+    display: none !important;
+  }
+}
+.service_item h3 {
+  background-color: #e87027;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+  height: 2em;
+  padding-top: 0.2em;
+}
+.service_item ul {
+  background-color: #f1d7c6;
+  height: 50%;
+  padding-top: 1em;
+}
+.service_item ul li {
+  list-style: none;
+  cursor: pointer;
+  color: #de5300;
+}
+.service_item ul li span:hover {
+  border-bottom: 1px outset #de5300;
+}
+.service_item img {
+  width: 15.5em;
+}
+@media (max-width: 768px) {
+  .service_item img {
+    width: 16.5em;
+  }
+}
+.service_item .modal ul {
+  background-color: inherit;
+}
+.service_item .modal ul li {
+  list-style: disc;
+  text-decoration: none;
+  color: inherit;
+  margin-left: 1em;
+}
+.dop {
+  margin-right: 2em;
+}
+.rent {
+  margin-left: 2em;
+}
+.service_accordion {
+  display: none;
+}
+.service_accordion span:hover {
+  border-bottom: 1px outset #de5300;
+}
+@media (max-width: 767px) {
+  .service_accordion {
+    display: block;
+  }
+}
+.our_works {
+  position: relative;
+  padding-top: 4em;
+}
+.our_works .example {
+  width: 100%;
+}
+.our_works #carousel {
+  width: 70%;
+  height: 40em;
+  position: relative;
+  clear: both;
+  overflow: hidden;
+  background: #FFF;
+}
+.our_works #carousel img {
+  visibility: hidden;
+  /* hide images until carousel can handle them */
+  cursor: pointer;
+  /* otherwise it's not as obvious items can be clicked */
+  width: 20em;
+  height: 30em;
+}
+.our_works .carousel_row {
+  width: 20%;
+}
+.our_works .carousel_row #prev {
+  position: absolute;
+  width: 5em;
+  height: 15em;
+  top: 36%;
+  left: 8%;
+  cursor: pointer;
+}
+.our_works .carousel_row #prev:before {
+  content: '';
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background-image: url('../img/uslugi_photostudii_row_left.png');
+  background-size: 100% 100%;
+  top: 40%;
+  cursor: pointer;
+}
+.our_works .carousel_row #next {
+  position: absolute;
+  width: 5em;
+  height: 15em;
+  top: 36%;
+  right: 8%;
+  cursor: pointer;
+}
+.our_works .carousel_row #next:after {
+  content: '';
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background-image: url('../img/uslugi_photostudii_row_right.png');
+  background-size: 100% 100%;
+  top: 40%;
+  right: 0;
+  cursor: pointer;
+}
+.about_photostudia {
+  padding-top: 2em;
+}
+.about_photostudia .about_photostudia_header {
+  margin-bottom: 4em;
 }
 @media (max-width: 768px) {
   .about_photostudia_fotograph {
@@ -251,9 +430,13 @@ header a:hover {
 .about_photostudio_frame {
   border: 4px solid #de5300;
 }
-.about_photostudio_frame img {
+.fotograph_Shirin {
   -webkit-transform: translate(3%, 2%);
           transform: translate(3%, 2%);
+}
+.photograph_Luiza {
+  -webkit-transform: translate(-2%, 2%);
+          transform: translate(-2%, 2%);
 }
 p {
   line-height: 1.5em;
@@ -271,60 +454,16 @@ p .about_photostudio_caption {
   display: block;
   font-weight: 700;
 }
-.service_item {
-  margin-top: 2em;
-}
-.service_item h3 {
-  background-color: #e87027;
-  font-size: 1.2em;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 0;
-}
-.service_item ul {
-  background-color: #f1d7c6;
-  height: 40%;
-  padding-top: 1em;
-}
-.service_item ul li {
-  text-decoration: none;
-  list-style: none;
-}
-.service_item img {
-  width: 18em;
-}
-.our_works .example {
-  width: 100%;
-}
-.our_works #carousel {
-  width: 70%;
-  height: 42em;
-  position: relative;
-  clear: both;
-  overflow: hidden;
-  background: #FFF;
-}
-.our_works #carousel img {
-  visibility: hidden;
-  /* hide images until carousel can handle them */
-  cursor: pointer;
-  /* otherwise it's not as obvious items can be clicked */
-}
-@media (max-width: 768px) {
-  .our_works #carousel img {
-    width: 30em !important;
-    height: 40em !important;
-  }
-}
 .contacts {
-  margin-top: 7em;
-  margin-bottom: 7em;
-  padding-top: 7em;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  padding-top: 4em;
 }
 .contact_caption {
-  color: #fff;
+  color: #fefefe;
+  margin-bottom: 4em;
 }
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   .wrap_contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -335,7 +474,7 @@ p .about_photostudio_caption {
             align-items: center;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   .contacts_addres_phone_social {
     margin-top: 2em;
   }
@@ -343,7 +482,7 @@ p .about_photostudio_caption {
 .wrap_icon {
   width: 100%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   .wrap_icon {
     margin-top: 2em;
   }
@@ -354,44 +493,45 @@ p .about_photostudio_caption {
 .wrap_icon .hashtag_vk {
   background-image: url('../img/photostudia_hashashtag_vk_icon.png');
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 40%;
 }
 .wrap_icon .hashtag_insta {
   background-image: url('../img/photostudia_hashashtag_instagram_icon.png');
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 40%;
 }
 .wrap_icon .hashtag_ok {
   background-image: url('../img/photostudia_hashashtag_odnoklassniki_icon.png');
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 40%;
 }
 .contacts_addres_phone_social {
   position: relative;
+  color: #fefefe;
 }
 .contacts_addres_phone_social span {
-  font-size: 1.5em;
-  color: #fff;
+  font-size: 1.2em;
+  color: #fefefe;
 }
 .contacts_addres_phone_social .contact_btn {
-  margin-left: 0 !important;
-  margin-top: 2rem;
-  padding: 1em 1em !important;
+  margin-top: 2em !important;
+  font-size: 0.9em;
+  width: 16em !important;
+  padding: 1em!important;
 }
 .contacts_addres_phone_social .phone {
   margin-bottom: 1rem;
 }
 map {
-  border: 1px solid red;
   width: 60%;
   height: 60vh;
 }
 .contacts_link_whatsapp {
   color: #fb8130;
-  text-decoration: underline;
   margin-left: 3rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 193px;
 }
 .contacts_link_whatsapp:before {
   content: '';
@@ -403,8 +543,13 @@ map {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.contacts_link_whatsapp:hover {
+  border-bottom: 1px outset #de5300;
+  text-decoration: none;
+  color: #de5300;
+}
 .we_social {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 footer {
   font-size: 1em;
@@ -418,7 +563,7 @@ footer .studio {
 }
 .footer_line_big {
   background-color: #fff;
-  height: 0.3em;
+  height: 0.2em;
 }
 .footer_line_small {
   background-color: #fff;
@@ -426,5 +571,82 @@ footer .studio {
 }
 .wrap_for_privacy {
   line-height: 3em;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+.rules {
+  background-color: #000;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.rules span {
+  color: #fff;
+}
+.rules_header_one {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 1.8em;
+}
+.rules_notation {
+  font-family: 'Georgia';
+  font-weight: bold;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+.rules_notation_important {
+  text-transform: uppercase;
+}
+.accordion {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.accordion .card {
+  border: 0px;
+  position: relative;
+  margin-bottom: 1em;
+}
+.accordion .card .card-header {
+  background-color: #f06a11;
+}
+.accordion .card .card-header button {
+  color: #fff;
+  font-family: 'Georgia';
+}
+@media (max-width: 425px) {
+  .accordion .card .card-header button {
+    font-size: 0.6rem !important;
+  }
+}
+@media (max-width: 320px) {
+  .accordion .card .card-header button {
+    font-size: 0.5rem !important;
+  }
+}
+.accordion .card .card-header button:after {
+  content: '';
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background-image: url('../img/rules_accordion_row.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 3%;
+  top: 1em;
+}
+@media (max-width: 425px) {
+  .accordion .card .card-header button:after {
+    right: 7%;
+    top: 1.5em;
+  }
+}
+@media (max-width: 320px) {
+  .accordion .card .card-header button:after {
+    top: 2em;
+  }
+}
+.accordion .card .card-body {
+  background-color: #fdf1e9;
+}
+.accordion .card .card-body li {
+  list-style-type: none;
 }

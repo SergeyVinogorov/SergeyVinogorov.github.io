@@ -32,41 +32,44 @@
 			</div>
 
 			<nav class="navbar navbar-expand-lg">
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="icon-bar"></span>
-			    <span class="icon-bar"></span>
-			    <span class="icon-bar"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNav">
-			    <ul class="navbar-nav w-100 justify-content-between container">
-			      <li class="nav-item active">
-			        <a class="nav-link" href="#about">О нас</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#fotoservice">Услуги</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#works">Фотосессии</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#works">Правила</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#contact">Контакты</a>
-			      </li>
-			    </ul>
-			  </div>
+				<div class="container">
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNav">
+				    <ul class="navbar-nav w-100 justify-content-between container">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#about">О нас</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#fotoservice">Услуги</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#works">Фотосессии</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="rules.html">Правила</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#contact">Контакты</a>
+				      </li>
+				    </ul>
+				  </div>
+				</div>
 			</nav>
 	</header>
-	<main class="d-flex flex-column justify-content-center basic_block">
+	<main class="d-flex flex-column justify-content-start basic_block">
+		<div class="container basic_block_wrap">
 		<h1>Профессиональная фотостудия<br>в самом центре Сочи</h1>
 		
 		<h2 class="basic_block_header">Все виды фотосессий по разумным ценам</h2>
 
 		<div class="wrap_button">
-			<a href="#" class="btn btn-primary btn-lg active justify-content-center" role="button" aria-pressed="true" data-toggle="modal" data-target="#exampleModal" data-whatever="get_discount"
+			<a href="#" class="btn btn-primary  active justify-content-center" role="button" aria-pressed="true" data-toggle="modal" data-target="#exampleModal" data-whatever="get_discount"
 			>Получить скидку</a>
-			
+		</div>
 			<!--Start modal-->
 	
 				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -98,54 +101,27 @@
 				  </div>
 				</div>
 			<!--End modal-->
-		</div>
 		
-		<h3>Оставь заявку прямо сейчас и получи скидку 10% <br>на свою первую фотосессию</h3>
+		<h3>* Оставь заявку прямо сейчас и получи скидку <span class="basic_block_percent">10%</span> <br>на свою первую фотосессию</h3>
+		</div>
 	</main>
 
 	<section class="container service" id="fotoservice">
 	
-		<h2><span class="hashtag">#</span>Услуги фотостудии</h2>
+		<h2 class="service_header"><span class="hashtag">#</span>Услуги фотостудии</h2>
 			
-		<div class="d-flex flex-wrap justify-content-around container">
+		<div class="d-flex flex-wrap justify-content-between container service_fotoset">
 			<div class="d-flex flex-column service_item">
 				<div class="d-flex example">
 					<img src="img/services/fotosessii_sochi.jpg" alt="Проведение фотосессий в г.Сочи семейные свадебные fashion уличные love story съемки">
 				</div>
 				<h3>Фотосессии</h3>
 				<ul>
-					<li>Семейная съемка</li>
-
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-					  Launch demo modal
-					</button>
-
-					<!-- Modal -->
-					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-					  <div class="modal-dialog modal-dialog-centered" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-					        ...
-					      </div>
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					        <button type="button" class="btn btn-primary">Save changes</button>
-					      </div>
-					    </div>
-					  </div>
-					</div>
-
-					<li>Уличная съемка</li>
-					<li>Fashion съемка</li>
-					<li>Love story</li>
-					<li>Свадебная съемка</li>
+					<li data-toggle="modal" data-target="#familyPhotography"><span>Семейная съемка</span></li>
+					<li data-toggle="modal" data-target="#streetPhotography"><span>Уличная съемка</span></li>
+					<li data-toggle="modal" data-target="#fashionPhotography"><span>Fashion съемка</span></li>
+					<li data-toggle="modal" data-target="#loveStory"><span>Love story</span></li>
+					<li data-toggle="modal" data-target="#weddingPhotography"><span>Свадебная съемка</span></li>
 				</ul>
 			</div>
 			<div class="d-flex flex-column service_item">
@@ -154,9 +130,9 @@
 				</div>
 				<h3>Пакеты услуг</h3>
 				<ul>
-					<li>Фотосет "Экспресс"</li>
-					<li>Фотосет "Индивидуальный"</li>
-					<li>Фотосет "Лайт"</li>
+					<li data-toggle="modal" data-target="#photosetExpress"><span>Фотосет "Экспресс"</span></li>
+					<li data-toggle="modal" data-target="#photosetIndividual"><span>Фотосет "Индивидуальный"</span></li>
+					<li data-toggle="modal" data-target="#photosetLight"><span>Фотосет "Лайт"</span></li>
 				</ul>
 			</div>
 			<div class="d-flex flex-column service_item">
@@ -165,99 +141,513 @@
 				</div>
 				<h3>Подарочные сертификаты</h3>
 				<ul>
-					<li>На фотосъемку</li>
-					<li>На аренду студии</li>
+					<li data-toggle="modal" data-target="#certificatePhotography"><span>На фотосъемку</span></li>
+					<li data-toggle="modal" data-target="#certificateLease"><span>На аренду студии</span></li>
 				</ul>
 			</div>
-			<div class="d-flex flex-column service_item">
-				<div class="d-flex example">
-					<img src="img/services/makiaj_v_fotostudii.jpg" alt="Оказание дополнительных услуг. Макияж укладка ретушь.">
+		</div>
+			<div class="container d-flex justify-content-around service_rent">
+				<div class="col-md-6 d-flex justify-content-end dop">
+					<div class="d-flex flex-column service_item">
+					<div class="d-flex example">
+						<img src="img/services/makiaj_v_fotostudii.jpg" alt="Оказание дополнительных услуг. Макияж укладка ретушь.">
+					</div>
+					<h3>Дополнительные услуги</h3>
+					<ul>
+						<li data-toggle="modal" data-target="#makeUp"><span>Макияж и укладка</span></li>
+						<li data-toggle="modal" data-target="#retouch"><span>Ретушь</span></li>
+					</ul>
+					</div>
 				</div>
-				<h3>Дополнительные услуги</h3>
-				<ul>
-					<li>Макияж и укладка</li>
-					<li>Ретушь</li>
-				</ul>
-			</div>
-			<div class="d-flex flex-column service_item">
-				<div class="d-flex example">
-					<img src="img/services/arenda_photostudia.jpg" alt="Предоставление фотостудии в аренду с оборудованием или без оборудования">
+				<div class="col-md-6 d-flex justify-content-start rent">
+					<div class="d-flex flex-column service_item">
+						<div class="d-flex example">
+							<img src="img/services/arenda_photostudia.jpg" alt="Предоставление фотостудии в аренду с оборудованием или без оборудования">
+						</div>
+						<h3>Аренда</h3>
+						<ul>
+							<li data-toggle="modal" data-target="#rentStudio"><span>Аренда студии</span></li>
+							<li data-toggle="modal" data-target="#rentEquipment"><span>Аренда оборудования</span></li>
+						</ul>
+					</div>
 				</div>
-				<h3>Аренда</h3>
-				<ul>
-					<li>Аренда студии</li>
-					<li>Аренда оборудования</li>
 			</div>
-		</div>	
-	</section>
 
+
+		<!-- Modal -->
+			<!--Family photography-->
+					<div class="modal fade" id="familyPhotography" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="familyPhotography">Семейная съемка</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<h6>Стоимость 3000 рублей</h6>
+					       <p>
+					       	Общая продолжительность съемки - 50-55 минут
+					       	Количество участников: 1-3
+					       	<br>
+					       	В стоимость входят:
+							<ul>
+					       	<li>работа фотографа</li>
+					       	<li>10 лучших фотографий с ретушью </li>
+					       	<li>все фотографии сессии (100-150 штук)</li>
+					       	<li>аренда зала</li>
+					       </ul>
+					       </p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>	
+			<!--Street photography-->
+				<div class="modal fade" id="streetPhotography" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="streetPhotography">Уличная съемка (Street)</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<h6>Стоимость 3000 рублей</h6>
+					       <p>
+					       	<ul>
+					       <li>60 мин съемки </li>
+					       <li>Все удачные фотографии сессии + 10 фото с ретушью</li>
+					       <li>Помощь в подборе образа</li>
+							</ul>
+					       Можно заказать дополнительно макияж - 1000 руб.
+					       </p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+			<!--Fashion photography-->
+				<div class="modal fade" id="fashionPhotography" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="fashionPhotography">Fashion съемка</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<h6>Стоимость 3000 рублей</h6>
+					       <p>
+					       	Общая продолжительность съемки - 50-55 минут
+					       	Количество участников: 1
+							<br>
+					       	В стоимость входят:
+					       	<ul>
+					       <li>работа фотографа </li>
+					       <li>10 лучших фотографий с ретушью </li>
+					       <li>все фотографии сессии (100-150 штук)</li>
+					       <li>аренда зала</li>
+							</ul>
+					       </p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+			<!--Love story-->
+				<div class="modal fade" id="loveStory" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="loveStory">Love story</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<h6>Стоимость  рублей</h6>
+					       <p>
+					       	...
+					       </p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+			<!--Wedding photography-->
+				<div class="modal fade" id="weddingPhotography" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="weddingPhotography">Свадебная съемка</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<h6>Стоимость  рублей</h6>
+					       <p>
+					       	...
+					       </p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+			<!--Photoset express-->
+				<div class="modal fade" id="photosetExpress" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="photosetExpress">Фотосет "Экспресс"</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<h6>Стоимость  рублей</h6>
+					       <p>
+					       	...
+					       </p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+			<!--Photoset individual-->
+				<div class="modal fade" id="photosetIndividual" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="photosetIndividual">Фотосет "Индивидуальный"</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<h6>Стоимость 2500 рублей</h6>
+					       <p>
+					       	Общая продолжительность съемки - 50-55 минут
+					       	Количество участников: 1
+							<br>
+					       	В стоимость входят:
+					       	<ul>
+					       	<li>работа фотографа</li>
+					       	<li>10 лучших фотографий с ретушью</li> 
+					       	<li>все фотографии сессии (100-150 штук)</li>
+					       	<li>аренда зала</li>
+					       </ul>
+					       </p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+			<!--Photoset light-->
+				<div class="modal fade" id="photosetLight" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="photosetLight">Фотосет "Лайт"" </h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<h6>Стоимость  рублей</h6>
+					       <p>
+					       	...
+					       </p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+			<!--Certificate photography-->
+				<div class="modal fade" id="certificatePhotography" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="certificatePhotography">Подарочные сертификаты на фотосъемку</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<h6>Стоимость  рублей</h6>
+					       <p>
+					       	...
+					       </p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+			<!--Certificate lease-->
+				<div class="modal fade" id="certificateLease" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="certificateLease">Подарочный сертификат на аренду студии</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<h6>Стоимость  рублей</h6>
+					       <p>
+					       	...
+					       </p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+			<!--Make up-->
+				<div class="modal fade" id="makeUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="makeUp">Макияж и укладка</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<h6>Стоимость 1000 рублей</h6>
+					       <p>
+					       	Все виды макияжа в фотостудии #HASHTAG 
+					       	* Приходить нужно за час до съемок
+					       </p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+			<!--Retouch-->
+				<div class="modal fade" id="retouch" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="retouch">Ретушь</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<h6>Стоимость  рублей</h6>
+					       <p>
+					       	...
+					       </p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+			<!--Rent studio-->
+				<div class="modal fade" id="rentStudio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="rentStudio">Аренда студии</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<h6>Стоимость 800 рублей</h6>
+					       <p>
+					       	1000 руб в выходные
+					       </p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+			<!--Rent equipment-->
+				<div class="modal fade" id="rentEquipment" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="rentEquipment">Аренда оборудования</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					       <p>
+					      		Прокат возможен только в нашей студии, для подписания договора нужен паспорт. <br>
+					      		Бронировать технику необходимо заранее через администратора. <br>
+					      		Canon EOS 60D  - 150руб/час <br>
+					      		Canon EF 24-70mm F/2.8L - 300руб/час
+					       </p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+		
+		<!--Accordion for width 425px-->
+			<div class="accordion service_accordion" id="accordionExample">
+			  <div class="card">
+			    <div class="card-header" id="headingOne">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			         Фотосессии
+			        </button>
+			      </h5>
+			    </div>
+
+			    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+			      <div class="card-body">
+			        <ul>
+			        	<li data-toggle="modal" data-target="#familyPhotography"><span>Семейная съемка</span></li>
+			        	<li data-toggle="modal" data-target="#streetPhotography"><span>Уличная съемка</span></li>
+			        	<li data-toggle="modal" data-target="#fashionPhotography"><span>Fashion съемка</span></li>
+			        	<li data-toggle="modal" data-target="#loveStory"><span>Love story</span></li>
+			        	<li data-toggle="modal" data-target="#weddingPhotography"><span>Свадебная съемка</span></li>
+			        </ul>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingTwo">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			          Пакеты услуг
+			        </button>
+			      </h5>
+			    </div>
+			    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+			      <div class="card-body">
+			       <ul>
+						<li data-toggle="modal" data-target="#photosetExpress"><span>Фотосет "Экспресс"</span></li>
+						<li data-toggle="modal" data-target="#photosetIndividual"><span>Фотосет "Индивидуальный"</span></li>
+						<li data-toggle="modal" data-target="#photosetLight"><span>Фотосет "Лайт"</span></li>
+					</ul>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingThree">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			          Подарочные сертификаты
+			        </button>
+			      </h5>
+			    </div>
+			    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+			      <div class="card-body">
+			        <ul>
+			        	<li data-toggle="modal" data-target="#certificatePhotography"><span>На фотосъемку</span></li>
+			        	<li data-toggle="modal" data-target="#certificateLease"><span>На аренду студии</span></li>
+			        </ul>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingFour">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+			        Дополнительные услуги
+			        </button>
+			      </h5>
+			    </div>
+
+			    <div id="collapseFour" class="collapse" aria-labelledby="headinFour" data-parent="#accordionExample">
+			      <div class="card-body">
+			       <ul>
+			       		<li data-toggle="modal" data-target="#makeUp"><span>Макияж и укладка</span></li>
+			       		<li data-toggle="modal" data-target="#retouch"><span>Ретушь</span></li>
+			       	</ul>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingFive">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+			         Аренда
+			        </button>
+			      </h5>
+			    </div>
+
+			    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+			      <div class="card-body">
+			        <ul>
+						<li data-toggle="modal" data-target="#rentStudio"><span>Аренда студии</span></li>
+						<li data-toggle="modal" data-target="#rentEquipment"><span>Аренда оборудования</span></li>
+					</ul>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+	</section>
 	<section class="container d-flex flex-column align-items-center our_works" id="works">
 
 			<h2><span class="hashtag">#</span>Наши работы</h2>
-				<div class="d-flex flex-column align-items-center justify-content-center example">
-				<div id="carousel">
+				<div class="d-flex flex-column align-items-center justify-content-start example">
+				
+				<div id="carousel" class="d-flex justify-content-start ">
 					<div class="gwrap">
-				   <a href="#"><img src="img/slider/detskaya_novogodnyaya_fotosessiya.jpg" id="item-1" /></a>
-				   <a href="#"><img src="img/slider/fashion-fotosessia.jpg" id="item-2" /></a>
-				   <a href="#"><img src="img/slider/fotosessiay_detei_v_studii_.jpg" id="item-3" /></a>
-				   <a href="#"><img src="img/slider/fotosessia_devushki_na_prirode.jpg" id="item-4" /></a>
-				   <a href="#"><img src="img/slider/fotosessia_na_prirode.jpg" id="item-5" /></a>
-				   <a href="#"><img src="img/slider/fotosessii_devushek.jpg" id="item-6" /></a>
-				   <a href="#"><img src="img/slider/fotosessii_par_v_studii.jpg" id="item-7" /></a>
-				   <a href="#"><img src="img/slider/fotosessii_s_detmi_v_studii.jpg" id="item-8" /></a>
-				   <a href="#"><img src="img/slider/fotosessii_s_sobakoi.jpg" id="item-9" /></a>
+				   <a href="#"><img src="img/slider/fotosessiay_detei_v_studii_.jpg" alt="Фотосессия детей в студии" id="item-1" /></a>
+				   <a href="#"><img src="img/slider/fotosessii_devushek.jpg" alt="Фотосессии девушек" id="item-2" /></a>
+				   <a href="#"><img src="img/slider/fotosessiya_mama_s_rebenkom.jpg" alt="Фотосессия мама с ребенком" id="item-3" /></a>
+				   <a href="#"><img src="img/slider/fotosessiya_pari.jpg" alt="Фотосессия пары" id="item-4" /></a>
+				   <a href="#"><img src="img/slider/fashion-fotosessia.jpg" alt="Фэшн фотосессия" id="item-5" /></a>
+				   <img src="img/slider/detskaya_novogodnyaya_fotosessiya.jpg" alt="Детская новогодняя фотосессия" id="item-6" /></a>
+				   <a href="#"><img src="img/slider/fotosessia_devushki_na_prirode.jpg" alt="Фотосессия девушки на природе" id="item-7" /></a>
+				   <a href="#"><img src="img/slider/fotosessia_na_prirode.jpg" alt="Фотосессия на природе" id="item-8" /></a>
+				   <a href="#"><img src="img/slider/fotosessii_par_v_studii.jpg" alt="Фотосессия пар в студии" id="item-9" /></a>
+				   <a href="#"><img src="img/slider/fotosessii_s_detmi_v_studii.jpg" alt="Фотосессия с детьми в студии" id="item-10" /></a>
+				   <a href="#"><img src="img/slider/fotosessii_v_studii.jpg" alt="Фотосессии в студии" id="item-11" /></a>
+				   <a href="#"><img src="img/slider/fotosessii_v_studii_devushki.jpg" alt="Фотосессии в студии девушки" id="item-12" /></a>
+				   <a href="#"><img src="img/slider/fotosessiya.jpg" alt="Фотосессия" id="item-13" /></a>
+				   <a href="#"><img src="img/slider/fotosessiya_angel.jpg" alt="Фотосессия ангел" id="item-14" /></a>
+				   <a href="#"><img src="img/slider/fotosessiya_na_den_rojdeniya.jpg" alt="Фотосессия на день рождения" id="item-15" /></a>
 					</div>
 				 </div>
-				 <a href="#" id="prev">Prev</a> | <a href="#" id="next">Next</a>
+				 <div class="d-flex justify-content-around carousel_row">
+				 <span id="prev"></span>  <span id="next"></span>
+				</div>
+
+
 				 </div>
-				<!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-				  <div class="carousel-inner">
-				    <div class="carousel-item active">
-				      <img class="resp" src="img/slider/fotosessiay_detei_v_studii_.jpg" alt="Фотосессия детей в студии">
-				    </div>
-				    <div class="carousel-item">
-				      <img src="img/slider/fotosessii_devushek.jpg" alt="Фотосессии девушек"></a>
-				    </div>
-				    <div class="carousel-item">
-				      <img src="img/slider/fotosessiya_mama_s_rebenkom.jpg" alt="Фотосессия мама с ребенком">
-				    </div>
-				    <div class="carousel-item">
-				      <img src="img/slider/fotosessiya_pari.jpg" alt="Фотосессия пары">
-				    </div>
-					<div class="carousel-item">
-					  <img src="img/slider/fashion-fotosessia.jpg" alt="Фэшн фотосессия">
-					</div>
-					<div class="carousel-item">
-					  <img src="img/slider/detskaya_novogodnyaya_fotosessiya.jpg" alt="Детская новогодняя фотосессия">
-					</div>
-					<div class="carousel-item">
-					  <img src="img/slider/fotosessia_devushki_na_prirode.jpg" alt="Фотосессия девушки на природе">
-					</div>
-					<div class="carousel-item">
-					  <img src="img/slider/fotosessia_na_prirode.jpg" alt="Фотосессия на природе">
-					</div>
-					<div class="carousel-item">
-					  <img src="img/slider/fotosessii_par_v_studii.jpg" alt="Фотосессия пар в студии">
-					</div>
-					<div class="carousel-item">
-					  <img src="img/slider/fotosessii_s_detmi_v_studii.jpg" alt="Фотосессия с детьми в студии">
-					</div>
-					<div class="carousel-item">
-					  <img src="img/slider/fotosessii_v_studii.jpg" alt="Фотосессии в студии">
-					</div>
-					<div class="carousel-item">
-					  <img src="img/slider/fotosessii_v_studii_devushki.jpg" alt="Фотосессии в студии девушки">
-					</div>
-					<div class="carousel-item">
-					  <img src="img/slider/fotosessiya.jpg" alt="Фотосессия">
-					</div>
-					<div class="carousel-item">
-					  <img src="img/slider/fotosessiya_angel.jpg" alt="Фотосессия ангел">
-					</div>
-					<div class="carousel-item">
-					  <img src="img/slider/fotosessiya_na_den_rojdeniya.jpg" alt="Фотосессия на день рождения">
-					</div>
-					<div class="carousel-item">
+				<!--
+					
 					  <img src="img/slider/fotosessiya_par.jpg" alt="Фотосессия пар">
 					</div>
 					<div class="carousel-item">
@@ -302,13 +692,13 @@
 
 	<section class="d-flex flex-column about_photostudia container" id="about">
 
-		<h2><span class="hashtag">#</span>Немного о нас</h2>
+		<h2 class="about_photostudia_header"><span class="hashtag">#</span>Немного о нас</h2>
 
 
 		<figure class="d-flex flex-row about_photostudia_fotograph">
 			<div class="wrap_frame">
 			<div class="about_photostudio_frame">
-				<img src="img/photograf_Shirin.jpg" alt="Фотостудия Сочи Hashtag фотограв Ширин">
+				<img class="fotograph_Shirin" src="img/photograf_Shirin.jpg" alt="Фотостудия Сочи Hashtag фотограв Ширин">
 			</div>
 			</div>
 			<figcaption class="d-flex align-self-center">
@@ -333,7 +723,7 @@
 			</figcaption>
 			<div class="wrap_frame">
 			<div class="about_photostudio_frame">
-				<img src="img/photograf_Luiza.jpg" alt="Фотостудия Сочи Hashtag фотограв Луиза">
+				<img class="photograph_Luiza" src="img/photograf_Luiza.jpg" alt="Фотостудия Сочи Hashtag фотограв Луиза">
 			</div>
 			</div>
 		</figure>
@@ -362,7 +752,7 @@
 
 		<footer>
 			<hr class="footer_line_big">
-			<hr class="footer_line_small"><br>
+			<hr class="footer_line_small">
 			<div class="d-flex flex-wrap justify-content-between container wrap_for_privacy">
 				<span>Фотостудия Hashtag <br>Сочи, 2018</span>
 				<div class="d-flex flex-column">

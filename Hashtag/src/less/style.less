@@ -8,27 +8,41 @@
 	}
 
 h2 {
-	font-size: 1.8em;
+	font-size: 1.2em;
 	font-family: 'Georgia';
-	font-weight: bold;
+	font-weight: 500;
 	letter-spacing: 1px;
 	text-align: center;
-	margin-bottom: 2em;
-	margin-top: 3em;
+	// margin-bottom: 1em;
+	// margin-top: 2em;
 	}
 	.wrap_button{
 			margin-top: 1em;
 		}
-		.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+		 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+
 			background-color: #de5300;
 			border-color: #de5300;
-			padding: 1em 2em;
-			font-size: 1.1em;
+			padding: 1em;
+			margin-bottom: 2em;
+			margin-top: 2em;
 			font-weight: 600;
 			font-family: 'Montserrat', sans-serif;
 			border-radius: 10px;
-			letter-spacing: 1px;
-			margin-left: 8%;
+			width: 13em;
+			@media (max-width: 768px){
+				width: 12em;
+				padding: 0.8em;
+			}
+			@media (max-width: 425px){
+				width: 11em;
+				padding: 0.6em;
+			}
+			@media (max-width: 320px){
+				width: 10em;
+				padding: 0.5em;
+				
+			}
 			&:hover {
 				background-color: #ce4b00;
 				border-color: #ce4b00;
@@ -65,36 +79,51 @@ body {
 		background-color: #fff;
 		li {
 			border-left: 1px solid #fff;
-			font-size: 1.2em;
+			font-size: 0.8em;
 			&:first-child {
 				border: none;
 				a {
-					padding-left: 4em !important;
+					padding-left: 2em !important;
+					// @media (max-width: 768px){
+					// 	padding-left: 3em !important;
+					// }
 				}
 			}
+			// &:last-child {
+			// 	 a {
+			// 		padding-left: 8em !important;
+			// 	}
+			// }
 			@media (max-width: 768px) {
 				border: none;
 				}
 			}
 			a{
 				color: #fff;
-				padding-left: 4em !important;
+				padding-left: 6em !important;
 				&:hover {
 					color: #de5300;
-				}	
-			}
+				}
+					@media (max-width: 768px){
+						padding-left: 2em !important;
+					}
+					
+				}
 			@media (min-width: 768px){
-				.navbar-expand-lg {
-					display: flex;
+			.navbar-expand-lg {
+			    -ms-flex-flow: row nowrap;
+			    flex-flow: row nowrap;
+			    -ms-flex-pack: start;
+			    justify-content: flex-start;
 				}
 			}
-		
 	}
 		
 	
 	.hashtag__icon {
+		margin-top: 0.5em;
 		a{
-		padding-left: 2em !important;
+		padding-left: 0em !important;
 		}
 		@media (max-width: 320px) {
 			flex-direction: column;
@@ -102,9 +131,9 @@ body {
 			justify-content: center;
 		}
 		img {
-			width: 11em;
+			width: 9em;
 			@media (max-width: 768px) {
-				width: 9em;
+				width: 8em;
 			}
 			@media (max-width: 425px) {
 				width: 7em;
@@ -114,7 +143,7 @@ body {
 			}
 		}
 		.hashtag__icon_phone {
-			font-size: 1.2em;
+			font-size: 0.8em;
 			line-height: 2em;
 			text-align: right;
 			span {
@@ -131,7 +160,7 @@ body {
 	}
 	.navbar {
 		background-color: #000;
-		margin-top: 1em;
+		margin-top: 0.5em;
 		font-family: 'Proxima Nova Rg';
 	}
 
@@ -147,13 +176,21 @@ body {
 			outline: 0px;
 		}
 	}
+	.navbar-brand {
+		padding: 0;
+	}
+	// @media (min-width: 768px){
+	// 	.navbar-expand-lg .navbar-nav {
+	//     	display: none;
+	// 	}
+	// }
 //main screen
 
 	.basic_block {
 		background-image: url('../img/main_bg.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 80vh;
+		height: 95vh;
 		@media (max-width: 992px) {
 			background-size: 100% 120%;
 		}
@@ -165,29 +202,28 @@ body {
 		}
 
 		h1 {		
-			font-size: 2em;
+			font-size: 1.8em;
 			font-weight: 500;
 			color: #fff;
-			margin-top: 1%;
+			margin-top: 8%;
 			margin-bottom: 2%;
-			margin-left: 8%;
 			font-family: 'Montserrat', sans-serif;
 			line-height: 1.5em;
 			width: 60%;
+			letter-spacing: 2px;
 		}
 		h2{
 			color: #fff;
 			font-family: 'Proxima Nova Rg';
 			text-align: left;
-			margin-left: 8%;
 			margin-bottom: 2%; 
-			margin-top: 0;
+			margin-top: 7%;
 			width: 60%;
 		}
 		h3 {
 			color: #fff;
-			font-size: 1em;
-			margin-left: 8%;
+			font-size: 0.8em;
+			font-weight: 400;
 			margin-top: 2%;
 		}
 	}
@@ -202,8 +238,162 @@ body {
 				border-color: #de5300;
 			}
 		}
-//block about master
-
+		.basic_block_percent{
+			font-size: 1.2em;
+			font-weight: 600;
+		}
+//block with service
+		.service {
+			padding-top: 4em;
+			.service_header {
+				margin-bottom: 3em;
+			}
+		}
+		.service_item {			
+			margin-top: 1em;
+			@media (max-width: 767px) {
+				display: none !important;
+			}
+			h3 {
+				background-color: #e87027;
+				font-size: 1em;
+				color: #fff;
+				text-align: center;
+				margin-bottom: 0;
+				height: 2em;
+				padding-top: 0.2em;
+			}
+			ul {
+				background-color: #f1d7c6;
+				height: 50%;
+				padding-top: 1em;
+				li {
+					list-style: none;
+					cursor: pointer; 
+					color: #de5300;
+					span{
+						&:hover{
+							border-bottom: 1px outset #de5300;
+						}
+					}
+				}
+			}
+			img {
+				width: 15.5em;
+				@media (max-width: 768px) {
+					width: 16.5em;
+				}
+			}
+			.modal {
+				ul{
+					background-color: inherit;
+					li {
+						list-style: disc;
+						text-decoration: none;
+						color: inherit;
+						margin-left: 1em;
+					}
+				}
+			}
+		}	
+		.dop {
+			margin-right: 2em;
+		}
+		.rent {
+			margin-left: 2em;
+		}
+		// .service_fotoset{
+		// 	@media (max-width: 425px) {
+		// 		display: none;
+		// 	}
+		// }
+		// .service_rent {
+		// 	@media (max-width: 425px) {
+		// 		display: none;
+		// 	}
+		// }
+		.service_accordion {
+			display: none;
+			span{
+				&:hover{
+					border-bottom: 1px outset #de5300;
+				}
+			}
+			@media (max-width: 767px) {
+				display: block;
+			}
+		}
+//our works
+	.our_works {
+		position: relative;
+		padding-top: 4em;
+		.example {
+			width: 100%;
+		}
+      #carousel {
+        width: 70%;
+        height: 40em;
+        position:relative;
+        clear:both;
+        overflow:hidden;
+        background:#FFF;
+        
+      }
+      #carousel img {
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+      	width: 20em;
+      	height: 30em;
+      }
+      .carousel_row {
+      	width: 20%;
+      	#prev {
+      		position: absolute;
+      		width: 5em;
+      		height: 15em;
+      		top: 36%;
+      		left: 8%;
+      		cursor: pointer;
+	      		&:before{
+	      		content: '';
+	      		position: absolute;
+	      		width: 1em;
+	      		height: 1em;
+	      		background-image: url('../img/uslugi_photostudii_row_left.png');
+	      		background-size: 100% 100%;
+	      		top: 40%;
+	      		//left: 8%;
+	      		cursor: pointer;
+				}
+      	}
+      	#next {
+      		position: absolute;
+      		width: 5em;
+      		height: 15em;
+      		top: 36%;
+      		right: 8%;
+      		cursor: pointer;
+	      		&:after{
+	      		content: '';
+	      		position: absolute;
+	      		width: 1em;
+	      		height: 1em;
+	      		background-image: url('../img/uslugi_photostudii_row_right.png');
+	      		background-size: 100% 100%;
+	      		top: 40%;
+	      		right: 0;
+	      		cursor: pointer;
+				}
+      	}
+      }
+	}
+//block about photostudia
+	.about_photostudia {
+		padding-top: 2em;
+		.about_photostudia_header {
+			margin-bottom: 4em;
+		}
+	}
 	.about_photostudia_fotograph {
 		@media (max-width: 768px) {
 			flex-direction: column !important;
@@ -218,10 +408,14 @@ body {
 
 	.about_photostudio_frame {
 		border: 4px solid #de5300;
-		img {
+	}
+		.fotograph_Shirin{
 			transform: translate(3%, 2%);
 		}
-	}
+		.photograph_Luiza {
+			transform: translate(-2%, 2%);
+		}
+	
 		
 	p {
 		line-height: 1.5em;
@@ -237,79 +431,30 @@ body {
 			font-weight: 700;
 		}
 	}	
-//block with service
-		
-		.service_item {			
-			margin-top: 2em;
-			h3 {
-				background-color: #e87027;
-				font-size: 1.2em;
-				color: #fff;
-				text-align: center;
-				margin-bottom: 0;
-			}
-			ul {
-				background-color: #f1d7c6;
-				height: 40%;
-				padding-top: 1em;
-				li {
-					text-decoration: none;
-					list-style: none;
-
-				}
-			}
-			img {
-				width: 18em;
-			}
-		}	
-//our works
-	.our_works {
-		
-		.example {
-			width: 100%;
-		}
-      #carousel {
-        width: 70%;
-        height: 42em;
-        position:relative;
-        clear:both;
-        overflow:hidden;
-        background:#FFF;
-        // display: flex;
-        // justify-content: center;
-      }
-      #carousel img {
-        visibility:hidden; /* hide images until carousel can handle them */
-        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
-      	@media (max-width: 768px) {
-			width: 30em !important;
-			height: 40em !important;
-      	}
-      }
-	}
 //contacts 
 	.contacts {
-		margin-top: 7em;
-		margin-bottom: 7em;
-		padding-top: 7em;
+		margin-top: 3em;
+		margin-bottom: 2em;
+		padding-top: 4em;
 	}
 	.contact_caption {
-		color: #fff;
+		color: #fefefe;
+		margin-bottom: 4em;
 	}
 	.wrap_contacts {
-		@media (max-width: 1200px) {
+		@media (max-width: 768px) {
 			flex-direction: column;
 			align-items: center;
 		}
 	}
 	.contacts_addres_phone_social {
-		@media (max-width: 1200px) {
+		@media (max-width: 768px) {
 			margin-top: 2em;
 		}
 	}
 	.wrap_icon {
 		width: 100%;
-		@media (max-width: 1200px) {
+		@media (max-width: 768px) {
 			margin-top: 2em;
 		}
 		a {
@@ -320,46 +465,46 @@ body {
 		.hashtag_vk {
 			background-image: url('../img/photostudia_hashashtag_vk_icon.png');
 			background-repeat: no-repeat;
-			background-size: 50%;
+			background-size: 40%;
 		}
 		.hashtag_insta {
 			background-image: url('../img/photostudia_hashashtag_instagram_icon.png');
 			background-repeat: no-repeat;
-			background-size: 50%;
+			background-size: 40%;
 		}
 		.hashtag_ok {
 			background-image: url('../img/photostudia_hashashtag_odnoklassniki_icon.png');
 			background-repeat: no-repeat;
-			background-size: 50%;
+			background-size: 40%;
 		}
 	}
 	.contacts_addres_phone_social {
 		position: relative;
+		color: #fefefe;
 		span {
-			font-size: 1.5em;
-			color: #fff;
+			font-size: 1.2em;
+			color: #fefefe;
 		}
 		.contact_btn {
-			margin-left: 0 !important;
-			margin-top: 2rem;
-			padding: 1em 1em !important;
+			margin-top: 2em !important;
+			font-size: 0.9em;
+			width: 16em !important;
+			padding: 1em!important;
 		}
 		.phone {
 			margin-bottom: 1rem;
 		}
 	}
 	map {
-		
-		border: 1px solid red;
 		width: 60%;
 		height: 60vh;
 	}
 	.contacts_link_whatsapp {
 		color: #fb8130;
-		text-decoration: underline;
 		margin-left: 3rem;
-		margin-top: 3rem;
-		margin-bottom: 3rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		width: 193px;
 		&:before {
 			content: '';
 			position: absolute;
@@ -370,9 +515,15 @@ body {
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
+		&:hover{
+			border-bottom: 1px outset #de5300;
+			text-decoration: none;
+			color: #de5300;
+		}
 	}
 	.we_social {
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
+
 	}
 //footer
 	footer {
@@ -388,7 +539,7 @@ body {
 	}
 	.footer_line_big {
 		background-color: #fff;
-		height: 0.3em;
+		height: 0.2em;
 	}
 	.footer_line_small {
 		background-color: #fff;
@@ -396,5 +547,77 @@ body {
 	}
 	.wrap_for_privacy {
 		line-height: 3em;
-		padding-bottom: 2rem;
+		padding-bottom: 1rem;
+	}
+
+
+//rules style
+	.rules {
+		background-color: #000;
+		padding-bottom: 1em;
+		padding-top: 1em;
+		span {
+			color: #fff;
+		}
+	}
+	.rules_header_one {
+		text-align: center;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		font-size: 1.8em;
+	}
+	.rules_notation{
+		font-family: 'Georgia';
+		font-weight: bold;
+		margin-bottom: 1em;
+		font-size: 0.9em;
+	}
+	.rules_notation_important{
+		text-transform: uppercase;
+	}
+	.accordion {
+		margin-top: 3em;
+		margin-bottom: 3em;
+		.card {
+			border: 0px;
+			position: relative;
+			margin-bottom: 1em;
+			.card-header {
+				background-color: #f06a11;
+				button {
+					color: #fff;
+					font-family: 'Georgia';
+					@media (max-width: 425px) {
+						font-size: 0.6rem !important;
+					}
+					@media (max-width: 320px) {
+						font-size: 0.5rem !important;
+					}
+					&:after {
+						content: '';
+						position: absolute;
+						width: 2em;
+						height: 2em;
+						background-image: url('../img/rules_accordion_row.png');
+						background-repeat: no-repeat;
+						background-size: contain;
+						right: 3%;
+						top: 1em;
+						@media (max-width: 425px) {
+							right: 7%;
+							top: 1.5em;
+						}
+						@media (max-width: 320px) {
+							top: 2em;
+						}
+					}
+				}
+			}
+			.card-body {
+				background-color: #fdf1e9;
+				li {
+					list-style-type: none;
+				}
+			}
+		}
 	}
