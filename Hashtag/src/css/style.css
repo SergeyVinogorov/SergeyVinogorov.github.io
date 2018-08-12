@@ -286,11 +286,6 @@ header a:hover {
     height: 45vh;
   }
 }
-@media (max-width: 320px) {
-  .basic_block {
-    height: 40vh;
-  }
-}
 .basic_block h1 {
   font-size: 1.8em;
   font-weight: 500;
