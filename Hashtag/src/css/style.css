@@ -264,7 +264,7 @@ header a:hover {
 }
 @media (max-width: 992px) {
   .basic_block {
-    background-size: 100% 100%;
+    background-size: 100% 80%;
   }
 }
 @media (max-width: 768px) {
@@ -272,17 +272,23 @@ header a:hover {
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
-    height: 85vh;
+    background-size: 100% 100%;
+    height: 60vh;
   }
 }
 @media (max-width: 425px) {
   .basic_block {
-    height: 65vh;
+    height: 55vh;
   }
 }
-@media (max-width: 325px) {
+@media (max-width: 375px) {
   .basic_block {
-    height: 60vh;
+    height: 45vh;
+  }
+}
+@media (max-width: 320px) {
+  .basic_block {
+    height: 40vh;
   }
 }
 .basic_block h1 {
