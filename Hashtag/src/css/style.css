@@ -278,12 +278,7 @@ header a:hover {
 }
 @media (max-width: 425px) {
   .basic_block {
-    height: 55vh;
-  }
-}
-@media (max-width: 375px) {
-  .basic_block {
-    height: 45vh;
+    height: 50vh;
   }
 }
 .basic_block h1 {
