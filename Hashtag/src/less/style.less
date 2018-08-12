@@ -31,15 +31,23 @@ h2 {
 			@media (max-width: 768px){
 				width: 12em;
 				padding: 0.8em;
+				margin-top: 1em;
 			}
-			@media (max-width: 425px){
+			@media (max-width: 540px){
 				width: 11em;
-				padding: 0.6em;
-			}
-			@media (max-width: 320px){
 				padding: 0.5em;
+				margin-top: 0.5em;
+				margin-bottom: 0.5em;
 				font-size: 1.5em;
 			}
+			@media (max-width: 530px){
+				margin-top: 0.3em;
+				margin-bottom: 0.3em;
+			}
+			// @media (max-width: 320px){
+			// 	padding: 0.5em;
+			// 	font-size: 1.5em;
+			// }
 			&:hover {
 				background-color: #ce4b00;
 				border-color: #ce4b00;
@@ -211,10 +219,14 @@ body {
 		@media (max-width: 768px){
 			justify-content: flex-start !important;
 			background-size: 100% 100%;
+			height: 70vh;
+		}
+		@media (max-width: 600px){
 			height: 60vh;
 		}
+		
 		@media (max-width: 425px){
-			height: 50vh;
+			height: 45vh !important;
 		}
 
 		//  
@@ -223,7 +235,7 @@ body {
 		// }
 
 		h1 {		
-			font-size: 1.8em;
+			font-size: 1.5em;
 			font-weight: 500;
 			color: #fff;
 			margin-top: 8%;
@@ -232,6 +244,12 @@ body {
 			line-height: 1.5em;
 			width: 60%;
 			letter-spacing: 2px;
+			@media (max-width: 768px){
+				margin-top: 5%;
+			}
+			@media (max-width: 540px){
+				margin-top: 3%;
+			}
 		}
 		h2{
 			color: #fff;
@@ -240,12 +258,21 @@ body {
 			margin-bottom: 2%; 
 			margin-top: 7%;
 			width: 60%;
+			@media (max-width: 768px){
+				margin-top: 5%;
+			}
+			@media (max-width: 540px) {
+				margin-top: 3%;
+			}
 		}
 		h3 {
 			color: #fff;
 			font-size: 0.8em;
 			font-weight: 400;
 			margin-top: 2%;
+			@media (max-width: 520px){
+				margin-top: 1%;
+			}
 		}
 	}
 		.close {
