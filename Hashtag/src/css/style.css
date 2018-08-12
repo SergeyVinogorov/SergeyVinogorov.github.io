@@ -47,8 +47,8 @@ h2 {
   .btn-primary:not(:disabled):not(.disabled).active,
   .btn-primary:not(:disabled):not(.disabled):active,
   .show > .btn-primary.dropdown-toggle {
-    width: 10em;
     padding: 0.5em;
+    font-size: 1.5em;
   }
 }
 .btn-primary:not(:disabled):not(.disabled).active:hover,
@@ -117,20 +117,14 @@ header a {
 header a:hover {
   color: #de5300;
 }
+@media (max-width: 992px) {
+  header a {
+    padding-left: 5em !important;
+  }
+}
 @media (max-width: 768px) {
   header a {
     padding-left: 2em !important;
-  }
-}
-@media (min-width: 768px) {
-  header .navbar-expand-lg {
-    -ms-flex-flow: row nowrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-flow: row nowrap;
-    -ms-flex-pack: start;
-    -webkit-box-pack: start;
-            justify-content: flex-start;
   }
 }
 .hashtag__icon {
@@ -191,6 +185,34 @@ header a:hover {
   margin-top: 0.5em;
   font-family: 'Proxima Nova Rg';
 }
+@media (min-width: 768px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-expand-lg .navbar-nav .navbar-toggler {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+}
 .icon-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,11 +225,35 @@ header a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (max-width: 425px) {
+  .icon-bar {
+    padding: 1px 15px;
+  }
+}
+@media (max-width: 375px) {
+  .icon-bar {
+    padding: 1px 12px;
+  }
+}
 .navbar-toggler:focus {
   outline: 0px;
 }
 .navbar-brand {
   padding: 0;
+}
+.navbar-nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 768px) {
+  .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 .basic_block {
   background-image: url('../img/main_bg.jpg');
@@ -217,7 +263,7 @@ header a:hover {
 }
 @media (max-width: 992px) {
   .basic_block {
-    background-size: 100% 120%;
+    background-size: 100% 100%;
   }
 }
 @media (max-width: 768px) {
@@ -225,11 +271,17 @@ header a:hover {
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
+    height: 85vh;
+  }
+}
+@media (max-width: 425px) {
+  .basic_block {
+    height: 65vh;
   }
 }
 @media (max-width: 325px) {
   .basic_block {
-    background-size: 100% 100%;
+    height: 60vh;
   }
 }
 .basic_block h1 {
@@ -363,6 +415,12 @@ header a:hover {
   width: 20em;
   height: 30em;
 }
+@media (max-width: 375px) {
+  .our_works #carousel img {
+    width: 30em;
+    height: 40em;
+  }
+}
 .our_works .carousel_row {
   width: 20%;
 }
@@ -434,9 +492,19 @@ header a:hover {
   -webkit-transform: translate(3%, 2%);
           transform: translate(3%, 2%);
 }
+@media (max-width: 375px) {
+  .fotograph_Shirin {
+    width: 25em;
+  }
+}
 .photograph_Luiza {
   -webkit-transform: translate(-2%, 2%);
           transform: translate(-2%, 2%);
+}
+@media (max-width: 375px) {
+  .photograph_Luiza {
+    width: 25em;
+  }
 }
 p {
   line-height: 1.5em;
