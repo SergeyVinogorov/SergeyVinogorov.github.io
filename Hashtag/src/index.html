@@ -17,7 +17,7 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU">
     </script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
 </head>
@@ -90,12 +90,12 @@
 				          </div>
 				          <div class="form-group">
 				            <label for="recepient-phone" class="col-form-label">Ваш телефон</label>
-				            <input type="tel" class="form-control" id="recipient-phone" placeholder="+7-999-999-99-99" name="user_phone">
+				            <input type="tel" class="form-control" id="recepient-phone" placeholder="+7-999-999-99-99" name="user_phone">
 				          </div>
 				        </form>
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-primary btn-lg active">Отправить</button>
+				        <button class="modal_button" type="button" class="btn btn-primary btn-lg active">Отправить</button>
 				      </div>
 				    </div>
 				  </div>
@@ -176,29 +176,29 @@
 
 		<!-- Modal -->
 			<!--Family photography-->
-					<div class="modal fade" id="familyPhotography" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal fade" id="familyPhotography" tabindex="-1" role="dialog" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="familyPhotography">Семейная съемка</h5>
+					        <h5 class="modal-title" >Семейная съемка</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					      </div>
 					      <div class="modal-body">
 					      	<h6>Стоимость 3000 рублей</h6>
-					       <p>
+					       <p class="service_modal_paragraph">
 					       	Общая продолжительность съемки - 50-55 минут
 					       	Количество участников: 1-3
 					       	<br>
 					       	В стоимость входят:
+					       </p>
 							<ul>
 					       	<li>работа фотографа</li>
 					       	<li>10 лучших фотографий с ретушью </li>
 					       	<li>все фотографии сессии (100-150 штук)</li>
 					       	<li>аренда зала</li>
 					       </ul>
-					       </p>
 					      </div>
 					      <div class="modal-footer">
 					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
@@ -207,25 +207,23 @@
 					  </div>
 					</div>	
 			<!--Street photography-->
-				<div class="modal fade" id="streetPhotography" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal fade" id="streetPhotography" tabindex="-1" role="dialog" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="streetPhotography">Уличная съемка (Street)</h5>
+					        <h5 class="modal-title">Уличная съемка (Street)</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					      </div>
 					      <div class="modal-body">
 					      	<h6>Стоимость 3000 рублей</h6>
-					       <p>
 					       	<ul>
 					       <li>60 мин съемки </li>
 					       <li>Все удачные фотографии сессии + 10 фото с ретушью</li>
 					       <li>Помощь в подборе образа</li>
 							</ul>
-					       Можно заказать дополнительно макияж - 1000 руб.
-					       </p>
+					       <p class="service_modal_paragraph">Можно заказать дополнительно макияж - 1000 руб.</p>
 					      </div>
 					      <div class="modal-footer">
 					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
@@ -234,29 +232,29 @@
 					  </div>
 					</div>
 			<!--Fashion photography-->
-				<div class="modal fade" id="fashionPhotography" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal fade" id="fashionPhotography" tabindex="-1" role="dialog" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="fashionPhotography">Fashion съемка</h5>
+					        <h5 class="modal-title">Fashion съемка</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					      </div>
 					      <div class="modal-body">
 					      	<h6>Стоимость 3000 рублей</h6>
-					       <p>
+					       <p class="service_modal_paragraph">
 					       	Общая продолжительность съемки - 50-55 минут
 					       	Количество участников: 1
 							<br>
-					       	В стоимость входят:
+					       	В стоимость входят:</p>
 					       	<ul>
 					       <li>работа фотографа </li>
 					       <li>10 лучших фотографий с ретушью </li>
 					       <li>все фотографии сессии (100-150 штук)</li>
 					       <li>аренда зала</li>
 							</ul>
-					       </p>
+					       
 					      </div>
 					      <div class="modal-footer">
 					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
@@ -265,18 +263,18 @@
 					  </div>
 					</div>
 			<!--Love story-->
-				<div class="modal fade" id="loveStory" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal fade" id="loveStory" tabindex="-1" role="dialog" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="loveStory">Love story</h5>
+					        <h5 class="modal-title">Love story</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					      </div>
 					      <div class="modal-body">
 					      	<h6>Стоимость  рублей</h6>
-					       <p>
+					       <p class="service_modal_paragraph">
 					       	...
 					       </p>
 					      </div>
@@ -287,18 +285,18 @@
 					  </div>
 					</div>
 			<!--Wedding photography-->
-				<div class="modal fade" id="weddingPhotography" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal fade" id="weddingPhotography" tabindex="-1" role="dialog" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="weddingPhotography">Свадебная съемка</h5>
+					        <h5 class="modal-title">Свадебная съемка</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					      </div>
 					      <div class="modal-body">
 					      	<h6>Стоимость  рублей</h6>
-					       <p>
+					       <p class="service_modal_paragraph">
 					       	...
 					       </p>
 					      </div>
@@ -309,18 +307,18 @@
 					  </div>
 					</div>
 			<!--Photoset express-->
-				<div class="modal fade" id="photosetExpress" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal fade" id="photosetExpress" tabindex="-1" role="dialog" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="photosetExpress">Фотосет "Экспресс"</h5>
+					        <h5 class="modal-title">Фотосет "Экспресс"</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					      </div>
 					      <div class="modal-body">
 					      	<h6>Стоимость  рублей</h6>
-					       <p>
+					       <p class="service_modal_paragraph">
 					       	...
 					       </p>
 					      </div>
@@ -331,29 +329,29 @@
 					  </div>
 					</div>
 			<!--Photoset individual-->
-				<div class="modal fade" id="photosetIndividual" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal fade" id="photosetIndividual" tabindex="-1" role="dialog" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="photosetIndividual">Фотосет "Индивидуальный"</h5>
+					        <h5 class="modal-title">Фотосет "Индивидуальный"</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					      </div>
 					      <div class="modal-body">
 					      	<h6>Стоимость 2500 рублей</h6>
-					       <p>
+					       <p class="service_modal_paragraph">
 					       	Общая продолжительность съемки - 50-55 минут
 					       	Количество участников: 1
 							<br>
-					       	В стоимость входят:
+					       	В стоимость входят:</p>
 					       	<ul>
 					       	<li>работа фотографа</li>
 					       	<li>10 лучших фотографий с ретушью</li> 
 					       	<li>все фотографии сессии (100-150 штук)</li>
 					       	<li>аренда зала</li>
 					       </ul>
-					       </p>
+					       
 					      </div>
 					      <div class="modal-footer">
 					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
@@ -362,18 +360,18 @@
 					  </div>
 					</div>
 			<!--Photoset light-->
-				<div class="modal fade" id="photosetLight" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal fade" id="photosetLight" tabindex="-1" role="dialog" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="photosetLight">Фотосет "Лайт"" </h5>
+					        <h5 class="modal-title">Фотосет "Лайт"" </h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					      </div>
 					      <div class="modal-body">
 					      	<h6>Стоимость  рублей</h6>
-					       <p>
+					       <p class="service_modal_paragraph">
 					       	...
 					       </p>
 					      </div>
@@ -384,18 +382,18 @@
 					  </div>
 					</div>
 			<!--Certificate photography-->
-				<div class="modal fade" id="certificatePhotography" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal fade" id="certificatePhotography" tabindex="-1" role="dialog" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="certificatePhotography">Подарочные сертификаты на фотосъемку</h5>
+					        <h5 class="modal-title">Подарочные сертификаты на фотосъемку</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					      </div>
 					      <div class="modal-body">
 					      	<h6>Стоимость  рублей</h6>
-					       <p>
+					       <p class="service_modal_paragraph">
 					       	...
 					       </p>
 					      </div>
@@ -406,18 +404,18 @@
 					  </div>
 					</div>
 			<!--Certificate lease-->
-				<div class="modal fade" id="certificateLease" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal fade" id="certificateLease" tabindex="-1" role="dialog" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="certificateLease">Подарочный сертификат на аренду студии</h5>
+					        <h5 class="modal-title">Подарочный сертификат на аренду студии</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					      </div>
 					      <div class="modal-body">
 					      	<h6>Стоимость  рублей</h6>
-					       <p>
+					       <p class="service_modal_paragraph">
 					       	...
 					       </p>
 					      </div>
@@ -428,18 +426,18 @@
 					  </div>
 					</div>
 			<!--Make up-->
-				<div class="modal fade" id="makeUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal fade" id="makeUp" tabindex="-1" role="dialog" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="makeUp">Макияж и укладка</h5>
+					        <h5 class="modal-title">Макияж и укладка</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					      </div>
 					      <div class="modal-body">
 					      	<h6>Стоимость 1000 рублей</h6>
-					       <p>
+					       <p class="service_modal_paragraph">
 					       	Все виды макияжа в фотостудии #HASHTAG 
 					       	* Приходить нужно за час до съемок
 					       </p>
@@ -451,18 +449,18 @@
 					  </div>
 					</div>
 			<!--Retouch-->
-				<div class="modal fade" id="retouch" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal fade" id="retouch" tabindex="-1" role="dialog" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="retouch">Ретушь</h5>
+					        <h5 class="modal-title">Ретушь</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					      </div>
 					      <div class="modal-body">
 					      	<h6>Стоимость  рублей</h6>
-					       <p>
+					       <p class="service_modal_paragraph">
 					       	...
 					       </p>
 					      </div>
@@ -473,18 +471,18 @@
 					  </div>
 					</div>
 			<!--Rent studio-->
-				<div class="modal fade" id="rentStudio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal fade" id="rentStudio" tabindex="-1" role="dialog" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="rentStudio">Аренда студии</h5>
+					        <h5 class="modal-title">Аренда студии</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					      </div>
 					      <div class="modal-body">
 					      	<h6>Стоимость 800 рублей</h6>
-					       <p>
+					       <p class="service_modal_paragraph">
 					       	1000 руб в выходные
 					       </p>
 					      </div>
@@ -495,17 +493,17 @@
 					  </div>
 					</div>
 			<!--Rent equipment-->
-				<div class="modal fade" id="rentEquipment" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal fade" id="rentEquipment" tabindex="-1" role="dialog" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h5 class="modal-title" id="rentEquipment">Аренда оборудования</h5>
+					        <h5 class="modal-title">Аренда оборудования</h5>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					      </div>
 					      <div class="modal-body">
-					       <p>
+					       <p class="service_modal_paragraph">
 					      		Прокат возможен только в нашей студии, для подписания договора нужен паспорт. <br>
 					      		Бронировать технику необходимо заранее через администратора. <br>
 					      		Canon EOS 60D  - 150руб/час <br>
@@ -586,7 +584,7 @@
 			      </h5>
 			    </div>
 
-			    <div id="collapseFour" class="collapse" aria-labelledby="headinFour" data-parent="#accordionExample">
+			    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
 			      <div class="card-body">
 			       <ul>
 			       		<li data-toggle="modal" data-target="#makeUp"><span>Макияж и укладка</span></li>
@@ -628,7 +626,7 @@
 				   <a href="#"><img src="img/slider/fotosessiya_mama_s_rebenkom.jpg" alt="Фотосессия мама с ребенком" id="item-3" /></a>
 				   <a href="#"><img src="img/slider/fotosessiya_pari.jpg" alt="Фотосессия пары" id="item-4" /></a>
 				   <a href="#"><img src="img/slider/fashion-fotosessia.jpg" alt="Фэшн фотосессия" id="item-5" /></a>
-				   <img src="img/slider/detskaya_novogodnyaya_fotosessiya.jpg" alt="Детская новогодняя фотосессия" id="item-6" /></a>
+				   <a href="#"><img src="img/slider/detskaya_novogodnyaya_fotosessiya.jpg" alt="Детская новогодняя фотосессия" id="item-6" /></a>
 				   <a href="#"><img src="img/slider/fotosessia_devushki_na_prirode.jpg" alt="Фотосессия девушки на природе" id="item-7" /></a>
 				   <a href="#"><img src="img/slider/fotosessia_na_prirode.jpg" alt="Фотосессия на природе" id="item-8" /></a>
 				   <a href="#"><img src="img/slider/fotosessii_par_v_studii.jpg" alt="Фотосессия пар в студии" id="item-9" /></a>
@@ -733,7 +731,7 @@
 		<section class="contacts" id="contact">
 			<h2 class="contact_caption"><span class="hashtag">#</span>Как с нами связаться</h2>
 			<div class="d-flex justify-content-around wrap_contacts">
-				<map name="" id="map"></map>
+				<div id="map"></div>
 				<div class="d-flex flex-column justify-content-around  contacts_addres_phone_social">
 					<span class="phone">8 (928) 449-04-44</span>
 					<span>г.Сочи, <br> Ул. Кубанская 15, офис </span>
@@ -766,7 +764,7 @@
 	<script src="js/jquery.waterwheelCarousel.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<!--yandex-karti-->
-	<script type="text/javascript">
+	<script>
 	  ymaps.ready(init);
 	    var myMap,
 	        myPlacemark;

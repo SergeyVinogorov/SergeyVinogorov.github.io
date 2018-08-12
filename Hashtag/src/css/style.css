@@ -68,6 +68,7 @@ h2 {
 }
 .hashtag {
   color: #e77020;
+  font-size: 1.5em;
 }
 body {
   font-size: 16px;
@@ -322,6 +323,16 @@ header a:hover {
   font-size: 1.2em;
   font-weight: 600;
 }
+.modal_button {
+  padding: 0.8em;
+  width: 11em;
+  background-color: #de5300;
+  border-color: #de5300;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+  color: #fff;
+}
 .service {
   padding-top: 4em;
 }
@@ -391,6 +402,13 @@ header a:hover {
   .service_accordion {
     display: block;
   }
+}
+.service_modal_paragraph {
+  line-height: 1em;
+  font-size: 1em;
+  font-weight: 400;
+  margin-left: 0em;
+  margin-right: 0em;
 }
 .our_works {
   position: relative;
@@ -590,7 +608,7 @@ p .about_photostudio_caption {
 .contacts_addres_phone_social .phone {
   margin-bottom: 1rem;
 }
-map {
+#map {
   width: 60%;
   height: 60vh;
 }
