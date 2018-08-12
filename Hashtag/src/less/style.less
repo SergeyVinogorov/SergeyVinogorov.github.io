@@ -454,8 +454,6 @@ body {
 		width: 25em;
 		}
 	}
-	
-		
 	p {
 		line-height: 1.5em;
 		font-size: 1.2em;
@@ -470,6 +468,34 @@ body {
 			font-weight: 700;
 		}
 	}	
+	.luiza {
+		height: 70vh;
+		.wrap_frame {
+			position: absolute;
+			right: 5%;
+			@media (max-width: 768px) {
+				position: static;
+			}			
+		}
+		p {
+		line-height: 1.5em;
+		font-size: 1.2em;
+		font-weight: 400;
+		margin-right: 2em;
+		margin-left: 0em;
+		width: 65%;
+		@media (max-width: 800px) {
+				width: 60%;
+			}
+		}
+		@media (max-width: 768px) {
+			height: auto;
+			p {
+				margin-left: 2em;
+				width: auto;
+			}
+		}
+	}
 //contacts 
 	.contacts {
 		margin-top: 3em;

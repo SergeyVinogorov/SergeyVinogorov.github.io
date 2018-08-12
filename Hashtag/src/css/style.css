@@ -540,6 +540,40 @@ p .about_photostudio_caption {
   display: block;
   font-weight: 700;
 }
+.luiza {
+  height: 70vh;
+}
+.luiza .wrap_frame {
+  position: absolute;
+  right: 5%;
+}
+@media (max-width: 768px) {
+  .luiza .wrap_frame {
+    position: static;
+  }
+}
+.luiza p {
+  line-height: 1.5em;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-right: 2em;
+  margin-left: 0em;
+  width: 65%;
+}
+@media (max-width: 800px) {
+  .luiza p {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .luiza {
+    height: auto;
+  }
+  .luiza p {
+    margin-left: 2em;
+    width: auto;
+  }
+}
 .contacts {
   margin-top: 3em;
   margin-bottom: 2em;
