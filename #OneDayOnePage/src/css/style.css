@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('../font/ProximaNova-Regular.woff2') format('woff2'), url('../font/ProximaNova-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Th';
+  src: url('../font/ProximaNova-Extrabld.woff2') format('woff2'), url('../font/ProximaNova-Extrabld.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+.HeadingQuote {
+  color: #e42558;
+}
+.secondBlock {
+  color: #fff4f8;
+}
+body {
+  font-size: 16px;
+}
+@media (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    font-size: 10px;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    font-size: 8px;
+  }
+}
+.wrap__main {
+  background-image: url('../img/main.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrap__main header {
+  padding-top: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrap__main header .icon__panteon {
+  width: 7em;
+  height: 2em;
+  background-image: url('../img/panteon_icon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+nav .menu__burger_menu {
+  color: #fff;
+}
+nav button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav button .burger__row_one {
+  background-color: #fff;
+  height: 1px;
+  width: 0.8em;
+}
+nav button .burger__row_two {
+  background-color: #fff;
+  height: 1px;
+  width: 1em;
+}
+nav button .burger__row_three {
+  background-color: #fff;
+  height: 1px;
+  width: 0.5em;
+}
+main {
+  padding-top: 6em;
+  padding-bottom: 6em;
+  position: relative;
+}
+main .main__border {
+  width: 100vw;
+  height: 75vh;
+  border: 3em solid transparent;
+  border-image-source: url('../img/examole.png');
+  border-image-slice: 100;
+  border-image-repeat: stretch;
+}
+main h1 {
+  line-height: 1;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+}
+main h1 span {
+  font-family: 'Proxima Nova Th';
+  font-weight: 700;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+main h2 {
+  color: #fff;
+  position: absolute;
+  left: 20%;
+  line-height: 1.3em;
+  letter-spacing: 0.5em;
+  font-weight: 100;
+  opacity: 0.3;
+}
+.main__video {
+  background-image: url('../img/video_screen.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 14em;
+  width: 27em;
+  position: absolute;
+  top: 60%;
+}
+.main__video span {
+  position: absolute;
+  color: #fff;
+  right: -40%;
+  font-size: 0.8em;
+  font-weight: 100;
+}
+.main__video span:before {
+  content: '';
+  height: 2px;
+  width: 5em;
+  position: absolute;
+  top: 50%;
+  left: -80%;
+  background-color: #fff;
+}
+.main__video a {
+  text-decoration: none;
+  color: #fff;
+}
+.main__video button {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: #e02457;
+  position: relative;
+}
+.main__video button:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: solid;
+  border-color: transparent transparent transparent #fff;
+  border-width: 10px 10px 10px 15px;
+  top: 20%;
+  left: 36%;
+}
+.description {
+  background-color: #fff4f8;
+  padding-bottom: 1em;
+}
+.description li {
+  padding-top: 1em;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.6em;
+  border-left: 1px solid #fcdfe8;
+  padding-left: 3em;
+}
+.description li:first-child {
+  border: none;
+}
+.description li .number {
+  font-size: 3em;
+  color: #e32457;
+  text-align: center;
+  padding-bottom: 0.3em;
+}
