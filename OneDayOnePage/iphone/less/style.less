@@ -1,0 +1,97 @@
+button {
+	text-transform: uppercase;
+}
+a {
+	color: #000;
+}
+//header
+	header {
+		font-family: 'Georgia';
+		font-weight: bold;
+		border-bottom: 1px solid #f0f2f7;
+		font-size: 14px;
+		margin-top: 2em;
+		padding-bottom: 2em;
+		.logo {
+			background-image: url('../img/logo.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 8em;
+			height: 2em;
+		}
+		button {
+			border: 1px solid #e3e8f0;
+			border-radius: 10px; 
+			margin-left: 2em;
+			background-color: #fff;
+			font-size: 14	px;
+		}
+	}
+	.basket{
+		position: relative;
+		text-transform: uppercase;
+		&:before {
+			content: '';
+			position: absolute;
+			background-image: url('../img/header_basket_icon.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 1em;
+			height: 1em;
+			left: -53%;
+			top: 14%;
+			font-size: 14px;
+		}
+	}
+	.score_basket {
+		background-color: #e3e8f0;
+		border-radius: 50%;
+	}
+	
+//links
+	.links {
+		padding-bottom: 1em;
+		padding-top: 1em;
+		font-size: 14px;
+		a {
+			color: #000;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-family: 'Thimes New Roman';
+			opacity: 0.5;
+			&:hover {
+				opacity: 1;
+				text-decoration: none;
+			}
+		}
+	}
+	input {
+		border: none;
+		margin-left: 2em;
+	}
+//main
+	main {
+		background-image: url('../img/main.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		color: #fff;
+		height: 80vh;
+		align-items: center;
+		.wrap_in_main {
+			align-items: flex-start;
+			justify-content: space-between;
+			height: 50%;
+			p {
+				width: 40%;
+			}
+			button {
+				background-color: #2754eb;
+				font-size: 14px;
+				border: none;
+				width: 12em;
+				border-radius: 20px;
+				color: #fff;
+				padding: 1em 1em;
+			}
+		}
+	}
