@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Агентство "Идеальный праздник"</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/styles_navbar.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Yandex.Metrika counter -->
+      <script type="text/javascript">
+        (function (d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+            try {
+              w.yaCounter40525785 = new Ya.Metrika({
+                id:40525785,
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+              });
+            } catch(e) { }
+          });
+
+          var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+          if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+      </script>
+      <noscript>
+        <div>
+          <img src="https://mc.yandex.ru/watch/40525785" style="position:absolute; left:-9999px;" alt="" />
+        </div>
+      </noscript>
+      <script type="text/javascript"> 
+        (function(a,e,c,f,g,h,b,d){var k={ak:"995096132",cl:"gBkZCLGvy3oQxOy_2gM",autoreplace:"+7(966 )777 -77-81"};a[c]=a[c]||function(){(a[c].q=a[c].q||[]).push(arguments)};a[g]||(a[g]=k.ak);b=e.createElement(h);b.async=1;b.src="//www.gstatic.com/wcm/loader.js";d=e.getElementsByTagName(h)[0];d.parentNode.insertBefore(b,d);a[f]=function(b,d,e){a[c](2,b,k,d,null,new Date,e)};a[f]()})(window,document,"_googWcmImpl","_googWcmGet","_googWcmAk","script"); 
+      </script>
+    <header class="header">
+      <div class="container">
+        <div class="row text-right">
+          <!--Logo-->
+          <div class="col-md-3 col-xs-7 col-sm-6 logo"><img class="img-responsive" src="img/logo5.png" alt="logo">
+          </div>
+          <!--Logo description-->
+          <div class="col-md-4 col-sm-3 hidden-xs agency"> <p class="text-left">Event агентство<br></p><p class="text-left">"Идеальный праздник"</p>
+          </div>
+          <!--Working hours-->
+          <div class="col-md-2 col-sm-3 text-right work_time">
+            <p class="hidden-xs">Время  работы:</p>
+            <p>8 <sup>00</sup>- 21 <sup>00</sup>, пн-пт</p>
+          </div>
+          <!--Phone number & callback-->
+          <div class="col-md-3 phone text-right"><p>
+            <i class="fa fa-mobile" aria-hidden="true"></i>+7 (966) 777-77-81 </p>
+            <a class="callback animated infinite pulse hidden-xs" data-toggle="modal" data-target="#form1" href="#">Заказать обратный звонок</a>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="form1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+              <!--Name--> 
+              <form action="send.php" class="contact_form" method="post" onSubmit="return checkForm(this)">
+                <p>Оставьте свои корректные контактные данные, чтобы мы связались с Вами для консультации.
+                  <br>
+                  <br>
+                  <label for="name" class="name_field">Имя:</label>
+                </p>
+                <p>
+                  <input id = "name" class="form-control"   type="text"  name="name" placeholder="Введите ваше имя" required />
+                </p><!--Phone number-->
+
+                <p>
+                  <label for="tel">Телефон:</label>
+                </p>
+                <p>
+                  <input class="form-control" id ="tel" type="text" name="phone" placeholder="Введите номер телефона" required>
+                </p>
+              </form>
+              <div class="text-center ">
+                <button type="button" class="btn btn-default text-center" data-dismiss="modal">Закрыть</button>
+                <button type="submit" class="btn btn-primary text-center">Отправить</button>
+              </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--block with Main menu-->
+    <section class="main">
+      <div class="navmenu">
+        <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+          </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav main_menu">
+              <li><a href="#main">Главная</a></li>
+              <li><a href="#about">О нас</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#!" aria-expanded="true">Услуги<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://sochimoroz.ru/" target="_blank">Новый Год</a></li>
+                  <li><a href="Animators.html" class="dropdown-item" target="_blank">Аниматоры, аренда костюмов</a></li>
+                  <li><a class="dropdown-item" href="Master.html" target="_blank">Ведущие</a></li>
+                  <li><a class="dropdown-item" href="show_programs.html" target="_blank">Шоу-программы</a></li>
+                  <!--<li><a class="dropdown-item" href="#!">Кейтеринг</a></li> -->
+                </ul>
+              </li>
+              <li><a href="#gallery">Галерея</a></li>
+              <li><a href="#how_we_work">Схема работы</a></li>
+              <li><a href="#map">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div id="main" class="main_banner text-center">              
+        <h1>Сделай праздник праздничным!</h1>
+        <h2 class="h2MainBlock">Обратись в команду профессионалов <br> <br>"Идеальный праздник"</h2>
+        <div class="button1 text-center">
+          <button id="btn_1" class="btn_1 wow tada" type="button" data-toggle="modal" data-target="#form1">Заказать праздник</button>
+          <p class="mainBlockText">Работаем во всех районах г. Сочи</h3>
+        </div> 
+      </div>
+    </section>
+    <!-- block_two Four reason -->
+    <section class="block_two">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12 head2" id="about" ><h2 class="h2_sec2 text-center"> 4 причины довериться нам</h2></div>
+        </div>
+        <div class="row our_achievement text-center hidden-xs">
+          <div class="col-md-2 col-sm-2 thumbnail">
+            <p><span class="number">1</span><br>Нашему агентству 6 лет, за это время нами проведено более 1000 праздников</p><br>
+          </div>
+          <div class="col-md-2 col-sm-2 col-md-offset-1 col-sm-offset-1 thumbnail">
+            <p><span class="number">2</span><br>В нашей гримерной более 400 новых костюмов</p><br><br>
+          </div>
+            <div class="col-md-2 col-sm-2 col-md-offset-1 col-sm-offset-1 thumbnail">
+              <p><span class="number">3</span><br>Результат нашей работы - 1500 довольных клиентов</p><br><br></div>
+              <div class="col-md-2 col-sm-2 col-md-offset-1 col-sm-offset-1 thumbnail">
+                <p><span class="number">4</span><br>С нами работают лучшие аниматоры и творческие коллективы города Сочи</p><br></div>
+        </div>
+              <!-- FOR XS -->
+        <div class="row hidden-md hidden-lg hidden-sm star_img">
+          <div class="col-xs-3"><img src="img/star.png" class="img-responsive"></div>
+          <div class="col-xs-3"><img src="img/star.png" class="img-responsive"></div>
+          <div class="col-xs-3"><img src="img/star.png" class="img-responsive"></div>
+          <div class="col-xs-3"><img src="img/star.png" class="img-responsive"></div>
+        </div>
+        <div class="row hidden-sm hidden-md hidden-lg">
+          <div class="col-xs-12 th_xs text-left">
+                 <p class="p_achieve1">Наше агентство существует 6 лет, за это время нами проведено более 1000 праздников</p>
+          </div>
+        </div>
+        <div class="row hidden-sm text-left hidden-md hidden-lg">
+          <div class="col-xs-12 th_xs">
+            <p class="p_achieve2">В нашей гримерной более 400 новых костюмов</p>
+          </div>
+        </div>
+        <div class="row hidden-sm text-left hidden-md hidden-lg">
+          <div class="col-xs-12 th_xs">
+            <p class="p_achieve3">Результат нашей работы - 1 500 довольных клиентов</p>
+          </div>
+        </div>
+        <div class="row text-left hidden-sm hidden-md hidden-lg">
+          <div class="col-xs-12 th_xs">
+             <p class="p_achieve4">С нами работают лучшие аниматоры и творческие коллективы города Сочи</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- block_three Link -->
+    <section class="block_three">
+      <div class="container" id="services">
+        <div class="row hidden-xs">
+          <div class="col-md-12 we_suggest">
+            <h2 class="h2_we_suggest text-center">Мы предлагаем</h2>
+          </div> 
+        </div>
+        <div class="row hidden-xs">
+          <div class="col-md-12 col-sm-12">
+            <ul class="weSuggest text-center">
+              <li><a href="show_programs.html">Шоу программы</a></li>
+              <li><a href="https://sochimoroz.ru/">Новый год</a>
+              </li>
+              <li><a href="Animators.html">Аниматоры, аренда костюмов</a>
+              </li>
+              <li><a href="Master.html">Ведущие</a>
+              </li>              
+              <li><a href="Children.html">Проведение детских праздников</a>
+              </li>
+              <li><a href="Decoration.html">Оформление праздников</a></li>
+              <li><a href="Heart.html">Открытка-сердце</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- FOR XS -->
+        <div class="row hidden-lg hidden-md hidden-sm">
+          <div class="col-xs-12">
+            <h2 class="h2_we_suggest_xs text-center">Мы предлагаем</h2>
+          </div> 
+        </div>
+        <div class="row hidden-lg hidden-md hidden-sm">
+          <div class="col-xs-12">
+            <ul class="weSuggest_xs">
+              <li><a href="show_programs.html">Шоу программы</a></li>
+              <li><a href="https://sochimoroz.ru/">Новый год</a>
+              </li>
+              <li><a href="Animators.html">Аниматоры, аренда костюмов</a>
+              </li>
+              <li><a href="Master.html">Ведущие</a>
+              </li>              
+              <li><a href="Children.html">Проведение детских праздников</a>
+              </li>
+              <li><a href="Decoration.html">Оформление праздников</a></li>
+              <li><a href="Heart.html">Открытка-сердце</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center">
+          <button id="btn_2" class="text-center btn_1 wow tada" data-toggle="modal" data-target="#form1">Узнать подробнее</button>
+        </div>
+      </div> 
+    </section>
+    <!-- block four Photo Gallery -->
+    <section class="block_four">
+      <div class="gallery">
+        <h2 id="gallery" class="h2_gallery text-center">Фотогалерея</h2>
+        <div class="container">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img class="img-responsive center-block" src="img/Children/Children_3.jpg" alt="...">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block img_gallery" src="img/Children/Children_4.jpg" alt="...">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/PaperShow/PaperShow_5.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/PaperShow/PaperShow_8.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Gallery/shantal_4.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Gallery/bubble4.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Acrobats/Acrobat_2.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Mim/Mim_1.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Solo/Solo_5.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Gallery/gallery_9.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Gallery/gallery_1.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Gallery/gallery_11.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Gallery/gallery_12.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Gallery/gallery_13.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Gallery/gallery_14.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Gallery/gallery_16.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Gallery/gallery_17.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Gallery/gallery_19.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Gallery/gallery_20.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Gallery/gallery_21.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="img-responsive center-block" src="img/Gallery/gallery_22.jpg" alt="">
+              </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- block five How we work-->
+    <section id="how_we_work" class="how_we_work">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12 head2" id="about" ><h2 class="h2_sec5 text-center"> 4 этапа работы</h2>
+          </div>
+        </div>
+        <div class="row our_achievement hidden-xs hidden-sm">
+          <div class="col-md-2 thumbnail">
+            <p><span class="number">1</span><br>Вы заказываете праздник</p><br><br>
+          </div>
+          <div class="col-md-2 col-md-offset-1  thumbnail">
+            <p><span class="number">2</span><br>Составляем и согласовываем программу</p><br>
+          </div>
+          <div class="col-md-2 col-md-offset-1 thumbnail">
+            <p><span class="number">3</span><br>Заключение договора. Оплата</p><br><br>
+          </div>
+          <div class="col-md-2 col-md-offset-1 thumbnail">
+            <p><span class="number">4</span><br>Вы получаете праздник мечты</p><br><br>
+          </div>
+        </div>
+        <!-- How we work for XS-->
+        <div class="row how_we_work_xs text-center hidden-md hidden-lg">
+          <div class="col-xs-5 col-sm-5 thumbnail">
+            <p><span class="number">1</span><br>Вы заказываете праздник</p><br>
+          </div>
+          <div class="col-xs-5 col-sm-5 col-xs-offset-1 col-sm-offset-1  thumbnail">
+            <p><span class="number">2</span><br>Мы составляем программу</p><br>
+          </div>
+        </div>
+        <div class="row how_we_work_xs hidden-md hidden-lg"">
+          <div class="col-xs-5 col-sm-5 thumbnail">
+            <p><span class="number">3</span><br>Заключение договора. Оплата</p><br>
+          </div>
+          <div class="col-xs-5 col-sm-5 col-xs-offset-1 col-sm-offset-1 thumbnail">
+            <p><span class="number">4</span><br>Вы получаете праздник мечты</p><br>
+          </div>
+        </div>
+        <!-- /How we work for XS-->
+        <div class="text-center">
+          <button id="btn_3" class="text-center button_3 wow tada" data-toggle="modal" data-target="#form1">Оставить заявку</button>
+        </div>
+      </div>
+    </section>
+    <!-- blo six Map-->
+    <section class="block_map">
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.643873124151!2d39.761782706032456!3d43.572303287832625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f5c90b901b8b4d%3A0xfa17361fc4b5ce96!2z0YPQuy4g0KLRgNCw0L3RgdC_0L7RgNGC0L3QsNGPLCA4MCwg0JHQvtC70YzRiNC-0Lkg0KHQvtGH0LgsINCa0YDQsNGB0L3QvtC00LDRgNGB0LrQuNC5INC60YDQsNC5LCAzNTQwNTQ!5e0!3m2!1sru!2sru!4v1477498164989" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen>
+        </iframe>
+      </div>
+      <!--Contacts-->
+      <div class="contacts hidden-xs">
+        <h3>Контакты</h3>
+        <p class="phone"> Тел. +7 (966) 777-77-81</p>
+        <p class="callback2 animated infinite pulse"><a href="#" data-toggle="modal" data-target="#form1">Заказать обратный звонок</a></p>
+        <br><br>
+        <p> Адрес: г. Сочи, ул.Транспортная, д. 80/5</p>
+        <br><br>
+        <a href="https://vk.com/prazdniktour" class="vk">Мы ВКонтакте</a>
+        <br><br><br>
+      </div>
+      <!-- Contacts FOR XS -->
+      <div class="contacts_xs hidden-sm hidden-md hidden-lg">
+        <h3>Контакты</h3>
+        <p class="phone"> Тел. +7 (966) 777-77-81</p>
+        <p class="callback2 animated infinite pulse"><a href="#" data-toggle="modal" data-target="#form1">Заказать обратный звонок</a></p><br>
+        <div class=" address hidden-sm hidden-lg hidden-md pxs">
+          <p> Адрес: г. Сочи, ул. Транспортная 80/5</p>
+        </div>
+        <a href="https://vk.com/prazdniktour" class="vk">Мы ВКонтакте</a>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row"> 
+          <div class="col-md-6 padd">
+            <p class="p1">Агентство "Идеальный праздник",  2016</p>
+            <a href="politika1.docx"><p>Политика конфиденциальности</p></a>
+          </div>
+          <div class="col-md-6 padd">
+            <p>ИНН 2303088555109</p>
+            <p>ОГРНИП 311236811900073</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
