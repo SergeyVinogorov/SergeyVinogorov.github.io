@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('CenturyGothic.woff2') format('woff2'),
+        url('CenturyGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Book Antiqua';
+    src: url('BookAntiqua.woff2') format('woff2'),
+        url('BookAntiqua.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINCondensedC';
+    src: url('DINCondensedC.woff2') format('woff2'),
+        url('DINCondensedC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Pro Cond';
+    src: url('DINPro-CondensedBold.woff2') format('woff2'),
+        url('DINPro-CondensedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

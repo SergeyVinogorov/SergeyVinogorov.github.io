@@ -1,0 +1,599 @@
+//font
+	@font-face {
+	    font-family: 'Century Gothic';
+	    src: url('../font/CenturyGothic.woff2') format('woff2'),
+	        url('../font/CenturyGothic.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+	@font-face {
+	    font-family: 'Book Antiqua';
+	    src: url('../font/BookAntiqua.woff2') format('woff2'),
+	        url('../font/BookAntiqua.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+	@font-face {
+	    font-family: 'DINCondensedC';
+	    src: url('../font/DINCondensedC.woff2') format('woff2'),
+	        url('../font/DINCondensedC.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+	@font-face {
+	    font-family: 'DIN Pro Cond';
+	    src: url('../font/DINPro-CondensedBold.woff2') format('woff2'),
+	        url('../font/DINPro-CondensedBold.woff') format('woff');
+	    font-weight: bold;
+	    font-style: normal;
+	}
+//style background image
+	.main_bg {
+		background-image: url('../image/main.jpg');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+//button
+	.form_button {
+		margin: auto;
+		background-color: #465374;
+		border: none;
+		padding: 1em 2em;
+		color: #fff;
+		border-radius: 5px;
+		letter-spacing: 2px;
+		cursor: pointer;
+		&:hover {
+			box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+		}
+	}
+
+header{
+		nav {
+			margin-top: 1em;
+		}
+		ul {
+			padding-left: 0;
+			margin-bottom: 0;
+		}
+		li{
+			list-style: none;
+			margin-left: 2em;
+			&:first-child {
+				margin-left: 0;
+			}
+			
+			a {
+				color: #fff !important;
+				font-family: 'DINCondensedC';
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		.menu_tablet {
+			display: none;
+		}
+	
+	}
+	//style for label left
+		.header_logo {
+			font-family: 'DINCondensedC';
+			font-weight: normal;
+			background-color: #22334d;
+			width: 9em;
+			height: 4em;
+			padding: 0.5em;
+			border-bottom-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+			a {
+				text-decoration: none;
+				cursor: pointer;
+				color: #fff;
+				.header_logo_thin {
+					font-size: 14px;
+				}
+			}
+		}
+	//style for label right
+		.header_contact {
+			font-family: 'DINCondensedC';			
+			text-align: right;
+			a {
+				color: #d44141;	
+				text-decoration: none;
+				cursor: pointer;
+			}
+		}
+
+// main
+	main {
+		.wrap_main{
+		color: #fff;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		height: 85vh;
+		position: relative;
+		h1 {
+			font-family: 'Century Gothic';
+			font-weight: bold;
+			letter-spacing: 3px;
+			line-height: 1.5;
+		}
+		a {
+			font-family: 'Century Gothic';
+			width: 12em;
+			align-self: center;
+			border-radius: 15px;
+			border: none;
+			padding: 1.1em;
+			margin-bottom: 3em;
+			margin-top: 3em;
+			background-color: #cb5b55;
+			color: #fff;
+			letter-spacing: 1px;
+			font-size: 14px;
+			text-decoration: none;
+			&:hover {
+				box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+			}
+		}
+		}
+	}
+	
+	.main_bulet_item {
+				display: flex;
+				justify-content: center;
+				margin-top: 2em;
+				img {
+					width: 50px;
+					height: 50px;
+				}
+				span {
+					align-self: center;
+					margin-left: 2em;
+					text-align: left;
+
+				}
+			}
+		.modal {
+			color: #000;
+			.form-group {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+			}
+			.modal-header, .modal-body, .modal-footer {
+				background-color: #ce6b70;
+			}
+			.modal-content {
+				border: none;
+				background-color: transparent;
+			}
+			.modal-header {
+				border-top-left-radius: 1.3rem;
+				border-top-right-radius: 1.3rem;
+			}
+			.modal-footer {
+				border-bottom-left-radius: 1.3rem;
+				border-bottom-right-radius:1.3rem;
+			}
+		}	
+//service	
+	.service {
+		height: 70vh;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+		h2 {
+			margin-bottom: 2em;
+			font-family: 'DIN Pro Cond';
+			text-align: center;
+			color: #223e6c;
+		}
+	}
+		.service_item {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			.service_description {
+				font-family: 'DINCondensedC';
+				position: absolute;
+				bottom: 5%;
+				line-height: 1.5;
+				right: 0;
+				.service_blue {
+					color: #223e6c;
+				}
+				.service_red {
+					color: #9a4005;
+				}
+			}
+		}	
+// my work
+	.my_work {
+		background-image: url('../image/my_work.jpg');
+		background-size: 100% 100%;
+	  	background-repeat: no-repeat;
+	  	padding-bottom: 3em;
+	  	padding-top: 3em;
+		h2 {
+		  		font-family: 'DIN Pro Cond';
+		  		color: #fff;
+		  		text-align: center;
+		  	}
+		img {
+  			width: 250px;
+  			height: 150px;
+  			margin-top: 2em;
+  			cursor: pointer;
+  			&:hover {
+  				box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+  			}
+  		}
+	}
+	.my_work_item {
+		display: flex;
+		justify-content: center;
+	}
+		
+	.my_work_inside {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+// my reviews
+
+	.my_reviews{
+		padding-bottom: 3em;
+		padding-top: 3em;
+		h2 {
+			font-family: 'DIN Pro Cond';
+			text-align: center;
+			color: #223e6c;
+			margin-bottom: 2em;
+		}
+		img{
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				align-self: center;
+				margin-right: 2em;
+			}
+				.slider-body {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				.article_text_wrap{
+					cite {
+						color: #cc6f6f;
+						font-family: 'Century Gothic';
+						font-style: normal;
+						span {
+							color: #a0a4ad;
+							font-family: 'Century Gothic';
+							font-size: 12px;
+						}
+					}
+					width: 40%;
+					blockquote {
+						font-family: 'Book Antiqua';
+						margin: 0;
+						font-size: 14px;
+					}
+				}
+				.my_work_row_left {
+					background-image: url('../image/left.png');
+					width: 2em;
+					height: 2em;
+					background-repeat: no-repeat;
+					background-size: contain;
+				}
+				.my_work_row_right {
+					background-image: url('../image/right.png');
+					width: 2em;
+					height: 2em;
+					background-repeat: no-repeat;
+					background-size: contain;
+				}
+			}
+footer {
+	padding-top: 3em;
+	background-image: url('../image/call_me.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	font-family: 'Century Gothic';
+	h2 {
+		font-family: 'DIN Pro Cond';
+		color: #fff;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+		.modal-body, .modal-footer {
+			background-color: #ce6b70;
+		}
+		.modal-content {
+			width: 60%;
+			border: none;
+			background-color: transparent;
+		}
+		.modal-body {
+			border-top-left-radius: 1.3rem;
+			border-top-right-radius: 1.3rem;
+		}
+		.modal-footer {
+			border-bottom-left-radius: 1.3rem;
+			border-bottom-right-radius:1.3rem;
+		}
+
+	
+}
+	.main_contact_link_social {
+			display: flex;
+			justify-content: center;
+			padding-bottom: 2em;
+			padding-top: 2em;
+			img {
+				border-radius: 6px;
+				&:hover {
+					box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+				}
+			}
+			.link {
+				margin-left: 1em;
+			}
+		}
+	.not_use_data {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		padding-bottom: 2em;
+			.politic {
+				color: #fff;
+				text-decoration: none;
+			}
+			.link_top {
+				margin-left: 1em;
+				img {
+					&:hover {
+						box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+					}
+				}
+			}
+		}
+		.main_contact_link {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				margin-top: 2em;
+				a{
+				color: #fff;
+				text-decoration: none;
+				align-self: center;
+				margin-left: 1em;
+				}
+				// img {
+				// 	width: 24px;			
+				// }
+				.main_contact_link_phone {
+					display: flex;
+					img {
+						align-self: center;				
+					}
+				}
+				.main_contact_link_mail {
+					display: flex;
+					img{
+					width: 30px;
+					height: 24px;
+					align-self: center;
+					}
+				}
+			}
+
+
+
+//media
+	@media screen and (max-width: 959px) {
+		.main_bg {
+			background-image: url('../image/main_tablet.jpg');
+		}
+		//main 
+			main{
+				
+				h1 {
+					font-size: 28px;
+				}
+			}
+		
+		//footer
+			footer {
+				background-image: url('../image/call_me_tablet.jpg');
+				
+			}			
+	} 
+	@media screen and (max-width: 768px) {
+		//header
+			.menu{
+				display: none;
+			}
+			.menu_tablet {
+				display: block !important;
+				margin-top: 2em;
+				margin-bottom: 2em;
+				li {
+					margin-left: 1em;
+				}
+			}
+			.logo, .contact {
+				display: flex;
+				justify-content: center !important;
+			}
+		//main
+			main { 
+				.wrap_main {
+					height: auto;
+					.main_bulet_item {
+						flex-direction: column;
+						align-items: center;
+					}
+				}
+			}
+		//sevice 
+			.service {
+				height: auto;
+				h2 {
+					font-size: 18px;
+					margin-top: 2em;
+				}
+			}
+					.service_item {
+						margin-bottom: 2em;
+						img {
+							width: 4em;
+						}
+						.service_description {
+							font-size: 16px;
+						}
+						.four {
+							width: 5em;	
+						}
+					}
+		//my_work
+			.my_reviews {
+				.slider-body {
+					flex-direction: column;
+				}
+			}
+		//footer 
+			footer {
+				.modal-content {
+					width: 80%;
+				}
+				.link_top {
+					margin: 1em;
+
+				}
+				.main_contact_link_mail {
+					margin-top: 1em;
+				}
+				.main_contact_link_phone {
+					margin-top: 1em;
+				}
+			}
+
+	}
+	@media screen and (max-width: 639px) {
+		.main_bg {
+			background-image: url('../image/main_mobile.jpg');
+			
+		}
+		//header
+			header {
+				flex-direction: column; 
+				justify-content: space-around;
+				align-items: center;
+			}
+			.header_logo {
+				text-align: center;
+			}
+			.header_contact {
+				text-align: center;
+			}
+		//main
+			main {
+				
+				h1 {
+					font-size: 20px;
+				}
+			}
+
+				
+		//my work
+			.my_work {
+				background: linear-gradient( to bottom, #171d32, #0e2840);
+			h2 {
+				font-size: 18px;
+			}
+			}
+		//my reviews
+			.my_reviews {
+				h2{
+					font-size: 18px;	
+				}
+			}
+		//footer
+			footer {
+				h2{
+					font-size: 18px;
+				}
+				background-image: url('../image/call_me_mobile.jpg');
+
+				.contact_form {
+					font-size: 14px;
+				}
+				.not_use_data {
+					flex-direction: column;
+					align-items: center;
+					font-size: 14px;
+					width: 100%;
+					
+				}
+			}
+	}
+	@media screen and (max-width: 575px) {
+		.my_work {
+			img {
+				width: 150px;
+				height: 100px;
+			}
+		}
+	}
+	@media screen and (max-width: 469px) {
+		main{
+		
+			.main_bulet_item {
+				span {
+					font-size: 14px;
+				}
+			}
+		}
+		.my_reviews {
+			.slider-body {
+				.article_text_wrap{
+					width: 300px;
+					text-align: center;
+				}
+			}
+		}
+		footer {
+			.modal-content {
+				width: 90%;
+			}
+		}
+
+	}
+	@media screen and (max-width: 460px){
+		.main_bulet_item {
+			span {
+				margin-left: 0;
+				text-align: center;
+			}
+		}
+	}
+
+.body_404 {
+	background-image: url('../image/404.jpg');
+	background-size: cover;
+	
+}
