@@ -1,0 +1,245 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.header-section
+		&::before
+			left: 7%
+		&::after
+			right: 7%
+	header
+		.header-contacts
+			span
+				font-size: 14px
+			a
+				font-size: 16px
+	.cron-review
+		.header-section
+			&:before
+				left: 19%
+			&:after
+				right: 19%
+	.cron-contacts
+		h2
+			padding-top: 0
+			font-size: 26px
+		p
+			font-size: 16px
+			margin-bottom: 1em
+// ≥992px
++media-breakpoint-down(md)
+	main
+		hgroup
+			h1
+				font-size: 26px
+			h2
+				font-size: 16px
+		.row
+			.form-wrapper
+				form
+					width: 300px
+	.cron-trast
+		.wrap_objection
+			.objection
+				font-size: 12px
+
+	.cron-info
+		.header-section
+			&::before
+				left: 30%
+			&::after
+				right: 30%
+		.cron-carousel
+			.carousel-indicators
+				bottom: -20%
+		.cron-list-benefits
+			ul
+				li
+					&::before
+						left: -12%
+						width: 20px
+						height: 20px
+						background-size: cover
+	.cron-review
+		.header-section
+			&:before
+				left: 11%
+			&:after
+				right: 11%
+		.wrap-review
+			.review-item
+				.review-item-img
+					.border-wrap
+						width: 200px
+						height: 200px
+			.carousel-control-prev
+				left: -2%
+			.carousel-control-next
+				right: -3%
+// ≥768px
++media-breakpoint-down(sm)
+	.header-section
+		&::before
+			left: 4%
+		&::after
+			right: 4%
+	header
+		.header-descript
+			justify-content: center
+			img
+				width: 84px
+				height: 29px
+		.header-contacts
+			text-align: center
+			margin-top: 1em
+			span
+				font-size: 12px
+			a
+				font-size: 12px
+	main
+		.row
+			.form-wrapper
+				justify-content: center
+				margin-top: 4em
+				form
+					width: 400px
+	.cron-info
+		.header-section
+			&::before
+				left: 24%
+			&::after
+				right: 24%
+		.cron-carousel
+			.carousel-item
+				height: 100%
+			.carousel-indicators
+				bottom: -15%
+		.cron-list-benefits
+			margin-top: 5em
+	.cron-review
+		.header-section
+			&:before
+				left: 0%
+			&:after
+				right: 0%
+// ≥576px
++media-breakpoint-down(xs)
+	body
+		font-size: 12px
+		.header-section
+			font-size: 18px
+			&::before
+				display: none
+			&::after
+				display: none
+		header
+			.header-descript
+				p
+					font-size: 10px
+		main
+			hgroup
+				h1
+					font-size: 22px
+				h2
+					font-size: 14px
+			.row
+				.form-wrapper
+					form
+						width: 300px
+		.cron-trast
+			.wrap_objection
+				.objection
+					.wrap_img
+						.first-image-trast
+							width: 64px
+							height: 39px
+						.second-image-trast
+							width: 61px
+							height: 37px
+						.third-image-trast
+							width: 61px
+							height: 68px
+						.forth-image-trast
+							width: 61px
+							height: 61px
+						.fifth-image-trast
+							width: 61px
+							height: 61px
+						.sixth-image-trast
+							width: 61px
+							height: 51px
+
+		.cron-info
+			.cron-carousel
+				margin-top: 2em
+				.carousel-indicators
+					bottom: -17%
+					li
+						width: 10px
+						height: 10px
+					.active
+						background-color: $button-red
+			.cron-list-benefits
+				margin-top: 5em
+				ul
+					li
+						margin-left: 1em
+						font-size: 12px
+						&::before
+							width: 20px
+							height: 20px
+							background-size: cover
+							left: -11%
+	.cron-contacts
+		font-size: 12px
+		h2
+			font-size: 18px
+		p
+			font-size: 12px
+		.cron-social
+			a
+				font-size: 12px
+			.social-link
+				a
+					img
+						width: 20px
+						height: 20px
+			button
+				width: 240px
+				height: 50px
+				font-size: 12px
+	footer
+		.row
+			font-size: 10px
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+	// .cron-info
+	// 	.cron-carousel
+	// 		.carousel-indicators
+	// 			bottom: -5%
+	// 	.cron-list-benefits
+	// 		margin-top: 3em
+	// 		ul
+	// 			li
+	// 				&::before
+	// 					left: -10%
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
+	.header-section
+		&::before
+			left: 13%
+		&::after
+			right: 13%
