@@ -1,0 +1,22 @@
+//- example where simple logo left and menu right, and also change on burger in touch screen after 1024px
+extends ../layout/main
+
+block variables
+
+block content
+	.container
+		nav(role="navigation", aria-label="main navigation" ).navbar
+			.navbar-brand
+				a(href="#").navbar-item
+					span.is-size-1 blow
+				a(role="button" aria-label="menu" aria-expanded="false" data-target="navbarTest").navbar-burger.burger
+					span(aria-hidden="true")
+					span(aria-hidden="true")
+					span(aria-hidden="true")
+			.navbar-menu#navbarTest
+				.navbar-end
+					a(href="#").navbar-item home
+					a(href="#").navbar-item about
+					a(href="#").navbar-item work
+					a(href="#").navbar-item contact
+

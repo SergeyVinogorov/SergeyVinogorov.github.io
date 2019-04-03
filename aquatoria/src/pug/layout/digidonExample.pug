@@ -1,0 +1,101 @@
+extends ../layout/main
+
+block variables
+
+block content
+	.container
+		nav.navbar(role="navigation", aria-label="main navigation")
+			.navbar-brand
+				a(href="#").navbar-item
+					img(src="./static/images/svg/logo.svg", alt="").logo
+				a(role="button", aria-label="menu", aria-expanded="false", data-target="navbar-digidon").navbar-burger.burger
+					span(aria-hidden="true")
+					span(aria-hidden="true")
+					span(aria-hidden="true")
+				a(role="button", aria-label="catalog", aria-controls="catalog-digidon").call-catalog Каталог
+				div(aria-label="catigories", aria-expanded="false").level.visually-hidden#catalog-digidon
+					label.switch
+						input(type="checkbox", name="showBrands")
+						span.slider.round
+					.columns
+						.level-item.column
+							ul Лицо
+								li
+									a(href="#", title="title") Уход ха лицом
+								li
+									a(href="#", title="title") Декоративная косметика
+								li
+									a(href="#", title="title") Уход за полостью рта
+								li
+									a(href="#", title="title") Профессиональный уход
+							ul Тело 
+								li
+									a(href="#", title="title") Уход за телом 
+								li
+									a(href="#", title="title") Уход за руками
+								li
+									a(href="#", title="title") Уход за ногами
+						.level-item.column
+							ul Волосы 
+								li
+									a(href="#", title="title") Уход за волосами
+								li
+									a(href="#", title="title") Стайлинг
+								li
+									a(href="#", title="title") Аксессуары
+							ul Парфюмерия 
+								li
+									a(href="#", title="title") Женская 
+								li
+									a(href="#", title="title") Мужская
+							span.is-success Подарочные наборы
+						.level-item.column
+							ul Специальный уход
+								li
+									a(href="#", title="title") Защита от солнца
+								li
+									a(href="#", title="title") Аптечная косметика
+								li
+									a(href="#", title="title") Косметика для гостиниц
+								li
+									a(href="#", title="title") Для беременных
+								li
+									a(href="#", title="title") Для детей
+								li
+									a(href="#", title="title") Для подростков
+								li
+									a(href="#", title="title") Для мужчин
+						.level-item.column
+							ul Другое 
+								li
+									a(href="#", title="title") Бытовая химия
+								li
+									a(href="#", title="title") Дой паки
+								li
+									a(href="#", title="title") Средства защиты от насекомых
+								li
+									a(href="#", title="title") Соки и чипсы
+								li
+									a(href="#", title="title") Тара 
+								li
+									a(href="#", title="title") Оборудование
+			.navbar-menu#navbar-digidon
+				.navbar-start
+					a(href="#", title="title").navbar-item О компании
+					a(href="#", title="title").navbar-item Бренды
+					a(href="#", title="title").navbar-item Логистика
+					a(href="#", title="title").navbar-item Новости
+					a(href="#", title="title").navbar-item Акции
+					a(href="tel:+79256853320", title="title").navbar-item.is-success +7 (925) 685-33-20
+					a(href="#", title="title").navbar-item Контакты
+			.navbar-end
+				.navbar-item
+					a(href="#", role="button") Личный кабинет
+					form
+						.field
+							input(type="text", placeholder="Введите название товара").visually-hidden
+							label.label.search
+					.select
+						select(name="language")
+							option(value="ru") Ru
+							option(value="eng") Eng

@@ -1,0 +1,159 @@
+@import "./libs/_vars"
+@import "./libs/_libs"
+.visually-hidden 
+	position: absolute
+	clip: rect(0 0 0 0)
+	width: 1px
+	height: 1px
+	margin: -1px
+.container-aqua
+	font-size: 22px
+	max-width: 1680px
+	margin: auto
+	padding: 0 5.7em
+.img-fluid 
+	width: 100%
+	height: auto
+header
+	display: flex
+	align-items: center
+	justify-content: space-between
+	min-height: 80px
+	img
+		width: 100%
+.brand
+	width: 20%
+	.burger-aqua
+		display: none
+		span
+			height: 2px
+			width: 2em
+			background-color: $text
+			display: block
+			margin-bottom: 5px
+.menu
+	font-family: $montB
+	font-size: 24px
+	font-weight: 600
+	padding-left: 0
+	display: flex
+	li
+		list-style: none
+		a
+			color: $menu
+			padding: 0.5em
+			text-decoration: none
+			&:hover
+				background-color: darken($white, 10%)
+h1
+	color: $headers
+	font-family: $openB
+	font-size: 62px
+	line-height: 1.5
+.content-item
+	line-height: 1.5
+	font-family: $openR
+	font-size: 22px
+	display: flex
+	justify-content: space-between
+	margin: 5em 0
+	h2
+		font-size: 42px
+		font-family: $openB
+		margin: 0.3em 0 0.8em 0
+		color: $headers
+	p
+		font-size: 22px
+		color: $text
+	a
+		font-size: 24px
+		margin-top: 0.6em
+		color: $link_content
+.show-menu
+	display: block
+.first-screen
+	display: flex
+	padding: 100px 0 100px 125px
+	justify-content: space-between
+	max-width: 1680px
+	margin: auto
+	.first-screen_wrap_text
+		width: 600px
+		button
+			background-color: $btn
+			outline: none
+			border: none
+			border-radius: 10px
+			color: $white
+			width: 10em
+			height: 3.5em
+			font-family: $openR
+			font-size: 24px
+			font-weight: 100
+			margin-top: 1.3em
+
+	.first-screen_wrap_img
+		// width: 1000px
+		overflow: hidden
+		img
+			width: 100%
+			height: auto
+.content-item__image
+	width: 19em
+	height: 19em
+	background: linear-gradient(to right, #f0a04a, #fedab3)
+	border-radius: 15px
+	box-shadow: 0px 0px 15px 1px grey
+	position: relative
+	img
+		position: absolute
+		top: 0
+		buttom: 0
+		left: 15%
+		margin: auto
+		width: 100%
+		height: auto
+.content-item__description
+	width: 25em
+footer
+	background-color: $footer
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	.footer-item
+		padding-top: 37px
+		padding-bottom: 37px
+		list-style: none
+		color: $white
+		li
+			margin-bottom: 18px
+		a
+			color: $white
+			font-family: $montR
+			font-size: 18px
+			font-weight: 100
+			text-decoration: none
+	.social-link
+		display: inline-flex
+		width: 10em
+		justify-content: space-between
+		span
+			width: 3em
+			height: 3em
+			display: block
+			margin-top: 2em
+		.fb
+			background-image: url('../images/png/fb_icon.png')
+			background-size: cover
+		.inst
+			background-image: url('../images/png/insta_icon.png')
+			background-size: cover
+		.vk
+			background-image: url('../images/png/vk_icon.png')
+			background-size: cover
+	.footer__sign
+		width: 100%
+		a 
+			color: blue
+			text-decoration: underline
+@import "./libs/_media"

@@ -1,0 +1,43 @@
+@import "./libs/_vars"
+@import "./libs/_libs"
+@import "../../../node_modules/bulma/bulma"
+.visually-hidden 
+	position: absolute
+	clip: rect(0 0 0 0)
+	width: 1px
+	height: 1px
+	margin: -1px
+header
+	background-color: $mainGreen
+	.navbar-item
+		color: $white
+main
+	background-image: url('../images/firstExample.jpg')
+	background-size: cover
+.what-we-do
+	opacity: 0.8
+	h2
+		margin-bottom: 2em
+	.column
+		display: flex
+		flex-direction: column
+	img
+		margin: auto
+		align-self: center
+	p
+		color: $white
+		margin: 1.3rem 0 3rem 0
+	
+	button
+		background-color: transparent
+		margin: auto
+		border-width: 3px
+		width: 200px
+		height: 70px
+		font-weight: 500
+.wrap
+	width: 100%
+	display: flex
+	justify-content: center
+
+@import "./libs/_media"

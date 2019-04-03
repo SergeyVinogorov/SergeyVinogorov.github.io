@@ -1,0 +1,41 @@
+extends ../layout/main
+
+block variables
+
+block content
+	header.has-background-primary
+		.container
+			nav(role="navigation", aria-label="main navigation" ).navbar.has-background-primary
+				.navbar-brand
+					a(href="#").navbar-item
+						img(src="./static/images/svg/Logo.svg", alt="Создание сайтов под ключ")
+					a(role="button" aria-label="menu" aria-expanded="false" data-target="navbarTest").navbar-burger.burger
+						span(aria-hidden="true")
+						span(aria-hidden="true")
+						span(aria-hidden="true")
+				.navbar-menu#navbarTest
+					.navbar-end.is-size-5
+						a(href="#").navbar-item Кто мы
+						a(href="#").navbar-item Услуги
+						a(href="#").navbar-item Схема работы
+						a(href="#").navbar-item Контакты
+	main
+		.hero.is-medium
+			.hero-body
+				.container
+					h1.title.has-text-white Разработка Landing Page за неделю от 7 500 рублей
+		section.what-we-do.section.has-background-primary
+			.container
+				h2.has-text-white Что мы сделаем за эти деньги:
+				.columns
+					.column.analise
+						img(src="./static/images/svg/analize.svg", alt="Анализ вашего бизнеса").center
+						p Проведем нализ основных конкурентов, выявим ваши преимущества
+					.column.design
+						img(src="./static/images/svg/disign.svg", alt="Дизайн на основе анализа вашего бизнеса").center
+						p Сделаем дизайн, который отразит душу и индивидуальность компании
+					.column.design
+						img(src="../../static/images/svg/conter.svg", alt="Установка счетчиков").center
+						p Установим счетчики Google и Яндекс. Купим домен и опубликуем сайт
+			.wrap
+				button.button.has-text-white Заказать сайт
