@@ -1,0 +1,25 @@
+extends ../layout/main
+
+block variables
+
+block content
+	.container
+		nav(role="navigation" aria-label="main navigation").navbar
+			.navbar-brand
+				a(href="#").navbar-item
+					span.is-size-3 Logo
+				a(role="button" aria-label="menu" aria-expanded="false" data-target="navbarTest").navbar-burger.burger
+					span(aria-hidden="true")
+					span(aria-hidden="true")
+					span(aria-hidden="true")
+			.navbar-menu(style="justify-content: space-between")
+				a(href="#").navbar-item Home
+				a(href="#").navbar-item About
+				a(href="#").navbar-item Services
+				a(href="#").navbar-item Portfolio
+				a(href="#").navbar-item Shop
+				a(href="#").navbar-item Contact
+				a(href="#").navbar-item Pages
+				a(href="#").navbar-item icon
+				a(href="#").navbar-item icon
+				a(href="#").navbar-item icon

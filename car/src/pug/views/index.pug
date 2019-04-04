@@ -1,0 +1,59 @@
+extends ../layout/main
+
+block variables
+
+block content
+	//- .hero
+	section.hero.is-fullheight
+
+		//- .hero-head
+		nav.hero-head
+			.columns.is-mobile.is-marginless.heading.has-text-weight-bold
+				ul.column.left
+					li
+						figure.navbar-item.image.logo
+							img(src="./static/images/svg/Logo.svg", alt="My logo")
+
+				ul.column.center.desktop
+					li.navbar-item.has-text-white Html
+					li.navbar-item.has-text-white Css
+					li.navbar-item.has-text-white Js
+					li.navbar-item.has-text-white Wordpress
+					li.navbar-item.has-text-white Vue
+
+
+				ul.column.right
+					li.navbar-item.desktop.has-text-white Заказать
+					li.navbar-item.desktop.has-text-white Войти
+					li.navbar-item.hamburger.center.center-column
+						span.burger
+						span.burger
+						span.burger
+
+		//- /.hero-head
+		//- .hero-body
+		.hero-body
+			.is-overlay.has-text-centered.single-spaced.main-title
+				h1.subtitle.is-4.has-text-weight-light.has-text-white Создание сайта
+				h2.title.is-1.has-text-white Landing page за 8 часов
+		//- /.hero-body
+		//- .hero-footer
+		main.hero-foot.center
+			.gridder
+				.g_a
+					p.has-text-centered.has-text-white.title.is-5 Также занимаюсь Вёрсткой для 1С Bitrix и React
+				.g_b.center-column
+					img(src="./static/images/svg/analize.svg", alt="Создание кроссбраузерного, кроссплатформенного сайта")
+					p.title.has-text-white.is-5 Проверяю сайт в разных браузерах и на разных девайсах
+				.g_c.center-column
+					img(src="./static/images/svg/conter.svg", alt="Создание кроссбраузерного, кроссплатформенного сайта")
+					p.title.has-text-white.is-5 Анализ времени загрузки
+				.g_d.center-column
+					img(src="./static/images/svg/disign.svg", alt="Создание кроссбраузерного, кроссплатформенного сайта")
+					p.title.has-text-white.is-5 Дизайн за отдельную плату
+				.g_e.center-column
+					a(href="#").button.is-danger.is-inverted.is-rounded.is-outlined.has-text-weight-bold.order-now Заказать сейчас
+
+
+		//-/.hero-footer
+	//- /.hero

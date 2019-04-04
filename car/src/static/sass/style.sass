@@ -1,0 +1,88 @@
+@import "./libs/_vars"
+@import "./libs/_libs"
+@import "../../../node_modules/bulma/bulma"
+.visually-hidden 
+	position: absolute
+	clip: rect(0 0 0 0)
+	width: 1px
+	height: 1px
+	margin: -1px
+.center, .center-column, .top, .right, .bottom, .left
+	display: flex
+	justify-content: center
+	align-items: center
+.center-column
+	flex-direction: column
+.top 
+	align-items: flex-start
+.right
+	justify-content: flex-end
+.bottom
+	align-items: flex-end
+.my-center-column
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+.logo
+	img
+		// height: 1rem
+		width: 6.25rem
+.hamburger
+	width: 6.25rem
+	.burger
+		display: block
+		width: 2rem
+		height: 2px
+		background-color: $white
+		margin-bottom: .25rem
+		&:last-child
+			margin-bottom: 0
+.main-title
+	top: 87px
+
+.single-spaced
+	> * 
+		line-height: 1
+.left
+	justify-content: flex-start
+.hero
+	background: black url('../images/Rectangle.jpg') center / cover
+.gridder
+	width: 992px
+	padding: 2rem
+	display: grid
+	grid-template-areas: "a a a a" "b c d e"
+	grid-row-gap: 1rem
+	.g_a
+		grid-area: a
+		padding: 1rem
+	.g_b
+		grid-area: b
+		padding: 1rem
+
+	.g_c
+		grid-area: c
+		border-left: 1px solid gray
+		padding: 1rem
+
+	.g_d
+		grid-area: d
+		border-left: 1px solid gray
+		padding: 1rem
+
+	.g_e
+		grid-area: e
+	img
+		width: 3rem
+		height: 3rem
+	p
+		margin-top: 2rem
+.order-now
+	width: 100%
+	border: 0.15em solid white
+// .wrapp-p
+// 	min-height: 10em
+// 	display: flex
+// 	align-items: center
+@import "./libs/_media"
