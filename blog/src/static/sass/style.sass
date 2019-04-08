@@ -1,0 +1,29 @@
+@import "./libs/_vars"
+@import "./libs/_libs"
+@import "../../../node_modules/bulma/bulma"
+.visually-hidden 
+	position: absolute
+	clip: rect(0 0 0 0)
+	width: 1px
+	height: 1px
+	margin: -1px
+.center
+	display: flex
+	justify-content: center
+	align-items: center
+.grid
+	display: grid
+	grid-template-columns: [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end]
+	> *
+		grid-column: md
+.grid-xl
+	grid-column: xl
+.is-paddingless-horizontal
+	padding-left: 0
+	padding-right: 0
+// nav, article, .child-grid
+// 	grid-column: md
+.my-presentation
+	padding-top: 0
+
+@import "./libs/_media"
