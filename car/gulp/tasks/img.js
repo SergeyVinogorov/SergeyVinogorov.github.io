@@ -12,9 +12,9 @@ module.exports = function() {
     return $.gulp
       .src("./src/static/img/**/*.{png,jpg,gif}")
       .pipe(
-        imagemin([
-          imagemin.jpegtran({ progressive: true }),
-          imagemin.optipng({ optimizationLevel: 5 })
+        $.gp.imagemin([
+          $.gp.imagemin.jpegtran({ progressive: true }),
+          $.gp.imagemin.optipng({ optimizationLevel: 5 })
         ])
       )
       .pipe($.gulp.dest("./build/static/images/"));

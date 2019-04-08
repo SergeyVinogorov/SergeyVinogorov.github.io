@@ -4,7 +4,7 @@
   "description": "Practice Work",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp build"
   },
   "author": "Sergey Vinogorov",
   "license": "ISC",
