@@ -1,0 +1,34 @@
+@import "./__header/stat__header";
+@import "./__link/stat__link.scss";
+@import "./___show/stat__show";
+@import "./__descript/stat__descript";
+@import "./__image/stat__image";
+@import "./__number/stat__number";
+@import "./__percent/stat__percent";
+@import "./__descript-number/stat__descript-number";
+
+.stat {
+  display: flex;
+  // width: 22%;
+  height: 7.6rem;
+  background-color: white;
+  justify-content: space-between;
+  position: relative;
+  padding: 0.8rem 1.1rem;
+  // overflow: hidden;
+  &:hover {
+    box-shadow: 0.1rem 0.1rem 0.2rem $dark-grey;
+    cursor: pointer;
+    .stat__link {
+      text-decoration: underline;
+    }
+  }
+}
+@media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: $mobile) {
+  .stat {
+    padding: 1.2rem 0.5rem;
+    background-color: inherit;
+  }
+}

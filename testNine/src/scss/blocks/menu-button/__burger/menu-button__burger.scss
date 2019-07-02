@@ -1,0 +1,13 @@
+@import "./--line/menu-button__burger--line";
+.menu-button__burger {
+  position: relative;
+  height: 0.8rem;
+  order: 2; //right here
+  // align-self: flex-start; //right here
+}
+@media only screen and (max-width: $mobile) {
+  .menu-button__burger {
+    order: -1;
+    // margin-top: 1rem;
+  }
+}

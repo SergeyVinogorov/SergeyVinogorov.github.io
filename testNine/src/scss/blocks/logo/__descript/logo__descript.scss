@@ -1,0 +1,15 @@
+@import "./--strong/logo__descript--strong";
+
+.logo__descript {
+  // display: none; //right here
+  position: absolute;
+  // clip: rect(1 0 0 0);
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  // margin: -1px;
+  transform: translateX(-10px);
+  flex-direction: column;
+  justify-content: center;
+  // transition: all 0.3s;
+}

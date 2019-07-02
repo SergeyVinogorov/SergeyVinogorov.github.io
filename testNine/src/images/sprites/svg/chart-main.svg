@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1168" height="268" viewBox="0 0 1168 268">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#347dfe" stop-opacity="0.369"/>
+      <stop offset="1" stop-color="#347dfe" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#347dfe" stop-opacity="0.169"/>
+      <stop offset="1" stop-color="#347dfe" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1009" data-name="Group 1009" transform="translate(-94 -366)">
+    <line id="Line_27" data-name="Line 27" x2="1104.5" transform="translate(138.5 585.5)" fill="none" stroke="#cbcfe2" stroke-width="1"/>
+    <line id="Line_28" data-name="Line 28" x2="1104.5" transform="translate(138.5 543.5)" fill="none" stroke="#cbcfe2" stroke-width="1"/>
+    <line id="Line_29" data-name="Line 29" x2="1104.5" transform="translate(138.5 501.5)" fill="none" stroke="#cbcfe2" stroke-width="1"/>
+    <line id="Line_30" data-name="Line 30" x2="1104.5" transform="translate(138.5 458.5)" fill="none" stroke="#cbcfe2" stroke-width="1"/>
+    <line id="Line_31" data-name="Line 31" x2="1104.5" transform="translate(138.5 416.5)" fill="none" stroke="#cbcfe2" stroke-width="1"/>
+    <line id="Line_32" data-name="Line 32" x2="1104.5" transform="translate(138.5 374.5)" fill="none" stroke="#cbcfe2" stroke-width="1"/>
+    <text id="Feb_17" data-name="Feb 17" transform="translate(485 631)" fill="#8c8f9e" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Feb 17</tspan></text>
+    <text id="Feb_16" data-name="Feb 16" transform="translate(301 631)" fill="#8c8f9e" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Feb 16</tspan></text>
+    <text id="Feb_15" data-name="Feb 15" transform="translate(117 631)" fill="#8c8f9e" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Feb 15</tspan></text>
+    <text id="_0" data-name="0" transform="translate(108 591)" fill="#8c8f9e" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0</tspan></text>
+    <text id="_50" data-name="50" transform="translate(116 549)" fill="#95e9cd" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="-14.016" y="0">50</tspan></text>
+    <text id="_150" data-name="150" transform="translate(116 464)" fill="#95e9cd" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="-21.023" y="0">150</tspan></text>
+    <text id="_100" data-name="100" transform="translate(116 507)" fill="#95e9cd" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="-21.023" y="0">100</tspan></text>
+    <text id="_200" data-name="200" transform="translate(116 422)" fill="#95e9cd" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="-21.023" y="0">200</tspan></text>
+    <text id="_250" data-name="250" transform="translate(116 380)" fill="#95e9cd" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="-21.023" y="0">250</tspan></text>
+    <text id="Feb_18" data-name="Feb 18" transform="translate(669 631)" fill="#8c8f9e" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Feb 18</tspan></text>
+    <text id="Feb_19" data-name="Feb 19" transform="translate(853 631)" fill="#8c8f9e" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Feb 19</tspan></text>
+    <text id="Feb_20" data-name="Feb 20" transform="translate(1037 631)" fill="#8c8f9e" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Feb 20</tspan></text>
+    <text id="Feb_21" data-name="Feb 21" transform="translate(1223 631)" fill="#8c8f9e" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Feb 21</tspan></text>
+    <path id="Path_583" data-name="Path 583" d="M-6654.5,404.5s206.433-3.6,346.207-30.956,217.458-77.342,358.253-96.1c72.228-9.621,148.713-25.624,220.234-41.971" transform="translate(6793 181)" fill="none" stroke="#347dfe" stroke-width="2"/>
+    <path id="Path_586" data-name="Path 586" d="M-6654.5,404.5s206.433-3.6,346.207-30.956,217.458-77.342,358.253-96.1c72.228-9.621,148.713-25.624,220.234-41.971,0,34.527.108,169.068.108,169.068" transform="translate(6793 181)" fill="url(#linear-gradient)"/>
+    <path id="Path_584" data-name="Path 584" d="M-5946.224,235.476c67.155-15.348,129.875-31.014,179.563-41.67" transform="translate(7009.418 181)" fill="none" stroke="#347dfe" stroke-width="2" stroke-dasharray="7 3"/>
+    <path id="Path_585" data-name="Path 585" d="M-5946.115,404.516s-.108-144.217-.108-169.04c67.155-15.348,129.875-31.014,179.563-41.67,0,24.828.242,210.711.242,210.711" transform="translate(7009.418 181)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

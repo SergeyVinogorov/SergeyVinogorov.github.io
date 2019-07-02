@@ -1,0 +1,25 @@
+.menu-button__burger--line {
+  display: block;
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: $burger;
+  border: none;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -0.3rem;
+    left: 0;
+    width: 1.5rem;
+    height: 0.2rem;
+    background-color: $burger;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0;
+    width: 1.5rem;
+    height: 0.2rem;
+    background-color: $burger;
+  }
+}

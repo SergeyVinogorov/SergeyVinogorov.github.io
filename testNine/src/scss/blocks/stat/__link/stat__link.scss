@@ -1,0 +1,27 @@
+@import "./--row/stat__link--row";
+.stat__link {
+	align-self: flex-end;
+	z-index: 1;
+	position: absolute;
+	right: 1.6rem;
+	color: $black;
+	text-decoration: none;
+}
+@media only screen and (max-width: $tablet) {
+	.stat__link {
+		visibility: hidden;
+		&:after {
+			visibility: visible;
+		}
+	}
+}
+@media only screen and (max-width: $mobile) {
+	.stat__link {
+		position: inherit;
+		&::after {
+			right: initial;
+			left: 0.4rem;
+			bottom: 0;
+		}
+	}
+}

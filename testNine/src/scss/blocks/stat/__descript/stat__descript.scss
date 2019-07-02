@@ -1,0 +1,11 @@
+.stat__descript {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 2;
+}
+@media only screen and (max-width: $mobile) {
+	.stat__descript {
+		position: relative;
+	}
+}
