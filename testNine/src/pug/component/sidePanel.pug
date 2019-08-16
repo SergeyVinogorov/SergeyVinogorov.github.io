@@ -1,0 +1,48 @@
+
+aside(class="side-panel" id="sidePanel")
+	.side-panel__logo.menu-button
+		.menu-button__logo.logo
+			svg(width='48' height='48' viewbox='0 0 46 48', aria-labelledby='head descript' class="logo__picture")
+				title(id='head') Awesome Page Account
+				desc(id="descript") Awesome Page Account
+				use(xlink:href='images/sprites.svg#menu')
+			p.logo__descript
+				strong.logo__descript--strong Awesome Page Account
+				span Account
+		.menu-button__burger
+			button(type="button" class="menu-button__burger--line")
+	nav.side-panel__nav.account-navigation
+		ul.account-navigation__list
+			li.account-navigation__item
+				a(href="#", title="home").account-navigation__link
+					+icon('home')
+					span.account-navigation__text Dashboard
+			li.account-navigation__item
+				a(href="#", title="home").account-navigation__link
+					+icon('shares')
+					span.account-navigation__text Dashboard
+			li.account-navigation__item.active-item
+				a(href="#", title="home").account-navigation__link
+					+icon('pay')
+					span.account-navigation__text.side-panel__news Dashboard
+						.side-panel__news--count 1
+			li.account-navigation__item
+				a(href="#", title="home").account-navigation__link
+					+icon('referal')
+					span.account-navigation__text Dashboard
+			li.account-navigation__item
+				a(href="#", title="home").account-navigation__link
+					+icon('bell')
+					span.account-navigation__text Dashboard
+			li.account-navigation__item
+				a(href="#", title="home").account-navigation__link
+					+icon('movie')
+					span.account-navigation__text Dashboard
+			li.account-navigation__item
+				a(href="#", title="home").account-navigation__link
+					+icon('marketing')
+					span.account-navigation__text Dashboard
+			li.account-navigation__item
+				a(href="#", title="home").account-navigation__link
+					+icon('document')
+					span.account-navigation__text Dashboard

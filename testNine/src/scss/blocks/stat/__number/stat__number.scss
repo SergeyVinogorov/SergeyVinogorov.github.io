@@ -1,0 +1,17 @@
+.stat__number {
+  font-family: $interM;
+  font-size: 2.2rem;
+  color: $black;
+  margin: 0;
+}
+@media only screen and (max-width: $tablet) {
+  .stat__number {
+    font-size: 1.8rem;
+    // position: relative;
+  }
+}
+@media only screen and (max-width: $tablet) {
+  .stat__number {
+    font-size: 1.3rem;
+  }
+}

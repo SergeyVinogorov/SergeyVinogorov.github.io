@@ -1,0 +1,26 @@
+.price {
+	padding: 3rem 1.2rem 1.6rem 2.8rem;
+}
+.price__head {
+	font-family: $inter;
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: $black;
+	margin: 0;
+	// padding-bottom: 1.9rem;
+}
+.price__image {
+	background-color: $main-color;
+	width: 100%;
+	max-width: 933px;
+	// min-width: 343px;
+}
+@media only screen and (max-width: 1024px) {
+	.price {
+		padding: 3rem 1.2rem 0 2.8rem;
+	}
+}
+.chart-main {
+	width: 100%;
+	// height: 500px;
+}

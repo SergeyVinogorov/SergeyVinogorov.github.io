@@ -1,0 +1,26 @@
+.stat__link--row {
+	fill: $active-menu;
+	position: absolute;
+	right: -1rem;
+	width: 0.6rem;
+	height: 0.6rem;
+}
+@media only screen and (max-width: $tablet) {
+	.stat__link--row {
+		visibility: visible;
+	}
+}
+@media only screen and (max-width: $mobile) {
+	.stat__link--row {
+		// position: absolute;
+		left: -1rem;
+		.show-more {
+			width: initial;
+		}
+	}
+}
+@media only screen and (max-width: 320px) {
+	.stat__link--row {
+		left: 0;
+	}
+}

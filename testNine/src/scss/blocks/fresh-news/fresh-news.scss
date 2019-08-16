@@ -1,0 +1,23 @@
+@import "./__image/fresh-news__image";
+@import "./__text/fresh-news__text";
+@import "./__time/fresh-news__time";
+@import "./__vews/fresh-news__views";
+@import "./__views-number/fresh-news__views-number";
+@import "./__head/fresh-news__head";
+.fresh-news {
+  padding-top: 1.8rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  &:hover {
+    .fresh-news__head {
+      text-decoration: underline;
+    }
+  }
+}
+@media only screen and (max-width: $tablet) {
+  .fresh-news {
+    display: block;
+    padding-right: 1.4rem;
+  }
+}

@@ -1,0 +1,22 @@
+section.user-stat
+	h2.user-stat__header User Stats
+	.user-stat__variants
+		.user-stat__item
+			+stats('Referrals','9','Shares', 'stat-refer')
+		.user-stat__item
+			+stats('Balance','$99.9','USD','stat-balance', '+0.9%')
+		.user-stat__item
+			+stats('Partners','9','Shares', 'stat-partner', '')
+		.user-stat__item
+			.stat
+				.stat__descript
+					h3.stat__header Profit 
+						span.user-stat__item--mobile-none over all time
+					p.stat__number $999.9
+						span.stat__percent
+					.stat__descript-number USD
+				.stat__show
+					+icon('stat-profit', '','', 'stat__image')
+					a(href="#", title="title").stat__link Show more
+						span.stat__link--row
+							+icon('show-more', '0.6rem', '0.6rem')

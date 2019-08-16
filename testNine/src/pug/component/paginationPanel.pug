@@ -1,0 +1,28 @@
+.pagination-panel
+	.pagination-panel__pagination
+		a(href="#", title="title", class="pagination-contact")
+			|Have any question? 
+			span Contact us now.
+		ul
+			li 
+				a(href="#", title="title") /Dashboard
+	.pagination-panel__user.user
+		button(type="button" class="user__language") English
+		ul(class="user__variant-language")
+			li 
+				a(href="#", title="title") English
+			li 
+				a(href="#", title="title") Русский
+			li 
+				a(href="#", title="title") Deutsch
+			li 
+				a(href="#", title="title") Le francais
+		button(type="button" class="user__name") Ivanov I.
+		.user__img
+			svg(width='36' height='47' xmlns="http://www.w3.org/2000/svg" aria-labelledby="userPicture userFoto")
+				use(xlink:href='images/sprites.svg#user')
+				title(id="userPicture") Account foto
+				desc(id="userFoto") User foto
+			//- img(src="static/images/svg/user.svg", alt="")
+
+
