@@ -10,10 +10,11 @@ public class Main {
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			System.out.println("Input: ");
 			String name = br.readLine();
-			getNumber.splitString(name);
-			makeNumber.converter();
+			getNumber.splitString(name); // call to class that split string delete white spaces, find expression and create variables of two numbers
+			makeNumber.converter(); //
 			checkRightNumber.rangeNumber(makeNumber.first);
 			checkRightNumber.rangeNumber(makeNumber.second);
+			checkRightNumber.checkTypeNumbers();
 			arifmetic.checkArifmetic();
 	    }
 	}

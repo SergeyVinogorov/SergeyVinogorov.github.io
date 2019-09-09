@@ -8,4 +8,11 @@ public class checkRightNumber {
 			throw new RuntimeException("That not a correct diapasons of number");
 		}
 	}
+	public static boolean checkTypeNumbers() {
+		if (makeNumber.firstNumberRoman == makeNumber.secondNumberRoman || makeNumber.firstNumberArabic == makeNumber.secondNumberArabic) {
+			return true;
+		}else {
+			throw new RuntimeException("That not a correct type of number");
+		}
+	}
 }

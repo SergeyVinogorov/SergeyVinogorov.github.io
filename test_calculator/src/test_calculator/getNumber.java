@@ -1,10 +1,12 @@
 package test_calculator;
 
 public class getNumber {
+	
 	static int arifmeticIndex;
 	static String firstNumber;
 	static String secondNumber;
 	static String expression;
+	
 	public static void splitString(String line) {
 		String someLine = line.trim();
 		someLine = someLine.replaceAll(" ", "");
