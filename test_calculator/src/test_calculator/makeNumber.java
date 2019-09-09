@@ -34,12 +34,13 @@ public class makeNumber {
 		int j = 0;
 		char firstLetter = roma.charAt(j);
 		char parametrs [] = {'I', 'X', 'V'};
-		for (int i=0; i <= parametrs.length - 1; i++) {
+		int i;
+		for (i = 0; i <= parametrs.length - 1; i++) {
 			if (firstLetter == parametrs[i]) {
 				firstNumberRoman = true;
 				romanNumerals.convertionRomanToArabicFirst(roma);
 				return;
-			}else {
+			}else if (i == 2) {
 				System.out.println("first number is not look like correct number");
 			}
 		}
@@ -54,8 +55,8 @@ public class makeNumber {
 				secondNumberRoman = true;
 				romanNumerals.convertionRomanToArabicSecond(roma);
 				return;
-			}else {
-				System.out.print("second number is not look like correct number");
+			}else if (i == 2) {
+				System.out.println("first number is not look like correct number");
 			}
 		}
 	}
