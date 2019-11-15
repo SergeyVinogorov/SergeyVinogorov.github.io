@@ -10,16 +10,15 @@ Vue.component("table-worker", {
     }
   },
   template: `<div>
-	<table>
+	<table border="1">
 	<thead>
 		<tr>
-			<th>ФИО</th>
-			<th>Должность</th>
-			<th>Дата рождения</th>
+		<th v-for="col in columns" @click="sortTable(col)">{{col}}</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr v-for="item in workers" :key="item.id">
+		<td>{{ item.id }}</td>
 			<td>{{ item.name }}</td>
 			<td>{{ item.position }}</td>
 			<td>{{ item.date }}</td>
@@ -38,7 +37,9 @@ Vue.component("table-worker", {
       TablePosition: this.tableposition,
       change: Number,
       showForm: false,
-      index: 0
+      index: 0,
+      ascending: false,
+      sortColumn: ""
     };
   },
   methods: {
@@ -65,6 +66,33 @@ Vue.component("table-worker", {
     deleteWorker(el) {
       this.getIndexWorker(el);
       this.workers.splice(this.index, 1);
+    },
+    sortTable(col) {
+      if (this.sortColumn === col) {
+        this.ascending = !this.ascending;
+      } else {
+        this.ascending = true;
+        this.sortColumn = col;
+      }
+
+      var ascending = this.ascending;
+
+      this.workers.sort(function(a, b) {
+        if (a[col] > b[col]) {
+          return ascending ? 1 : -1;
+        } else if (a[col] < b[col]) {
+          return ascending ? -1 : 1;
+        }
+        return 0;
+      });
+    }
+  },
+  computed: {
+    columns() {
+      if (this.workers.length == 0) {
+        return [];
+      }
+      return Object.keys(this.workers[0]);
     }
   }
 });
