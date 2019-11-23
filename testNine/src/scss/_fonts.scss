@@ -1,8 +1,0 @@
-// stylelint-disable no-empty-source
-@import "./mixins/_font-face";
-
-@include font-face("Montserrat", "../fonts/Montserrat-Bold");
-@include font-face("Inter-ExtraBold", "../fonts/Inter-ExtraBold");
-@include font-face("Inter-Medium", "../fonts/Inter-Medium");
-@include font-face("Inter-SemiBold", "../fonts/Inter-SemiBold");
-@include font-face("Inter", "../fonts/Inter-Regular");
