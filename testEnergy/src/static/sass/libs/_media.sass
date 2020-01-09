@@ -1,0 +1,59 @@
+@media only screen and (max-width: 1200px)
+	.container-aqua
+		font-size: 14px
+	.brand
+		width: 15%
+	.menu
+		font-size: 18px
+	.first-screen
+		.first-screen_wrap_text
+			h1
+				font-size: 52px
+			button
+				font-size: 18px
+	.content-item
+		font-size: 18px
+		flex-wrap: wrap
+
+
+@media only screen and (max-width: 1024px)
+	.brand
+		display: flex
+		justify-content: space-between
+		width: 100%
+		.burger-aqua
+			display: block
+			align-self: center
+	nav
+		width: 260px
+		display: none
+	.menu
+		position: absolute
+		flex-direction: column
+		top: -40px
+		right: 0
+		background-color: $btn
+		padding: 2em
+		.menu-item
+			margin-bottom: 2em
+			width: 100%
+			a 
+				color: $white
+				&:hover
+					color: lighten($headers, 10%)
+	.first-screen
+		flex-wrap: wrap
+		.first-screen_wrap_img
+			margin-top: 2em
+	.content-item
+		justify-content: center
+		.content-item__description
+			margin-top: 2em
+@media only screen and (max-width: 768px)
+	.brand-aqua
+		width: 50%
+	.container-aqua
+		font-size: 10px
+@media only screen and (max-width: 480px)
+	.content-item__image
+		height: 10em

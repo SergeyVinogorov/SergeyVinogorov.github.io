@@ -1,0 +1,98 @@
+extends ../layout/main
+
+block variables
+
+block content
+
+	header.container-aqua(aria-label="Сайт аренды яхт и школа шкиперов")
+		.brand
+			a.brand-aqua
+				img(src="../../static/images/png/yahtLogo.png", alt="Аренда яхт")
+			.burger-aqua.js-burg
+				span(aria-label="hidden")
+				span(aria-label="hidden")
+				span(aria-label="hidden")
+		nav.js-menu
+			ul.menu
+				li.menu-item
+					a(href="#").menu-link О нас
+				li.menu-item
+					a(href="#").menu-link Аренда яхт
+				li.menu-item
+					a(href="#").menu-link Обучение
+				li.menu-item
+					a(href="#").menu-link Регаты
+				li.menu-item
+					a(href="#").menu-link Туры
+				li.menu-item
+					a(href="#").menu-link Инвестиции
+	main
+		section.container-aqua.first-screen
+			.first-screen_wrap_text
+				h1 Аренда яхт <br> по всему миру
+				button(type="button") Подобрать яхту
+			.first-screen_wrap_img
+				img(src="../../static/images/img_main.jpg", alt="Яхт клуб")
+		section.container-aqua
+			.content-item
+				.content-item__image
+					img(src="../../static/images/png/captain.png", alt="Проведение обучения шкиперов")
+				.content-item__description
+					h2 Школа капитанов
+					p Обучение на права шкипера(капитана яхты) от международной школы IYT, которая известна во всем мире. <br><br> Практическая часть проходит на ячтах Sun Odyssey 54 DS в Хорватии в группе до 6 человек. Повышение квалификации на яхтах Bavaria 42 Match
+					a(href="#") Подробнее...
+		section.container-aqua
+			.content-item
+				.content-item__image
+					img(src="../../static/images/png/pegats.png", alt="Проведение обучения шкиперов")
+				.content-item__description
+					h2 Регаты и флотилии
+					p Обучение на права шкипера(капитана яхты) от международной школы IYT, которая известна во всем мире. <br><br> Практическая часть проходит на ячтах Sun Odyssey 54 DS в Хорватии в группе до 6 человек. Повышение квалификации на яхтах Bavaria 42 Match
+					a(href="#") Подробнее...
+		section.container-aqua
+			.content-item
+				.content-item__image
+					img(src="../../static/images/png/tures.png", alt="Проведение обучения шкиперов")
+				.content-item__description
+					h2 Туры и мероприятия
+					p Обучение на права шкипера(капитана яхты) от международной школы IYT, которая известна во всем мире. <br><br> Практическая часть проходит на ячтах Sun Odyssey 54 DS в Хорватии в группе до 6 человек. Повышение квалификации на яхтах Bavaria 42 Match
+					a(href="#") Подробнее...
+	footer(aria-label="Footer with links").container-aqua
+		ul.footer-item
+			li
+				a(href="tel:+74991120984") +7 (499) 112 0984
+			li
+				a(href="mailto:sailing-tour@mail.ru?sabject=Письмо с нашего сайта") sailing-tour@mail.ru
+			li
+				.social-link
+					a(href="#")
+						span.fb
+					a(href="#")
+						span.inst
+					a(href="#")
+						span.vk
+		ul.footer-item
+			li
+				a(href="#") Сотрудничество
+			li
+				a(href="#") Клубная карта
+			li
+				a(href="#") Новости
+			li
+				a(href="#") Статьи
+			li
+				a(href="#") Форум
+		ul.footer-item
+			li
+				a(href="#") Дополнительные услуги
+			li
+				a(href="#") Корпоративный яхтинг
+			li
+				a(href="#") Полезная информация
+			li
+				a(href="#") Обратная связь
+			li
+				a(href="#") Наши ученики
+		.footer-item.footer__sign
+			p Aguqtoria Yachting, 2018
+			a(href="#") Политика конфиденциальности

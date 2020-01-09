@@ -1,0 +1,15 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "for webp converter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergey Vinogorv",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-webp": "^4.0.1"
+  }
+}

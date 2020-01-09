@@ -1,0 +1,15 @@
+//- for svg insert into page
+mixin icon(name,mod)
+	- mod = mod || ''
+	svg(class="icon icon-" + name + ' ' + mod)
+		use(xlink:href="static/img/svg/symbol/sprite.svg#" + name)
+//-for blocks thatr same verticalm stracture
+mixin vBricks(header,descript)
+	div.brick
+		div.brick__item_first
+			h3= header
+		div.brick__item_second
+			p= descript
+
+mixin partner(logo, descript)
+	img(src="./static/images/svg/" + logo, alt=""+descript)

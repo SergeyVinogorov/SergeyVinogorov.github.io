@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test work Vinogorov Sergey</title>
+  </head>
+  <body>
+    <script src="sort.js"></script>
+    <script>
+      let cards = [
+        {
+          departure: "Roza Khutor",
+          destination: "Gornaya Karusel",
+          seat: "no",
+          transportType: "bus",
+          departurePoint: "follow the signs",
+          transportNumber: 105,
+          baggage: "no"
+        },
+        {
+          departure: "Gamburg",
+          destination: "Saint",
+          seat: "no",
+          transportType: "bus",
+          departurePoint: "follow the signs",
+          transportNumber: 105,
+          baggage: "no"
+        },
+        {
+          departure: "Gornaya Karusel",
+          destination: "Rixos hotel",
+          seat: "no",
+          transportType: "cable car",
+          departurePoint: "walk from the cable car to the hotel",
+          transportNumber: "any",
+          baggage: "no"
+        },
+        {
+          departure: "metro station Moscow",
+          destination: "Pulkovo airport",
+          seat: "no",
+          transportType: "bus",
+          departurePoint: "exit the metro at the signs for the bus stop",
+          transportNumber: 55,
+          baggage: "baggage is paid separately"
+        },
+        {
+          departure: "Adler airport",
+          destination: "Roza Khutor",
+          seat: "no",
+          transportType: "train Lastochka",
+          departurePoint: "folow the signs",
+          transportNumber: "no",
+          baggage: "no"
+        },
+        {
+          departure: "Pulkovo airport",
+          destination: "Adler airport",
+          seat: "46d",
+          transportType: "flight",
+          departurePoint: "gate 8",
+          transportNumber: "472G",
+          baggage: "Baggage drop at ticket counter 344"
+        }
+      ];
+      let main = function() {
+        let sorter = new TravelSorted();
+        sorter.selectionSort(cards);
+        sorter.getCardFilter();
+      };
+      document.addEventListener("DOMContentLoaded", main);
+    </script>
+  </body>
+</html>
