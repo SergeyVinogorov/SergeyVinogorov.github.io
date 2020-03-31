@@ -1,0 +1,25 @@
+{
+  "name": "mymedium",
+  "version": "1.0.0",
+  "description": "Simple authentication in Vue ",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server -d 1500 --watch ./db.json",
+    "start-auth": "node ./server/app.js"
+  },
+  "author": "Sergey Vinogorov",
+  "license": "MIT",
+  "dependencies": {
+    "@mdi/font": "^5.0.45",
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "file-system": "^2.2.2",
+    "fs": "0.0.1-security",
+    "json-server": "^0.16.1",
+    "jsonwebtoken": "^8.5.1",
+    "sqlite3": "^4.1.1"
+  }
+}

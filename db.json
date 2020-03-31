@@ -1,0 +1,234 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "bruno@email.com",
+      "password": "bruno",
+      "role": "writer"
+    },
+    {
+      "id": 2,
+      "email": "techie@email.com",
+      "password": "techie",
+      "role": "writer"
+    },
+    {
+      "id": 3,
+      "email": "nilson@email.com",
+      "password": "nilson",
+      "role": "reader"
+    },
+    {
+      "id": 4,
+      "email": "nilson1@email.com",
+      "password": "nilson",
+      "role": "reader"
+    },
+    {
+      "id": 5,
+      "email": "nilson2@email.com",
+      "password": "nilson",
+      "role": "reader"
+    },
+    {
+      "id": 6,
+      "email": "vinogorich@gmail.com",
+      "password": "123321",
+      "role": "reader"
+    },
+    {
+      "id": 1585640592000,
+      "email": "Sahapova.s@gmail.com",
+      "password": "123321",
+      "role": "reader"
+    },
+    {
+      "id": 7,
+      "email": "vinogorich@gmail.com",
+      "password": "654321",
+      "role": "reader"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "this is awesome vue medium progect",
+      "description": "fuga et accusamus dolorum perferendis illo voluptas\nnon doloremque neque facere\nad qui dolorum molestiae beatae\nsed aut voluptas totam sit illumdddd",
+      "claps": 1,
+      "createdAt": "2019-09-29T00:00:00.000Z",
+      "updateAt": "2020-03-30T19:20:48.924Z",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "voluptatem eligendi optio",
+      "description": "aut dicta possimus sint mollitia voluptas commodi quo doloremque\niste corrupti reiciendis voluptatem eius rerum\nsit cumque quod eligendi laborum minima\nperferendis recusandae assumenda consectetur porro architecto ipsum ipsam",
+      "claps": 12,
+      "createdAt": "2019-09-29T00:00:00.000Z",
+      "updateAt": "2019-09-29T00:00:00.000Z",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "title": "dolorum ut in voluptas mollitia et saepe quo animi",
+      "description": "aut dicta possimus sint mollitia voluptas commodi quo doloremque\niste corrupti reiciendis voluptatem eius rerum\nsit cumque quod eligendi laborum minima\nperferendis recusandae assumenda consectetur porro architecto ipsum ipsam",
+      "claps": 2,
+      "createdAt": "2019-09-29T00:00:00.000Z",
+      "updateAt": "2019-09-29T00:00:00.000Z",
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "title": "in quibusdam tempore odit est dolorem",
+      "description": "itaque id aut magnam\npraesentium quia et ea odit et ea voluptas et\nsapiente quia nihil amet occaecati quia id voluptatem\nincidunt ea est distinctio odio",
+      "claps": 0,
+      "createdAt": "2019-09-29T00:00:00.000Z",
+      "updateAt": "2019-09-29T00:00:00.000Z",
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "title": "et ea vero quia laudantium autem",
+      "description": "delectus reiciendis molestiae occaecati non minima eveniet qui voluptatibus\naccusamus in eum beatae sit\nvel qui neque voluptates ut commodi qui incidunt\nut animi commodi",
+      "claps": 0,
+      "createdAt": "2019-09-29T00:00:00.000Z",
+      "updateAt": "2019-09-29T00:00:00.000Z",
+      "userId": 1
+    },
+    {
+      "id": 6,
+      "title": "optio molestias id quia eum",
+      "description": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error",
+      "claps": 0,
+      "createdAt": "2019-09-29T00:00:00.000Z",
+      "updateAt": "2019-09-29T00:00:00.000Z",
+      "userId": 1
+    },
+    {
+      "id": 7,
+      "title": "nesciunt iure omnis dolorem tempora et accusantium",
+      "description": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas",
+      "claps": 0,
+      "createdAt": "2019-09-29T00:00:00.000Z",
+      "updateAt": "2019-09-29T00:00:00.000Z",
+      "userId": 1
+    },
+    {
+      "id": 8,
+      "title": "dolorem dolore est ipsam",
+      "description": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae",
+      "claps": 0,
+      "createdAt": "2019-09-29T00:00:00.000Z",
+      "updateAt": "2019-09-29T00:00:00.000Z",
+      "userId": 1
+    },
+    {
+      "id": 9,
+      "title": "magnam facilis autem",
+      "description": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas",
+      "claps": 0,
+      "createdAt": "2019-09-29T00:00:00.000Z",
+      "updateAt": "2019-09-29T00:00:00.000Z",
+      "userId": 1
+    },
+    {
+      "id": 10,
+      "title": "dolorem eum magni eos aperiam quia",
+      "description": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestia",
+      "claps": 0,
+      "createdAt": "2019-09-29T00:00:00.000Z",
+      "updateAt": "2019-09-29T00:00:00.000Z",
+      "userId": 1
+    },
+    {
+      "id": 11,
+      "title": "eum et est occaecati",
+      "description": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque",
+      "claps": 0,
+      "createdAt": "2019-09-29T00:00:00.000Z",
+      "updateAt": "2019-09-29T00:00:00.000Z",
+      "userId": 1
+    },
+    {
+      "id": 12,
+      "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+      "description": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+      "claps": 1,
+      "createdAt": "2019-09-29T00:00:00.000Z",
+      "updateAt": "2019-09-29T00:00:00.000Z",
+      "userId": 1
+    },
+    {
+      "id": 14,
+      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+      "description": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+      "claps": 32,
+      "createdAt": "2019-09-20T00:00:00.000Z",
+      "updateAt": "2019-09-29T00:00:00.000Z",
+      "userId": 2
+    },
+    {
+      "title": "Land",
+      "description": "Yes we are strong\n",
+      "id": 13,
+      "claps": 0,
+      "createdAt": "Sun Mar 29 2020 12:22:32 GMT+0300 (Moscow Standard Time)",
+      "updateAt": "2020-03-29T10:43:01.608Z",
+      "userId": 1
+    },
+    {
+      "title": "Давайте будем серьезней",
+      "description": "иногда!",
+      "id": 1585478771000,
+      "claps": 0,
+      "createdAt": "Sun Mar 29 2020 13:46:11 GMT+0300 (Moscow Standard Time)",
+      "updateAt": "2020-03-29T11:04:15.008Z",
+      "userId": 1
+    },
+    {
+      "title": "Yes i amddd",
+      "description": "ccccccc\n",
+      "id": 1585480223000,
+      "claps": 0,
+      "createdAt": "Sun Mar 29 2020 14:10:23 GMT+0300 (Moscow Standard Time)",
+      "updateAt": "2020-03-30T20:42:04.498Z",
+      "userId": 1
+    },
+    {
+      "title": "Landing page from scratch",
+      "description": "ddddddd",
+      "id": 1585480510000,
+      "claps": 0,
+      "createdAt": "Sun Mar 29 2020 14:15:10 GMT+0300 (Moscow Standard Time)",
+      "updateAt": "Sun Mar 29 2020 14:15:10 GMT+0300 (Moscow Standard Time)",
+      "userId": 1
+    },
+    {
+      "title": "Landing page from scratch",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa corporis sed exercitationem blanditiis labore quia corrupti velit, repellendus quos a ad, unde voluptatem pariatur dolorum non asperiores quod eum, dignissimos veritatis tenetur? Quidem, magni soluta deserunt deleniti unde quo iusto placeat dolores animi esse illo ipsum, non nam harum saepe.",
+      "id": 1585629935000,
+      "claps": 0,
+      "createdAt": "Tue Mar 31 2020 07:45:35 GMT+0300 (Moscow Standard Time)",
+      "updateAt": "Tue Mar 31 2020 07:45:35 GMT+0300 (Moscow Standard Time)",
+      "userId": 1
+    },
+    {
+      "title": "Yes i am",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa corporis sed exercitationem blanditiis labore quia corrupti velit, repellendus quos a ad, unde voluptatem pariatur dolorum non asperiores quod eum, dignissimos veritatis tenetur? Quidem, magni soluta deserunt deleniti unde quo iusto placeat dolores animi esse illo ipsum, non nam harum saepe.\n",
+      "id": 1585629958000,
+      "claps": 0,
+      "createdAt": "Tue Mar 31 2020 07:45:58 GMT+0300 (Moscow Standard Time)",
+      "updateAt": "Tue Mar 31 2020 07:45:58 GMT+0300 (Moscow Standard Time)",
+      "userId": 1
+    },
+    {
+      "title": "this is awesome vue medium progect",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, placeat? Inventore, dolore neque? Temporibus doloremque architecto illum nisi aspernatur, numquam, modi ab ea, culpa harum vero! Obcaecati praesentium distinctio est mollitia accusamus vitae aperiam voluptatibus tempore! Harum aperiam mollitia, hic libero, nesciunt nam similique voluptatem earum aut repellendus commodi perspiciatis ab deleniti doloribus quidem! Voluptatem, voluptate! Accusantium possimus veritatis nostrum voluptatibus maiores incidunt deserunt, voluptates beatae sed perferendis molestiae et velit distinctio illo nesciunt? Doloribus esse, corporis dolorem voluptates voluptatum laudantium distinctio explicabo iste. Reprehenderit quis incidunt, alias harum qui nisi mollitia quae aspernatur distinctio vel atque sit molestias aut?",
+      "id": 1585629985000,
+      "claps": 0,
+      "createdAt": "Tue Mar 31 2020 07:46:25 GMT+0300 (Moscow Standard Time)",
+      "updateAt": "Tue Mar 31 2020 07:46:25 GMT+0300 (Moscow Standard Time)",
+      "userId": 1
+    }
+  ]
+}
