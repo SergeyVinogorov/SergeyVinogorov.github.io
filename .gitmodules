@@ -1,0 +1,3 @@
+[submodule "myMediumVue"]
+	path = myMediumVue
+	url = https://github.com/SergeyVinogorov/myMediumVue.git
