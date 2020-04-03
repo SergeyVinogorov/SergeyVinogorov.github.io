@@ -53,8 +53,6 @@ function isAuthenticated({ email, password }) {
 
 // Register New User
 server.post("/auth/register", (req, res) => {
-  console.log("register endpoint called; request body:");
-  console.log(req.body);
   const { email, password } = req.body;
 
   if (isAuthenticated({ email, password }) === true) {

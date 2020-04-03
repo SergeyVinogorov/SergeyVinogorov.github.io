@@ -21,13 +21,11 @@ npm install
 npm run start-auth
 ```
 
-next
+### Next open a new terminal
 
 ```
 cd myMediumVue
 ```
-
-next
 
 ```
 npm install
