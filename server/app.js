@@ -1,7 +1,5 @@
 const fs = require("fs");
-const bcrypt = require("bcryptjs");
 const bodyParser = require("body-parser");
-
 const jsonServer = require("json-server");
 const jwt = require("jsonwebtoken");
 const server = jsonServer.create();
@@ -55,8 +53,8 @@ function isAuthenticated({ email, password }) {
 
 // Register New User
 server.post("/auth/register", (req, res) => {
-  // console.log("register endpoint called; request body:");
-  // console.log(req.body);
+  console.log("register endpoint called; request body:");
+  console.log(req.body);
   const { email, password } = req.body;
 
   if (isAuthenticated({ email, password }) === true) {
@@ -66,7 +64,6 @@ server.post("/auth/register", (req, res) => {
     return;
   }
   let test = JSON.stringify(userdb.users);
-  // console.log(test);
 
   fs.readFile(test, (err, data) => {
     if (err) {
